@@ -1,0 +1,31 @@
+.background_cell_color {background-color:#ffffff}
+
+.background_main_color {background-color:#cccccc}
+
+.background_title_color {background-color:#ffffff}
+
+.border {border: 1px solid #000000}
+
+a:link {color:#0000ff}
+
+a:active {color:#0000ff}
+
+a:visited {color:#0000ff}
+
+/*
+   The following is a combination of background_button_color and text_button_color,
+   this will override all input elements to look the same which will give a nice feel
+   Also, use border style from above in CSS style to give consistent look, there is really no
+   way to inherit this so you will change both properties
+*/
+input,textarea,select {background-color:#ffffff;color:#000000;border: 1px solid #000000}
+
+.text_body_color {color:#000000}
+
+.text_subtitle_color {color:#000000}
+
+.text_title_color {color:#000000}
+
+.title_font {font-family:sans-serif;font-size:40}
+
+.text_font {font-family:sans-serif;font-size:12}

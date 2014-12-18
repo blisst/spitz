@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Root>
+	<section title='About'>
+		<img link='content/Images/about/img_1.jpg'/>
+		<img link='content/Images/about/img_2.jpg'/>
+		<img link='content/Images/about/img_3.jpg'/>
+		<img link='content/Images/about/img_4.jpg'/>
+	</section>
+	<section title='Menu'>
+		<sub title='Sandwiches'>
+			<img link='content/Images/menu/sandwiches/img_1.jpg'/>
+			<img link='content/Images/menu/sandwiches/img_2.jpg'/>
+			<img link='content/Images/menu/sandwiches/img_3.jpg'/>
+		</sub>
+		<sub title='Wraps'>
+			<img link='content/Images/menu/wraps/img_1.jpg'/>
+			<img link='content/Images/menu/wraps/img_2.jpg'/>
+			<img link='content/Images/menu/wraps/img_3.jpg'/>
+		</sub>
+		<sub title='Styles'>
+			<img link='content/Images/menu/styles/img_1.jpg'/>
+			<img link='content/Images/menu/styles/img_2.jpg'/>
+			<img link='content/Images/menu/styles/img_3.jpg'/>
+		</sub>
+		<sub title='Salads'>
+			<img link='content/Images/menu/salads/img_1.jpg'/>
+			<img link='content/Images/menu/salads/img_2.jpg'/>
+			<img link='content/Images/menu/salads/img_3.jpg'/>
+		</sub>
+		<sub title='Plates'>
+			<img link='content/Images/menu/plates/img_1.jpg'/>
+			<img link='content/Images/menu/plates/img_2.jpg'/>
+			<img link='content/Images/menu/plates/img_3.jpg'/>
+		</sub>
+		<sub title='Sides'>
+			<img link='content/Images/menu/sides/img_1.jpg'/>
+			<img link='content/Images/menu/sides/img_2.jpg'/>
+		</sub>
+		<sub title='Gelato'>
+			<img link='content/Images/menu/gelato/img_1.jpg'/>
+			<img link='content/Images/menu/gelato/img_2.jpg'/>
+			<img link='content/Images/menu/gelato/img_3.jpg'/>
+		</sub>
+		<sub title='Main'>
+			<img link='content/Images/menu/main/img_1.jpg'/>
+			<img link='content/Images/menu/main/img_2.jpg'/>
+			<img link='content/Images/menu/main/img_3.jpg'/>
+			<img link='content/Images/menu/main/img_4.jpg'/>
+		</sub>
+	</section>
+	<section title='Catering'>
+		<img link='content/Images/catering/img_1.jpg'/>
+		<img link='content/Images/catering/img_2.jpg'/>
+		<img link='content/Images/catering/img_3.jpg'/>
+	</section>
+	<section title='Bar'>
+		<img link='content/Images/bar/img_1.jpg'/>
+		<img link='content/Images/bar/img_2.jpg'/>
+		<img link='content/Images/bar/img_3.jpg'/>
+		<img link='content/Images/bar/img_4.jpg'/>
+	</section>
+	<section title='Happy Hour'>
+		<img link='content/Images/happyhour/img_1.jpg'/>
+		<img link='content/Images/happyhour/img_2.jpg'/>
+		<img link='content/Images/happyhour/img_3.jpg'/>
+		<img link='content/Images/happyhour/img_4.jpg'/>
+		<img link='content/Images/happyhour/img_5.jpg'/>
+	</section>
+	<section title='Press'>
+		<img link='content/Images/press/img_1.jpg'/>
+		<img link='content/Images/press/img_2.jpg'/>
+		<img link='content/Images/press/img_3.jpg'/>
+	</section>
+	<section title='FAQ'>
+		<img link='content/Images/faq/img_1.jpg'/>
+		<img link='content/Images/faq/img_2.jpg'/>
+		<img link='content/Images/faq/img_3.jpg'/>
+	</section>
+</Root>

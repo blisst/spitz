@@ -1,0 +1,45 @@
+menuText= <span class="style1">The Spitz 
+Menu</span>
+<p class="style4"><span class="style2">D&ouml;ner Kebab Sandwiches</span><br />
+Make your sandwich a meal with your choice of one side and a medium drink for $TBA </p>
+<p class="style4"><span class="style3">The Classic </span><br />
+SPITZ's signature sandwich made with our homemade D&ouml;ner meat, fresh lettuce, tomato and onion, and topped with a cool mint or dill tzatziki sauce and a spicy chili sauce. $TBA</p>
+<p class="style4"><strong>The Chicken D&ouml;ner </strong><br />
+Just like The Classic, but made with an innovative blend of lean chicken and freshly ground spices. $TBA</p>
+<p class="style4"><strong>The Falafelite </strong><br />
+Freshly made light and fluffy falafel topped with your choice of 14 veggies, cheeses and sauces (lettuce, tomato, green onion, cucumber, green pepper, yellow pepper, jalape&ntilde;o, red cabbage, Greek Olives, feta cheese, mint or dill Tzatziki sauce, spicy chili sauce, homemade hummus). $TBA</p>
+<p class="style4"><strong>The V&eacute;g </strong><br />
+  Same as above...hold the falafel. $TBA<br />
+</p>
+<p class="style4">&nbsp;</p>
+<p class="style4"><span class="style2">D&ouml;ner Kebab Salads</span><br />
+  Make your salad a meal with your choice of one side and a medium drink for $TBA </p>
+<p class="style4">Served on a bed of crisp Romaine and topped with a special lo-cal house dressing, our fresh and healthy salads are made to order. After selecting the Classic, Chicken D&ouml;ner, Falafalite or V&eacute;g you are limited only by your imagination! </p>
+<p class="style4"><strong>Classic</strong> $TBA</p>
+<p class="style4"><strong>Chicken D&ouml;ner</strong> $TBA</p>
+<p class="style4"><strong>Falafelite</strong> $TBA</p>
+<p class="style4"><strong>V&eacute;g</strong> $TBA</p>
+<p class="style4">&nbsp;</p>
+<p class="style4">&nbsp;</p>
+<p class="style2">Sides</p>
+<p class="style4"><strong>Greek Salad</strong> $TBA</p>
+<p class="style4"><strong>Lightly Fried Pita Strips </strong>with Hummus $TBA</p>
+<p class="style4"><strong>Seasoned Waffle Fries</strong> with Tzatziki and chili dipping sauces $TBA</p>
+<p class="style4">&nbsp;</p>
+<p class="style4">&nbsp;</p>
+<p class="style4"><span class="style5">Dessert</span><br />
+The finest Italian Gelato and Sorbetto in California! Our flavors are always rotating, so don't be shy, ask for a sample taste today!</p>
+<p class="style4"><strong>Small</strong>$TBA</p>
+<p class="style4"><strong>Medium</strong>$TBA</p>
+<p class="style4"><strong>Large</strong>$TBA</p>
+<p class="style4">&nbsp;</p>
+<p class="style4">&nbsp;</p>
+<p class="style2">Beverages</p>
+<p class="style4"><strong>Coffee</strong>$TBA</p>
+<p class="style4"><strong>Tea</strong>$TBA</p>
+<p class="style4"><strong>Fountain Drinks </strong><br />
+  Small: $TBA</p>
+<p class="style4">Medium: $TBA</p>
+<p class="style4">Large: $TBA</p>
+<p class="style4"><strong>Bottled Water </strong>$TBA<br />
+</p>

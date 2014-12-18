@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Root>
+	<press thumbnail="content/Images/press/thumbs/img_1.jpg" image="content/Images/press/large/img_1.jpg" />
+	<press thumbnail="content/Images/press/thumbs/img_2.jpg" image="content/Images/press/large/img_2.jpg" />
+	<press thumbnail="content/Images/press/thumbs/img_3.jpg" image="content/Images/press/large/img_3.jpg" />
+	<press thumbnail="content/Images/press/thumbs/img_4.jpg" image="content/Images/press/large/img_4.jpg" />
+	<press thumbnail="content/Images/press/thumbs/img_5.jpg" image="content/Images/press/large/img_5.jpg" />
+</Root>
