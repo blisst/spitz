@@ -568,7 +568,7 @@ input[type=submit] {background:#ca5b3f; font-size:13px; line-height:32px; height
 #footer {position:relative;background:transparent url(../img/footer-bg.jpg) repeat-x 49% 0; min-height:340px; margin:5px 0 0 0; padding:0 30px;}
 #footer .top { height:38px; background-size:100%; background: transparent url(../img/ft-box-top.png);background-size:100% 100%;}
 #footer .mid {background: transparent url(../img/ft-box-mid.png) repeat-y 50% 100%; min-height:192px; background-size:100%; text-align:center;}
-#footer .btm {background: transparent url(../img/ft-box-btm.png) no-repeat 50% 0; height:38px; background-size:100%;}
+#footer .btm {background: transparent url(../img/ft-box-btm.png) no-repeat 50% 0; height:38px; background-size:100% 100%;}
 #footer .hdr1 {position:relative; top:-29px;}
 #footer h4 {color:#cee5e5; font-size:16px; font-family: 'Underwood','lucida_granderegular'; text-transform: uppercase; margin-bottom:7px;}
 #footer h4 span.lft {background:none;}
