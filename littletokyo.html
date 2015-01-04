@@ -19,11 +19,15 @@
         </div>
 
         <div class="topData hidden-phone hidden-tablet" style="padding-bottom: 10px;">
-            <ul style="list-style: none; display: inline; width: 300px;">
-                <li> <a href="http://www.facebook.com/SpitzLittleTokyo" target="_blank"><img src="img/fb-icon.png"></a>
+            <ul>
+               <li class="social-links"> 
+                    <a href="http://www.facebook.com/SpitzLittleTokyo" target="_blank"><img src="img/fb-icon.png"></a>
                     <a href="http://www.twitter.com/SpitzLitTokyo" target="_blank"><img src="img/twit-icon.png"></a>
-                    <img src="img/locations.png">
-                </li>
+                    <a href="http://instagram.com/spitzpics" target="_blank"><img src="img/insta-icon.png"></a>
+               </li>
+               <li class="locations">
+                    <span>LOS FELIZ, LITTLE TOKYO, EAGLE ROCK & STUDIO CITY</span>
+               </li>
             </ul>
         </div>
         <div class="clearfix"></div>
@@ -34,7 +38,7 @@
 
 <div id="menuContainer">
     <div class="container">
-        <ul class="mainMenu" >
+        <ul class="mainMenu">
             <li><a href="about.html">About<span class="addTxt">We're Real Foodies</span></a></li>
             <li class="subMenu hidden-desktop"><a href="#">Order <span class="addTxt ">Order Yummy Spitz Online!</span></a>
                 <ul>
@@ -44,18 +48,23 @@
                     <li><a href="http://eat24hrs.com/restaurants/27444" target="_blank">Studio City</a></li>
                 </ul>
             </li>
-            <li><a href="menu.html">Menu<span class="addTxt">Our Real Tasty Food</span></a>
-            </li>
-            <li><a href="catering.html">Catering<span class="addTxt">The Perfect Party Food</span></a>
-            </li>
+            
+           <!--  <li><a href="catering.html">Catering<span class="addTxt">The Perfect Party Food</span></a>
+           </li> -->
+           <li class="subMenu"><a href="#">Menu<span class="addTxt">Our Real Tasty Food</span></a>
+               <ul>
+                   <li><a href="menu/forhere.pdf">Lunch/Dinner</a></li>
+                   <li><a href="menu/catering.pdf">Catering</a></li>
+               </ul>
+           </li>
             <li class="subMenu"><a href="#">Locations<span class="addTxt">Find Your Favorite Spitz</span></a>
                 <ul>
-                    <li><a href="#">Little Tokyo</a></li>
+                    <li><a href="littletokyo.html">Little Tokyo</a></li>
                     <li><a href="losfeliz.html">Los Feliz</a></li>
                     <li><a href="eaglerock.html">Eagle Rock</a></li>
                     <li><a href="studiocity.html">Studio City</a></li>
                     <li><a href="http://www.spitzslc.com" target="_blank">Salt Lake City</a></li>
-
+        
                 </ul>
             </li>
             <li><a href="contact.html">Contact<span class="addTxt">Get & Stay in Contact</span></a></li>
@@ -70,195 +79,101 @@
 
 <div id="mainContent">
 <div class="container">
-    <div class="column1 pull-left">
-
-        <br><br>
-
         <div class="blogContent">
-            <div class="blogTitle">
-                <h2>Spitz - Little Tokyo</h2>
-
-                <div class="clearfix"></div>
-
-            </div>
-
+          <!--   <div class="blogTitle">
+              <h2>Spitz - Little Tokyo</h2>
+          
+              <div class="clearfix"></div>
+          
+          </div> -->
             <img src="img/slt.png" alt="Spitz - Little Tokyo">
-
-            <p>Spitz Little Tokyo is located at 371 E. 2nd St, Los Angeles CA 90012</p>
-
-            <a href="http://goo.gl/maps/eLQzU" target="_blank" >Get Directions</a>
-
-
-        </div>
-
-
-
-    </div>
-    <div class="column2 pull-right">
-
-
-        <div class="box1">
-            <div class="top"></div>
-            <div class="mid">
-                <h4 class="curved">Events & Specials</h4>
-                <span class="subTitle">Dont Miss them!</span>
-
-                <div class="mCont">
-
-                    <h5>DJ Manboy</h5>
-                    <p>Come on out to Spitz - Little Tokyo for DJ nights! "DJ Manboy" spins from 8pm-close every Friday and Saturday night! </p>
-
-                    <h5>Find Your Cocktail</h5>
-                    <p>At Spitz Little Tokyo, you'll fall in love<br> with our signature cocktails!</p>
-
-                    <div class="clearfix"></div>
-
-
+         </div>
+         <div class="locationInfo">
+             <div class="locationTitle"><h2>Little Tokyo</h2></div>
+           
+              <ul>
+                    <li>
+                     <!--     <dl>
+                        <dt>Address:</dt>
+                        <dd><a href="http://goo.gl/maps/eLQzU" target="_blank">371 E. 2nd St,<br/>Los Angeles, CA 90012<br/>(click for map)</a></dd>
+                        <dt>Hours:</dt>
+                        <dd>11am - 10pm, Sun-Wed</dd>
+                        <dd>11am - 11pm, Thurs</dd>
+                        <dd>11am - Midnight, Fri & Sat</dd>
+                        <dt>Phone:</dt>
+                        <dd>(213) 613-0101</dd>
+                     
+                                         </dl> -->
+                         <table class="hidden-phone">
+                            <tr>
+                                <th>Address</th>
+                                <th>Hours</th>
+                                <th>Phone</th>
+                            </tr>
+                            <tr>
+                                <td><a href="http://goo.gl/maps/eLQzU" target="_blank">371 E. 2nd St,<br/>Los Angeles, CA 90012<br/>(click for map)</a>
+                               <!--  <br/><br/>
+                               <p>*Delivery Available</p> --></td>
+                                <td>11am - 10pm, Sun-Wed<br/>11am - 11pm, Thurs<br/>11am - Midnight, Fri & Sat</td>
+                                <td>(213) 613-0101</td>
+                            </tr>
+                        </table>
+                        <table class="hidden-tablet hidden-desktop">
+                            <tr>
+                                <th>Address</th>
+                                <td><a href="http://goo.gl/maps/eLQzU" target="_blank">371 E. 2nd St,<br/>Los Angeles, CA 90012<br/>(click for map)</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <th>Hours</th>
+                                <td>11am - 10pm, Sun-Wed<br/>11am - 11pm, Thurs<br/>11am - Midnight, Fri & Sat</td>
+                            </tr>
+                            <tr>
+                                <th>Phone</th>
+                                <td>(213) 613-0101</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li><p>*Delivery Available</p></li>
+                    <li class="social-links">
+                        <a href="http://www.facebook.com/SpitzLittleTokyo" target="_blank"><img src="img/fb-icon.png"></a>
+                        <a href="http://www.twitter.com/SpitzLitTokyo" target="_blank"><img src="img/twit-icon.png"></a>
+                        <a href="http://instagram.com/spitzpics" target="_blank"><img src="img/insta-icon.png"></a>
+                    </li>
+                </ul>
                 </div>
-                <!-- mCont -->
+            
+         </div>
 
-            </div>
-            <div class="btm"></div>
-        </div>
-        <!-- box1 -->
+      
 
-        <div class="box2" style="font-size: 18px; line-height: 17px">
-            Happy Hour<br>
-            3pm-7pm m-f<br>
-            11a-7p sat
-        </div>
 
-        <div class="box8">
-
-        </div>
-
-        <h4 class="hdr3">Hours</h4>
-
-        <div class="box4">
-            <span class="hour">11am - 10pm, Sun-Wed</span><br>
-            <span class="hour">11am - 11pm, Thurs</span><br>
-            <span class="hour">11am - Midnight, Fri & Sat</span>
-            <p><strong>(213) 613-0101</strong></p>
-            <p>* Curbside Pickup Available!</p>
-            <p>* Delivery Available</p>
-
-            <hr class="divider2">
-        </div>
-
-        <div class="clearfix"></div>
-    </div>
     <!-- container -->
 </div>
-    <br><br><br><br><br><br>
+ <div id="footer" class="hidden-phone">
+     <div class="footNotes">
 
-<div id="footer" class="hidden-phone">
+         <p>© 2014 Spitz - Home of the Döner Kebab, All Rights Reserved.</p>
 
-    <div class="container">
-        <div class="top">
-            <h3 class="hdr1">Hours and Locations of your Favorite Spitz:</h3>
-        </div>
-        <div class="mid">
-            <div class="col1" style="margin-left: 10px;">
-                <h4><span class="lft"></span>Eagle Rock<span class="rt"></span></h4>
-                <span class="hour" style="color: #000">11am - 10pm, Mon - Sun</span>
-                <br>
-                <span> <p>
-                    <a href="http://goo.gl/maps/bDq3j" target="_blank" style="color: #fff;">
-                        2506 Colorado Blvd,<br>
-                        Los Angeles, CA 90041<br>(click for map)
-                    </a>
-                    <br>
-                    <strong>(323) 257-5600</strong><br>
-                    * Curbside Pickup Available!<br>
+         <div class="clearfix"></div>
+     </div>
+     
 
-                </p></span>
-            </div>
+ </div>
+ <!-- footer -->
+ <div id="footer2" class="hidden-desktop hidden-tablet">
+     <hr>
+    <center>
+    <ul>
 
-            <div class="col1">
-                <div class="brdr"  style="padding-left: 5px;">
-                    <h4><span class="lft"></span>Little Tokyo</h4>
-                    <span class="hour" style="color: #000">11am - 10pm, Sun-Wed</span><br>
-                    <span class="hour" style="color: #000">11am - 11pm, Thurs</span><br>
-                    <span class="hour" style="color: #000">11am - Midnight, Fri & Sat</span><br>
-                <span>
-                    <p>
-                        <a href="http://goo.gl/maps/eLQzU" target="_blank"  style="color: #fff;">
-                            371 E. 2nd St,<br>
-                            Los Angeles, CA 90012<br>
-                            (click for map)
-                        </a>
-                        <br>
-                        <strong>(213) 613-0101</strong><br>
-                        * Delivery Available<br><br>
-
-                    </p></span>
-                </div>
-            </div>
-
-            <div class="col1">
-                <div class="brdr"  style="padding-left: 10px;">
-                    <h4><span class="lft"></span>Los Feliz</h4>
-                    <span class="hour" style="color: #000;">11am - 10pm, Sun, Mon, Tues</span><br>
-                    <span class="hour" style="color: #000;">11am - 11pm, Wed & Thurs</span><br>
-                    <span class="hour" style="color: #000;">11am - Midnight, Fri & Sat</span><br>
-                <span> <p>
-                    <a href="http://goo.gl/maps/QRkeO" target="_blank" style="color:#fff">
-                        1725 Hillhurst Ave,<br>
-                        Los Angeles, CA 90027<br>
-                        (click for map)<br>
-                    </a>
-                    <strong>(323) 522-3309</strong><br>
-                    * Curbside Pickup Available!<br>
-                    * Delivery Available<br><br>
-
-                </p></span>
-                </div>
-            </div>
-            <div class="col1"  style="padding-left: 20px;">
-                <div class="brdr">
-                    <h4><span class="rt"></span>Studio City</h4>
-                    <span class="hour" style="color: #000">11am - 10pm, Sun-Wed</span><br>
-                    <span class="hour" style="color: #000">11am - 11pm, Thurs</span><br>
-                    <span class="hour" style="color: #000">11am - Midnight, Fri & Sat</span><br>
-                <span>
-                    <p>
-                        <a href="http://goo.gl/maps/8T9D4" target="_blank"  style="color: #fff;">
-                            3737 Cahuenga Blvd,<br>
-                            Studio City, CA 91604<br>
-                            (click for map)
-                        </a>
-                        <br>
-                        <strong>(818) 755-0400</strong><br>
-                        * Curbside Pickup Available!<br>
-                        * Delivery Available<br><br>
-                    </p>
-               </span>
-                </div>
-            </div>
-        </div>
-
-        <div class="btm"></div>
-
-
-        <div class="footNotes">
-
-            <p>© 2014 Spitz - Home of the Döner Kebab, All Rights Reserved. Website Designed by: <a href="http://www.sarahabecker.com" target="_blank">Sara Habecker</a></p>
-
-            <div class="clearfix"></div>
-        </div>
-    </div>
-
-</div>
-<!-- footer -->
-<div class="hidden-desktop hidden-tablet">
-    <hr>
-    <center> <ul class="social">
-        <li><a href="http://www.facebook.com/SpitzLittleTokyo" class="fb" target="_blank">Facebook</a></li>
-        <li><a href="http://www.twitter.com/SpitzLitTokyo" class="twit" target="_blank">Twitter</a></li>
-    </ul></center>
-    <center><p style="margin-top: 10px; margin-bottom: 10px;"> © 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved.</p></center>
-</div>
-
+        <li class="social-links"> 
+             <a href="http://www.facebook.com/SpitzLittleTokyo" target="_blank"><img src="img/fb-icon.png"></a>
+             <a href="http://www.twitter.com/SpitzLitTokyo" target="_blank"><img src="img/twit-icon.png"></a>
+             <a href="http://instagram.com/spitzpics" target="_blank"><img src="img/insta-icon.png"></a>
+        </li> 
+     </center>
+     <center><p style="margin-top: 10px; margin-bottom: 10px;"> © 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved.</p></center>
+ </div>
 <script src="js/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/jquery.nivo.slider.pack.js"></script>
