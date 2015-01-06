@@ -106,7 +106,7 @@ p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
 #mainContent .content {width:95%; margin:20px auto;}
 #mainContent .content h2 {text-align:center;margin:20px auto;}
 #mainContent .content strong {font-size:18px;}
-#mainContent .locationInfo .contact .row {text-align:center;}
+#mainContent .locationInfo .contact .row {text-align:center; width:100%; margin:0 auto;}
 #mainContent .locationInfo .contact .row h4,#mainContent .locationInfo .contact .row h3 {color:white;}
 #mainContent .locationInfo .contact .row h3 {text-decoration: underline}
 #mainContent .locationInfo .contact .row p, #mainContent .locationInfo .contact .row a {font-size:14px; padding:30px 0; color:black;}
