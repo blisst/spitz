@@ -74,19 +74,18 @@ h1, h2, h3, h4, h5 {font-weight:normal;}
 img { height:auto; max-width:100%;}
 th,td {text-align:center;}
 ul {padding:0;}
-.container {padding-left:0;padding-right:0;}
 p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
 
 /* set desktop resolution */
-.container { margin:0 auto; position:relative; width:auto; padding:0 60px;}
+.container { margin:0 auto; position:relative; width:auto; padding:0 150px; }
 
-#header { margin: 0 auto; position:relative; padding:0 60px;}
+#header { margin: 0 auto; position:relative; padding:0 150px;}
 #header .logoContainer {position:relative;}
 #header .logoContainer a {display:inline-block;vertical-align:bottom;margin:10px auto;}
 #header .logoContainer a img {max-width:160px;}
 #header h1 {font-size:20px;font-weight:700; color:black; line-height:1.5; text-align:center; margin:10px auto; display:inline-block; vertical-align:bottom; margin-left:-50px;}
 
-#header .topData { text-align:right; margin-right:12%; position:absolute; bottom:0; margin-bottom:10px; right:0;; /* right:0; */; }
+#header .topData { text-align:right; margin-right:17%; position:absolute; bottom:0; margin-bottom:10px; right:0;; /* right:0; */; }
 #header .topData ul li { display:inline; }
 #header .topData a {display:inline-block;height:100px;width:100px;}
 #header .topData .social-links a img {}
