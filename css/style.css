@@ -85,9 +85,9 @@ p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
 #header .logoContainer a img {max-width:160px;}
 #header h1 {font-size:20px;font-weight:700; color:black; line-height:1.5; text-align:center; margin:10px auto; display:inline-block; vertical-align:bottom; margin-left:-50px;}
 
-#header .topData { text-align:right; margin-right:17%; position:absolute; bottom:0; margin-bottom:10px; right:0;; /* right:0; */; }
+#header .topData { text-align:right; margin-right:20%; position:absolute; bottom:0; margin-bottom:10px; right:0;; /* right:0; */; }
 #header .topData ul li { display:inline; }
-#header .topData a {display:inline-block;height:100px;width:100px;}
+#header .topData a {display:inline-block;height:80px;width:80px;}
 #header .topData .social-links a img {}
 #header .topData .locations {
     background: #3399cc;
