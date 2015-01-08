@@ -69,7 +69,7 @@
 /** General Styles **/
 /** Blue color: #28A0BC; **/
 html {width:100%; height:100%;}
-body { height:100%;background: #fff url(../img/top-bdy-bg.jpg) no-repeat top center; font-family: 'Underwood','lucida_granderegular'; width: 100%; background-size: 100% auto;}
+body {background: #fff url(../img/body-bg.jpg) no-repeat top center; font-family: 'Underwood','lucida_granderegular'; width: 100%; background-size: 100% auto; height: 100%;}
 h1, h2, h3, h4, h5 {font-weight:normal;}
 img { height:auto; max-width:100%;}
 th,td {text-align:center;}
@@ -77,11 +77,11 @@ ul {padding:0;}
 p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
 
 /* set desktop resolution */
-.container { margin:0 auto; position:relative; width:auto; padding:0 150px; }
+.container { margin:0 auto; position:relative; width:auto; padding:0 102px; }
 
-#header { margin: 0 auto; position:relative; padding:0 150px;}
+#header { margin: 0 auto; position:relative; padding:0 102px;}
 #header .logoContainer {position:relative;}
-#header .logoContainer a {display:inline-block;vertical-align:bottom;margin:10px auto;}
+#header .logoContainer a {display:inline-block;vertical-align:bottom;margin:5px auto;}
 #header .logoContainer a img {max-width:160px;}
 #header h1 {font-size:20px;font-weight:700; color:black; line-height:1.5; text-align:center; margin:10px auto; display:inline-block; vertical-align:bottom; margin-left:-50px;}
 
@@ -101,7 +101,7 @@ p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
 /*Flexslider */
 #mainContent .flexslider {border:none;z-index:10;}
 #mainContent .flexslider .slides img {border-radius:2px;}
-#mainContent .flex-control-paging {text-align:left;z-index:100;bottom:5px;left:20px;}
+#mainContent .flex-control-paging {text-align:left;z-index:100;bottom:2px;left:8px;}
 #mainContent .flex-control-paging li a:hover {opacity:.8;}
 #mainContent .flex-control-paging li a {background:white;
 -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.7);
@@ -137,7 +137,7 @@ box-shadow: inset 0 0 3px rgba(0,0,0,0.7);}
 #mainContent .locationInfo dd a {color:black;}
 #mainContent .locationTitle {background: transparent url(../img/location-ribbon.png) no-repeat center;height:150px;background-size:82% 76%;position:absolute;top:-79px;left:0;right:0;}
 #mainContent .locationTitle h2 { text-align:center; color:white; text-transform:uppercase; position:relative; top:17%; font-size:24px;}
-#menuContainer {background: transparent url(../img/menu-cont-bg.png) repeat-x; height:50px; background-size:auto 100%; z-index:993;}
+#menuContainer {background: transparent url(../img/menu-cont-bg_black.png) repeat-x; height:50px; background-size:auto 100%; z-index:993;}
 #menuContainer a {text-decoration:none;}
 
 /* main menu styles */
@@ -148,7 +148,7 @@ ul.mainMenu li:last-child {background:none;}
 ul.mainMenu .addTxt {display:none;}
 
 ul.mainMenu li.subMenu {position:relative;}
-ul.mainMenu ul {z-index:10; display:none; position:absolute; top:32px; left:-5px; margin:0; background: transparent url(../img/sub-menu-bg.png) repeat; border:0; padding:10px 0 5px 6px; border-radius:5px; box-shadow: 0 7px 10px 0 #5E7487}
+ul.mainMenu ul {z-index:10; display:none; position:absolute; top:38px; left:-5px; margin:0; background: black; border:0; padding:0px 0 5px 6px; border-radius:5px; box-shadow: 0px 10px 13px 2px #5E7487}
 ul.mainMenu ul li {float:none; background:none; white-space:nowrap; margin:2px 0;}
 ul.mainMenu ul a { color:#fff; font-size:14px; text-transform: uppercase; font-family: 'Underwood','Helvetica Neue'; line-height:27px; margin:1px 0; display:inline-block; }
 ul.mainMenu ul li:hover a {background:#2f5e70; border-radius:5px;}
@@ -164,7 +164,7 @@ ul.mainMenu ul li:hover a {background:#2f5e70; border-radius:5px;}
 .login ul li:first-child {background:none;}
 /* main menu end */
 
-a.order {background-size:100% 100%; width:138px; padding:26px 10px 0 18px; text-align:center; height:134px; background: transparent url(../img/book-table.png) no-repeat top center; position:absolute; left:-98px; top:-16px; font-family: 'Underwood','lucida_granderegular'; line-height:27px; text-transform: uppercase; display:block; color:#fff; background-size:100% 100%; font-size:20px; z-index:100;}
+a.order {background-size:100% 100%; width:138px; padding:26px 10px 0 18px; text-align:center; height:130px; background: transparent url(../img/book-table.png) no-repeat top center; position:absolute; left:-98px; top:-16px; font-family: 'Underwood','lucida_granderegular'; line-height:27px; text-transform: uppercase; display:block; color:#fff; background-size:100% 100%; font-size:20px; z-index:100;}
 /* order online */
 
 
