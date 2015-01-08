@@ -103,6 +103,14 @@ p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
 #mainContent .flexslider {border:none;z-index:10;}
 #mainContent .flexslider .slides img {border-radius:2px;}
 #mainContent .flex-control-paging {text-align:left;z-index:100;bottom:5px;left:20px;}
+#mainContent .flex-control-paging li a:hover {opacity:.8;}
+#mainContent .flex-control-paging li a {background:white;
+-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.7);
+-moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.7);
+box-shadow: inset 0 0 3px rgba(0,0,0,0.7);}
+#mainContent .flex-control-paging li a.flex-active {
+    background:#cc6633;
+}
 
 
 #mainContent .locationInfo { background:transparent url(../img/location-box.png) no-repeat center; background-size:100% 100%; width:80%; margin:80px auto 0 auto; position:relative;margin-bottom:-100px; z-index:200;}
