@@ -78,18 +78,18 @@ ul {padding:0;}
 p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
 
 /* set desktop resolution */
-.container { margin:0 auto; position:relative; width:auto; padding:0 45px;}
+.container { margin:0 auto; position:relative; width:auto; padding:0 60px;}
 
-#header {
-    margin: 0 auto;}
-#header .logoContainer {position:relative;;}
+#header { margin: 0 auto; position:relative; padding:0 60px;}
+#header .logoContainer {position:relative;}
 #header .logoContainer a {display:inline-block;vertical-align:bottom;margin:10px auto;}
-#header .logoContainer a img {max-width:190px;}
+#header .logoContainer a img {max-width:160px;}
 #header h1 {font-size:20px;font-weight:700; color:black; line-height:1.5; text-align:center; margin:10px auto; display:inline-block; vertical-align:bottom; margin-left:-50px;}
 
-#header .topData { float:right; text-align:right; position:absolute; bottom:0; right:45px; /* right:0; */; }
+#header .topData { text-align:right; margin-right:12%; position:absolute; bottom:0; margin-bottom:10px; right:0;; /* right:0; */; }
 #header .topData ul li { display:inline; }
-#header .topData .social-links a img {height:100px;width:100px;}
+#header .topData a {display:inline-block;height:100px;width:100px;}
+#header .topData .social-links a img {}
 #header .topData .locations {
     background: #3399cc;
     padding: 6px 0;
@@ -97,12 +97,12 @@ p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
     color: white;
 }
 #header .topData .locations span {padding: 0 6px;}
-#mainContent {min-height:300px; margin: 30px auto 0 auto;}
+#mainContent {min-height:300px;top:-6px;position:relative;z-index:-5;}
 
 /*Flexslider */
-#mainContent .flexslider {border:none;}
+#mainContent .flexslider {border:none;z-index:10;}
 #mainContent .flexslider .slides img {border-radius:2px;}
-#mainContent .flex-control-paging {left:0;text-align:left;}
+#mainContent .flex-control-paging {text-align:left;z-index:100;bottom:5px;left:20px;}
 
 
 #mainContent .locationInfo { background:transparent url(../img/location-box.png) no-repeat center; background-size:100% 100%; width:80%; margin:80px auto 0 auto; position:relative;margin-bottom:-100px; z-index:200;}
@@ -130,18 +130,18 @@ p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
 #mainContent .locationInfo dd a {color:black;}
 #mainContent .locationTitle {background: transparent url(../img/location-ribbon.png) no-repeat center;height:150px;background-size:82% 76%;position:absolute;top:-79px;left:0;right:0;}
 #mainContent .locationTitle h2 { text-align:center; color:white; text-transform:uppercase; position:relative; top:17%; font-size:24px;}
-#menuContainer {background: transparent url(../img/menu-cont-bg.png) repeat-x 0 0; height:66px;}
+#menuContainer {background: transparent url(../img/menu-cont-bg.png) repeat-x; height:50px; background-size:auto 100%; z-index:993;}
 #menuContainer a {text-decoration:none;}
 
 /* main menu styles */
-ul.mainMenu {margin:0; float:left;}
-ul.mainMenu li {list-style:none; float:left; margin:0 8px 0 0; background: transparent url(../img/divid-menu.png) no-repeat right 56%; padding-right:8px; }
-ul.mainMenu li a {color:#fff; font-size:16px; text-transform: uppercase;  font-family: 'Underwood','Helvetica Neue'; line-height:60px; display:block; padding:0 10px 0 5px;}
+ul.mainMenu {margin:0; float:left; height:50px;}
+ul.mainMenu li {list-style:none; float:left; margin:0 8px 0 0; background: transparent url(../img/divid-menu.png) no-repeat right 56%; padding-right:8px; display:block; }
+ul.mainMenu li a {color:#fff; font-size:16px; text-transform: uppercase;  font-family: 'Underwood','Helvetica Neue'; line-height:50px; display:block; padding:0 10px 0 5px;}
 ul.mainMenu li:last-child {background:none;}
 ul.mainMenu .addTxt {display:none;}
 
 ul.mainMenu li.subMenu {position:relative;}
-ul.mainMenu ul {z-index:10; display:none; position:absolute; top:50px; left:-5px; margin:0; background: transparent url(../img/sub-menu-bg.png) repeat; border:0; padding:10px 0 10px 5px; border-radius:5px; box-shadow: 0 7px 10px 0 #5E7487}
+ul.mainMenu ul {z-index:10; display:none; position:absolute; top:32px; left:-5px; margin:0; background: transparent url(../img/sub-menu-bg.png) repeat; border:0; padding:10px 0 5px 6px; border-radius:5px; box-shadow: 0 7px 10px 0 #5E7487}
 ul.mainMenu ul li {float:none; background:none; white-space:nowrap; margin:2px 0;}
 ul.mainMenu ul a { color:#fff; font-size:14px; text-transform: uppercase; font-family: 'Underwood','Helvetica Neue'; line-height:27px; margin:1px 0; display:inline-block; }
 ul.mainMenu ul li:hover a {background:#2f5e70; border-radius:5px;}
@@ -157,7 +157,7 @@ ul.mainMenu ul li:hover a {background:#2f5e70; border-radius:5px;}
 .login ul li:first-child {background:none;}
 /* main menu end */
 
-a.order {background-size:100% 100%; width:138px; padding:26px 10px 0 18px; text-align:center; height:134px; background: transparent url(../img/book-table.png) no-repeat top center; position:absolute; left:-98px; top:-16px; font-family: 'Underwood','lucida_granderegular'; line-height:27px; text-transform: uppercase; display:block; color:#fff; background-size:100% 100%; font-size:20px;}
+a.order {background-size:100% 100%; width:138px; padding:26px 10px 0 18px; text-align:center; height:134px; background: transparent url(../img/book-table.png) no-repeat top center; position:absolute; left:-98px; top:-16px; font-family: 'Underwood','lucida_granderegular'; line-height:27px; text-transform: uppercase; display:block; color:#fff; background-size:100% 100%; font-size:20px; z-index:100;}
 /* order online */
 
 
@@ -574,7 +574,8 @@ input[type=submit] {background:#ca5b3f; font-size:13px; line-height:32px; height
 .comments input[type=submit] {float:right; padding:0 10px;}
 
 /* footer */
-
+/* footer {background:transparent url(../img/footer-bg.jpg) no-repeat top center; background-size: 100% 100%; min-height:400px;} */
+footer .copyright {}
 #footer {position:relative;background:transparent url(../img/footer-bg.jpg) repeat-x 49% 0; min-height:340px; margin:5px 0 0 0; padding:0 30px;}
 #footer .top { height:38px; background-size:100%; background: transparent url(../img/ft-box-top.png);background-size:100% 100%;}
 #footer .mid {background: transparent url(../img/ft-box-mid.png) repeat-y 50% 100%; min-height:192px; background-size:100%; text-align:center;}
