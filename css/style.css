@@ -771,6 +771,7 @@ footer .social-links li.subMenu ul{
     .slider2 a.link1 {right:32px;}
 
     .blogContent {margin:0 45px;}
+    footer .social-links {display:initial !important;}
     #footer { margin-top:50px; background:transparent url(../img/ipad-footer-bg.jpg) repeat-x 49% 100%;}
     /* #footer .hdr1 {display:none;} */
 /*     #footer .top, #footer .mid, #footer .btm {
