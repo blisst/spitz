@@ -6,8 +6,6 @@
     <title> Spitz - Home of the Döner Kebab |  Los Angeles: Little Tokyo, Loz Feliz, Eagle Rock  |  Mediterranean Street Food</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="css/nivo-slider.css" rel="stylesheet">
-    <link href="css/anythingslider.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/flexslider.css" rel="stylesheet">
 
@@ -31,26 +29,7 @@
             <h1>Mediterranean Street Food<br/>Craft Beer - Sangria</h1>
 
         </div>
-  <!--   <td>
-      <a href="https://www.facebook.com/SpitzEagleRock" target="_blank"><img src="img/ft-fb-icon3.png"></a>
-      <a href="https://twitter.com/SpitzEagleRock" target="_blank"><img src="img/ft-twit-icon3.png"></a>
-      <a href="http://instagram.com/spitzpics" target="_blank"><img src="img/ft-insta-icon3.png"></a>
-  </td>
-  <td>
-      <a href="http://www.facebook.com/SpitzLittleTokyo" target="_blank"><img src="img/ft-fb-icon3.png"></a>
-      <a href="http://www.twitter.com/SpitzLitTokyo" target="_blank"><img src="img/ft-twit-icon3.png"></a>
-      <a href="http://instagram.com/spitzpics" target="_blank"><img src="img/ft-insta-icon3.png"></a>
-  </td>
-  <td>
-      <a href="https://www.facebook.com/SpitzLosFeliz" target="_blank"><img src="img/ft-fb-icon3.png"></a>
-      <a href=" http://twitter.com/SpitzLosFeliz" target="_blank"><img src="img/ft-twit-icon3.png"></a>
-      <a href="http://instagram.com/spitzpics" target="_blank"><img src="img/ft-insta-icon3.png"></a>
-  </td>
-  <td>
-      <a href="https://www.facebook.com/SpitzStudioCity" target="_blank"><img src="img/ft-fb-icon3.png"></a>
-      <a href="https://twitter.com/spitzstudiocity" target="_blank"><img src="img/ft-twit-icon3.png"></a>
-      <a href="http://instagram.com/spitzpics" target="_blank"><img src="img/ft-insta-icon3.png"></a>
-  </td> -->
+
         <div class="topData hidden-phone">
             <ul class="social-links">
                 <li class="subMenu">
@@ -219,7 +198,7 @@
 <script src="js/contact-form.js"></script>
 
 <script type="text/javascript" charset="utf-8">
-
+//New stuff
   function fitSlider() {
     if ($('.flexslider') != []) {
       var windowHeight = $(window).height();
@@ -244,78 +223,7 @@
   });
 
   $(window).resize(fitSlider);
-</script>
-
-<script type="text/javascript">
-
-    $(document).ready(function () {
-
-        // rotate text
-        $(".slider6 .ribTxt span").rotate({angle:-45});
-
-        // init curved header
-        $('.curved').arctext({radius:250, rotate:true, dir:1});
-
-
-        // slider6 init
-        $('#slider6Nivo').nivoSlider({
-            effect:'random',
-            pauseTime:8000,
-            captionEasing:'linear',
-            slices:15, // For slice animations
-            boxCols:8, // For box animations
-            boxRows:4, // For box animations
-            animSpeed:500, // Slide transition speed
-            startSlide:0, // Set starting Slide (0 index)
-            directionNav:true, // Next & Prev navigation
-            controlNav:true, // 1,2,3... navigation
-            controlNavThumbs:false, // Use thumbnails for Control Nav
-            pauseOnHover:true, // Stop animation while hovering
-            manualAdvance:false, // Force manual transitions
-            prevText:'Prev', // Prev directionNav text
-            nextText:'Next', // Next directionNav text
-            randomStart:false, // Start on a random slide
-            beforeChange:function () {
-            }, // Triggers before a slide transition
-            afterChange:function () {
-            }, // Triggers after a slide transition
-            slideshowEnd:function () {
-            }, // Triggers after all slides have been shown
-            lastSlide:function () {
-            }, // Triggers when last slide is shown
-            afterLoad:function () {
-            } // Triggers when slider has loaded
-
-        });
-
-        $('.nivo-controlNav').prepend("<div class='lft'></div>");
-        $('.nivo-controlNav').append("<div class='rt'></div>");
-        $('.nivo-controlNav a').wrapAll("<div class='mid'>");
-        $('.nivo-controlNav div').wrapAll("<div class='navCent'>");
-
-
-
-        //slider7 init
-        $('#anythingSlider7').anythingSlider({
-            autoPlay: false,
-            expand: true,
-            pauseOnHover: true,
-            hashTags: false,
-            buildNavigation: false,
-            buildStartStop: false,
-            delay: 8000
-        });
-
-        // show book a table on click
-        $(".ipad-box9").hide();
-
-        $(".bookTable").click(function(){
-            $(".ipad-box9").slideToggle();
-
-            return false;
-        })
-
-
+  $(document).ready(function() {
     // show submenu on click
 
     $("ul li.subMenu ul").hide();
@@ -331,6 +239,27 @@
     $("body").click(function() {
         $("ul li.subMenu ul").hide();
     });
+    
+  });
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //Old stuff
+
+        // init curved header
+        $('.curved').arctext({radius:250, rotate:true, dir:1});
+
+        // show book a table on click
+        $(".ipad-box9").hide();
+
+        $(".bookTable").click(function(){
+            $(".ipad-box9").slideToggle();
+
+            return false;
+        })
+
 
 
 
