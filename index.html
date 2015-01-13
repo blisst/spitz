@@ -77,9 +77,10 @@
             
            <!--  <li><a href="catering.html">Catering<span class="addTxt">The Perfect Party Food</span></a>
            </li> -->
-           <li class="subMenu"><a href="#">Menu<span class="addTxt">Our Real Tasty Food</span></a>
+           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt">Our Real Tasty Food</span></a>
                <ul>
                    <li><a href="menu/forhere.pdf">Lunch/Dinner</a></li>
+                   <li><a href="menu/brunch.pdf">Brunch</a></li>
                    <li><a href="menu/catering.pdf">Catering</a></li>
                </ul>
            </li>
@@ -190,12 +191,12 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/jquery.nivo.slider.pack.js"></script>
 <script src="js/jquery.arctext.js"></script>
 <script src="js/jquery.anythingslider.min.js"></script>
-<script src="js/jQueryRotateCompressed.2.2.js"></script>
-<script src="js/contact-form.js"></script>
+<script src="js/jQueryRotateCompressed.2.2.js"></script> -->
+<!-- <script src="js/contact-form.js"></script> -->
 
 <script type="text/javascript" charset="utf-8">
 //New stuff
@@ -204,7 +205,7 @@
       var windowHeight = $(window).height();
       var flexBottom = $('.flexslider').offset().top+$('.flexslider').height();
       if (flexBottom > windowHeight) {
-        $('.flexslider').height($('.flexslider').height() - (flexBottom - windowHeight));
+        $('.flexslider').height($('.flexslider').height() - (flexBottom - windowHeight + 20 ));
       }
       else {
         $('.flexslider').css('height','');

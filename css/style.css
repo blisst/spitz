@@ -69,7 +69,7 @@
 /** General Styles **/
 /** Blue color: #28A0BC; **/
 html {width:100%;}
-body {background: #fff url(../img/body-bg.jpg) no-repeat top center; font-family: 'Underwood','lucida_granderegular'; width: 100%; background-size: 100% auto; height: 100%; }
+body {background: #fff url(../img/body-bg.jpg) no-repeat top center; background-size: cover; font-family: 'Underwood','lucida_granderegular'; width: 100%; height: 100%; }
 h1, h2, h3, h4, h5 {font-weight:normal;}
 img { height:auto; max-width:100%;}
 th,td {text-align:center;}
@@ -122,12 +122,12 @@ footer { margin-top:20px;}
 #mainContent .location-info {
     text-align: center;
     z-index: 100;
-    padding:15% 0;
+    padding:7% 0;
     
 }
 #mainContent .location-info h2 {
     font-size: 44px;
-    color: #cc6633;
+    color: black;
 
 }
 #mainContent .location-info > div {
@@ -135,16 +135,17 @@ footer { margin-top:20px;}
 }
 #mainContent .location-info .hours ul {
     list-style: none;}
-#mainContent .locationInfo { background:transparent url(../img/location-box.png) no-repeat center; background-size:100% 100%; width:80%; margin:80px auto 0 auto; position:relative;margin-bottom:-100px; z-index:200;}
+#mainContent .locationInfo { position:relative; z-index:200;}
 #mainContent .locationInfo ul {list-style:none;margin:0 auto;text-align:center;padding: 60px 0 15px 0;width:100%;}
 #mainContent .locationInfo ul li p {color:white;font-size:14px;}
 #mainContent .locationInfo ul li {padding:10px 0;;}
 #mainContent .locationInfo ul .social-links a {display:inline-block; width:6%; margin:0px 2px; }
 #mainContent .locationInfo dt {color:white; font-weight:400;}
 #mainContent .locationInfo dt {padding:10px 0;}
-#mainContent .content {width:95%; margin:20px auto;}
+#mainContent .content {width:100%; margin:20px 0;}
 #mainContent .content h2 {text-align:center;margin:20px auto;}
 #mainContent .content strong {font-size:18px;}
+#mainContent .content p {font-size:13px;}
 #mainContent .locationInfo .contact .row {text-align:center; width:100%; margin:0 auto;}
 #mainContent .locationInfo .contact .row h4,#mainContent .locationInfo .contact .row h3 {color:white;}
 #mainContent .locationInfo .contact .row h3 {text-decoration: underline}
@@ -693,6 +694,7 @@ footer .social-links li.subMenu ul{
 
     #mainContent .location-info {padding:5%;}
     #mainContent .location-info h2 { font-size:30px; }
+    #mainContent .content {margin-bottom:155px;}
 }
 @media (max-width:1080px) {
     #header {padding:0 8%;}
@@ -703,6 +705,8 @@ footer .social-links li.subMenu ul{
 }
 @media (max-width:979px) {
     #header .topData { margin-right:102px;}
+    #mainContent .content {margin-bottom:40px;}
+
     .row {margin-left: -15px;}
     .slider7 .anythingSlider-default { background:none; }
     .slider7 a.link1 {background: #cc6633; padding:4px 28px; height:auto;width:7%;display:block;bottom:114px;right:0;left:0;border-radius:5px;margin:0 auto; }
@@ -759,7 +763,7 @@ footer .social-links li.subMenu ul{
     ul.mainMenu li ul {left:0; width:100%; padding:0;}
 
     .home #mainContent {margin-top:18px;}
-    .location #mainContent { margin-top:80px;}
+    .location #mainContent,.about #mainContent { margin-top:80px;}
     #mainContent.sliderBack {background: transparent url(../img/ipad-slider1-shadow.png) no-repeat center 199px;}
     #mainContent.fullWidth {background: none;}
 
@@ -885,7 +889,7 @@ footer .social-links li.subMenu ul{
 @media (max-width:729px) {
 
     .container {width:auto; padding:0 20px;}
-    .location #mainContent { margin-top:190px;}
+    .location #mainContent,.about #mainContent { margin-top:190px;}
     ul.mainMenu li { margin:5px 0; padding:0; width:100%;}
     ul.mainMenu li a {line-height:18px;}
     ul.mainMenu ul {display:block; position:static; box-shadow:none; padding-top:0;}
