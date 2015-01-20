@@ -166,9 +166,11 @@
       var imageBottom = image.offset().top+image.height();
       if (imageBottom > windowHeight) {
         image.height(image.height() - (imageBottom - windowHeight + 20 ));
+        image.css('width','100%');
       }
       else {
         image.css('height','');
+        image.css('width','');
       }
      
     }
