@@ -68,14 +68,14 @@
 
 /** General Styles **/
 /** Blue color: #28A0BC; **/
-html {width:100%;}
-body {background: #fff url(../img/body-bg.jpg) no-repeat top center; background-size: cover; font-family: 'Underwood','lucida_granderegular'; width: 100%; height: 100%; }
+html {width:100%;height:100%;}
+body {background: #fff url(../img/body-bg.jpg) no-repeat top center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; font-family: 'Underwood','lucida_granderegular'; width: 100%; height: 100%; }
 h1, h2, h3, h4, h5 {font-weight:normal;}
 img { height:auto; max-width:100%;}
 th,td {text-align:center;}
 ul {padding:0;}
 p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
-footer { margin-top:20px;}
+footer { margin-top:40px;}
 /* set desktop resolution */
 .container { margin:0 auto; position:relative; width:auto; padding:0 102px; }
 
@@ -128,8 +128,8 @@ footer { margin-top:20px;}
     
 }
 #mainContent .location-info h2 {
-    font-size: 44px;
     color: #333333;
+    font-size: 38px;
 
 }
 #mainContent .location-info > div {
@@ -146,7 +146,7 @@ footer { margin-top:20px;}
 #mainContent .locationInfo dt {color:white; font-weight:400;}
 #mainContent .locationInfo dt {padding:10px 0;}
 #mainContent .content {width:100%; margin:20px 0;}
-#mainContent .content h2 {text-align:center;margin:20px auto;}
+#mainContent .content h2 {text-align:center;margin:20px auto;font-size:38px;}
 #mainContent .content strong {font-size:18px;}
 #mainContent .content p {font-size:13px;}
 #mainContent .locationInfo .contact .row {text-align:center; width:100%; margin:0 auto;}
@@ -707,7 +707,7 @@ footer .social-links li.subMenu ul{
 
     #mainContent .location-info {}
     #mainContent .location-info h2 { font-size:30px; }
-    #mainContent .content {margin-bottom:155px;}
+    #mainContent {margin-bottom:0;;}
 }
 @media (max-width:1080px) {
     #header {padding:0 8%;}
@@ -728,7 +728,6 @@ footer .social-links li.subMenu ul{
     body {
         padding:0;
         background-size:cover;
-        /* background: #fff url(../img/body-bg.jpg) repeat-x; */
     }
     .container {}
 
@@ -1138,8 +1137,7 @@ footer .social-links li.subMenu ul{
     #mainContent .locationInfo table td {width:3%;}
     #mainContent .locationInfo ul .social-links a {width:10%;}
     #mainContent .locationInfo ul li {padding:6px 0;}
-    body {background-size:;}
-}
+    }
 @media (max-width:517px) {
     #header h1 {
         left:0;
