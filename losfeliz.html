@@ -50,7 +50,7 @@
 </div>
 <!-- header end -->
 
-<div id="menuContainer">
+<div id="menuContainer" class="clearfix">
     <p class="menuBg"></p>
     <div class="container">
         <ul class="mainMenu">
@@ -214,11 +214,12 @@
     $("ul li.subMenu ul").hide();
 
     $("ul li.subMenu > a").click(function () {
-        $("ul li.subMenu ul").hide();
+        $('ul li.subMenu ul').not($(this).next('ul')).hide();
+        // $("ul li.subMenu ul").hide();
         $(this).next('ul').toggle();
 
         return false;
-      });
+    });
 
     // hide submenu when click outside menu container
     $("body").click(function() {
@@ -273,40 +274,7 @@
     $(window).width() < 959 ? $('.col-golden-lg').insertBefore('.col-golden-sm') : $('.col-golden-sm').insertBefore('.col-golden-lg');
   });
 </script>
-<script type="text/javascript">
 
-    $(document).ready(function () {
-
-      /*$('#menuContainer').offset().top+$('#menuContainer').height()
-*/  
-
-     
-        // init curved header
-        $('.curved').arctext({radius:250, rotate:true, dir:1});
-
-        // show book a table on click
-        $(".box9").hide();
-
-        $("#bkTable").click(function(){
-            $(".box9").fadeToggle();
-
-            return false;
-        })
-
-        // slide and show iphone book a table box on click
-        $(".ipad-box9").hide();
-
-        $(".topBar .bookTable").click(function(){
-            $(".ipad-box9").slideToggle();
-            return false;
-        })
-
-     
-
-
-    });
-
-</script>
 <div class="clearfix"></div>
 
 </body>

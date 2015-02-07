@@ -2,7 +2,10 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=0.5, maximum-scale=1.0"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <title>Spitz - Home of the Döner Kebab  |  Mediterranean Street Food  | Contact Us</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/golden-bootstrap.min.css" rel="stylesheet">
@@ -43,12 +46,11 @@
 
         </div>
 
-        <!-- <div class="clearfix"></div> -->
     <!-- container end -->
 </div>
 <!-- header end -->
 
-<div id="menuContainer">
+<div id="menuContainer" class="clearfix">
     <p class="menuBg"></p>
     <div class="container">
         <ul class="mainMenu">
@@ -101,6 +103,7 @@
         <div class="clearfix"></div>
     </div>
 </div>
+
 <div id="mainContent">
   <div class="container">
     <div class="row">
@@ -182,11 +185,12 @@
     $("ul li.subMenu ul").hide();
 
     $("ul li.subMenu > a").click(function () {
-        $("ul li.subMenu ul").hide();
+        $('ul li.subMenu ul').not($(this).next('ul')).hide();
+        // $("ul li.subMenu ul").hide();
         $(this).next('ul').toggle();
 
         return false;
-      });
+    });
 
     // hide submenu when click outside menu container
     $("body").click(function() {
