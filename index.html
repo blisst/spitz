@@ -205,6 +205,7 @@
 <!-- <script src="js/jquery.js"></script> -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
 
 
 <script type="text/javascript" charset="utf-8">
@@ -290,33 +291,23 @@
     $("body").click(function() {
         $("ul li.subMenu ul").hide();
     });
+
+    $("ul li.subMenu > a").tap(function () {
+        $('ul li.subMenu ul').not($(this).next('ul')).hide();
+        // $("ul li.subMenu ul").hide();
+        $(this).next('ul').toggle();
+
+        return false;
+    });
+
+    // hide submenu when click outside menu container
+    $("body").tap(function() {
+        $("ul li.subMenu ul").hide();
+    });
     
   });
 </script>
 
-<script type="text/javascript">
-
-    $(document).ready(function () {
-        //Old stuff
-
-        // init curved header
-        $('.curved').arctext({radius:250, rotate:true, dir:1});
-
-        // show book a table on click
-        $(".ipad-box9").hide();
-
-        $(".bookTable").click(function(){
-            $(".ipad-box9").slideToggle();
-
-            return false;
-        })
-
-
-
-
-    });
-
-</script>
 
 
 </body>

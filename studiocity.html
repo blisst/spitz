@@ -113,7 +113,8 @@
       <div class="hours">
         <h4>Hours</h4>
         <ul>
-          <li>11am - 10pm, Mon - Sun </li>
+          <li>11am - 10pm, Mon - Thurs & Sun </li>
+          <li>11am - 11pm, Fri & Sat </li>
         </ul>
       </div>
       <div class="address">
@@ -176,12 +177,10 @@
     <p class="copyright"> © 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved.</p>
     </center>
 </footer>
-<script src="js/jquery.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/jquery.nivo.slider.pack.js"></script>
-<script src="js/jquery.arctext.js"></script>
-<script src="js/contact-form.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+
 <script type="text/javascript" charset="utf-8">
 
   function fitSlider() {
@@ -221,6 +220,19 @@
 
     // hide submenu when click outside menu container
     $("body").click(function() {
+        $("ul li.subMenu ul").hide();
+    });
+
+    $("ul li.subMenu > a").tap(function () {
+        $('ul li.subMenu ul').not($(this).next('ul')).hide();
+        // $("ul li.subMenu ul").hide();
+        $(this).next('ul').toggle();
+
+        return false;
+    });
+
+    // hide submenu when click outside menu container
+    $("body").tap(function() {
         $("ul li.subMenu ul").hide();
     });
     
