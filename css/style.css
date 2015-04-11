@@ -188,6 +188,7 @@ ul li.subMenu ul {z-index:10; display:none; top:38px; left:-5px; margin:0; backg
 ul li.subMenu ul li {float:none; background:none; white-space:nowrap; margin:2px 0;}
 ul li.subMenu ul a { color:#fff; font-size:14px; text-transform: uppercase; font-family: 'Underwood','Helvetica Neue'; line-height:27px; margin:1px 0; display:inline-block; }
 ul li.subMenu ul li:hover a {background:#2f5e70; border-radius:5px;}
+ul li.subMenu ul.opened { display: block; }
 
 
 /* ul.mainMenu li.subMenu:hover ul {display:block;} */

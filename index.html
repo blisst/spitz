@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=0.5, maximum-scale=1.0">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title> Spitz - Home of the Döner Kebab |  Los Angeles: Little Tokyo, Loz Feliz, Eagle Rock  |  Mediterranean Street Food</title>
+    <title>Spitz - Home of the Döner Kebab |  Los Angeles: Little Tokyo, Loz Feliz, Eagle Rock  |  Mediterranean Street Food</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -206,9 +206,10 @@
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/app.js"></script>script>
 
 
-<script type="text/javascript" charset="utf-8">
+<!-- <script type="text/javascript" charset="utf-8">
 //New stuff
   function fitSlider() {
     if ($('.flexslider') != []) {
@@ -216,7 +217,6 @@
       var flexBottom = $('.flexslider').offset().top+$('.flexslider').height();
       var heightChange = (flexBottom - windowHeight + 11 );
       var newHeight = $('.flexslider').height() - heightChange;
-      console.log(heightChange);
       if (flexBottom > windowHeight) {
         $('.flexslider').height(newHeight);
         $('#mainContent .flexslider .slides img:not(.focusTop)').css('top',-heightChange/2);
@@ -277,9 +277,40 @@
   $(document).ready(function() {
     // show submenu on click
 
-    $("ul li.subMenu ul").hide();
+    // $("ul li.subMenu ul");
 
-    $("ul li.subMenu > a").click(function () {
+    var openMenu = function() {
+      var menu = $(this).siblings('ul');
+      if (menu.is(':visible')) {
+        menu.removeClass('opened');
+      }
+      else {
+        $('ul li.subMenu ul').removeClass('opened');
+        menu.addClass('opened');
+      }
+    }
+
+    var closeMenus = function(e) {
+      window.event2 = e;
+      // console.log($(e.target));
+      var menuParent = $('ul li.subMenu ul.opened').parent();
+      var menuChildren = $('ul li.subMenu ul.opened').parent().find('*');
+      var menu = menuParent.add(menuChildren);
+      if (!menu.has(e.target).length) {
+        $('ul li.subMenu ul').removeClass('opened');
+      }
+    }
+
+    // $("ul li.subMenu > a").click(openMenu);
+
+    $("ul li.subMenu > a").tap(openMenu);
+    $(document).tap(closeMenus);
+
+
+   
+
+
+    /*$("ul li.subMenu > a").click(function () {
         $('ul li.subMenu ul').not($(this).next('ul')).hide();
         // $("ul li.subMenu ul").hide();
         $(this).next('ul').toggle();
@@ -288,7 +319,7 @@
     });
 
     // hide submenu when click outside menu container
-    $("body").click(function() {
+    $("body").not($(subM.click(function() {
         $("ul li.subMenu ul").hide();
     });
 
@@ -301,12 +332,12 @@
     });
 
     // hide submenu when click outside menu container
-    $("body").tap(function() {
+    $("body").not('ul li.subMenu ul.opened').tap(function() {
         $("ul li.subMenu ul").hide();
-    });
+    });*/
     
   });
-</script>
+</script> -->
 
 
 

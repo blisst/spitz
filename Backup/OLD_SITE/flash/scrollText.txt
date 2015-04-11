@@ -1,3 +1,0 @@
-scrollText=<font size="16"><font color="#FFFFFF"><b><p> <h1>The SPITZ Menu</h1>
-<h3>D&Ouml;NER Kebab Sandwiches</h3>
-<p>Make your sandwich a meal with your choice of one side and a medium drink for $TBA </p>
