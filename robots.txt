@@ -4,3 +4,5 @@ Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /bootstrap/
+Disallow: /img/
+Allow: /img/slider/
