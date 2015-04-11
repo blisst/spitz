@@ -93,7 +93,8 @@ $(window).resize(fitSlider);
 $(document).ready(function() {
 
 
-  var openMenu = function() {
+  var openMenu = function(e) {
+    e.preventDefault();
     var menu = $(this).siblings('ul');
     if (menu.is(':visible')) {
       menu.removeClass('opened');
