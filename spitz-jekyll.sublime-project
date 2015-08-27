@@ -1,0 +1,18 @@
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": "C:/CODING/spitz/spitz-jekyll"
+        }
+    ],
+
+    "settings":
+    {
+        "Jekyll":
+        {
+            "posts_path": "C:/CODING/spitz/spitz-jekyll/_posts",
+            "drafts_path": "C:/CODING/spitz/spitz-jekyll/_drafts",
+        }
+    }
+}
