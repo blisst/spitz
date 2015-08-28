@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /bootstrap/
+Disallow: /img/
+Disallow: /Gruntfile.js
+Allow: /img/slider/

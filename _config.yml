@@ -12,5 +12,5 @@ url: "http://eatatspitz.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock","*.sublime-*"]
 gems: ["octopress-autoprefixer"]

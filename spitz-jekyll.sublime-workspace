@@ -484,23 +484,10 @@
 	"buffers":
 	[
 		{
-			"contents": "sublime-jekyll\n==============\n\nA Sublime Text package for [Jekyll](http://jekyllrb.com/) static sites. This package should help maintaining Jekyll sites and posts easier by providing access to new post/draft shortcuts, key template tags and filters, as well as common completions and a current date/datetime command (for dating posts).\n\n### New in this Release\n\nThe 2.2 release introduces a new feature for faster post and draft creation. If you don't want to specify your folder paths, or you don't create a Sublime project for each blog you manage, you can enable a new setting `automatically_find_paths`. Setting this key to `true` will tell sublime-jekyll to search all folders in the active view for any `_posts` or `_drafts` directories. If none are found, it falls back to the normal project or user settings.\n\nFor a history of changes or previous releases, have a look at the more detailed [CHANGELOG ➭](CHANGELOG)\n\n\nInstallation\n------------\n\n### Package Control\n\nYou can install this package using [Package Control](https://sublime.wbond.net/packages/Jekyll) from wbond.net.\n\n* Press `ctrl+shift+p` (Windows/Linux) or `command+shift+p` (OS X) to bring up the Command Palette (or use _Tools > Command Palette_ menu)\n* Type to search for the `Package Control: Install Package` command\n* Search packages for **Jekyll** and hit `enter` to install\n* **NOTE:** You may need to restart in order to use this package\n\n### Manual\n\n[Clone ↻](https://github.com/23maverick23/sublime-jekyll.git) or [download ⬇](https://github.com/23maverick23/sublime-jekyll/archive/master.zip) the contents of this repo into your Sublime Text `Packages` folder.\n\n* OS X: `~/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages`\n* Windows: `%APPDATA%\\Sublime Text 3\\Packages`\n* Linux: `~/.config/sublime-text-3/Packages`\n\n### After Installing...\n\nAfter installing this package, make sure you configure your User settings file. The most important piece of this is to set your `posts_path` location. This can also be set on a per-project basis later if you have multiple Jekyll sites you wish to manage.\n\n```python\n{\n\n    // This should point to your \"_posts\" directory.\n    // NOTE: This should be an absolute path. Also, the path should\n    // match your system convention. For example, Windows machines should\n    // have a path similar to \"C:\\\\Users\\\\username\\\\site\\\\_posts\".\n    // *nix systems should have a path similar to \"/Users/username/site/_posts\".\n    \"posts_path\": \"\",\n\n    // This should point to your \"_drafts\" directory.\n    // NOTE: This should be an absolute path. Also, the path should\n    // match your system convention. For example, Windows machines should\n    // have a path similar to \"C:\\\\Users\\\\username\\\\site\\\\_drafts\".\n    // *nix systems should have a path similar to \"/Users/username/site/_drafts\".\n    \"drafts_path\": \"\",\n\n    // If you have multiple Jekyll blogs, but don't use Sumblime Projects,\n    // you can optionally have sublime-jekyll look for the `_posts` or `_drafts`\n    // folders open in your sidebar. This should have a value of true or false.\n    \"automatically_find_paths\": false,\n\n    // This string value should represent the default syntax for a new post.\n    // Valid options are: \"Markdown\", \"Textile\"\n    \"default_post_syntax\": \"Markdown\",\n\n    /** *****************************************************************************\n     * Post Front-matter Defaults\n     *\n     * Set these values to make your life easier when composing new posts. This is\n     * similar to setting your defaults as part of the `_config.yml` file:\n     *\n     * http://jekyllrb.com/docs/configuration/#front-matter-defaults\n     * ******************************************************************************\n     */\n\n    // This string value should represent the default layout for new posts.\n    \"default_post_layout\": \"\",\n\n    // This value should represent the default categories for new posts.\n    // Each category should be entered as a list item in string format\n    // with commas separating values [\"cat1\", \"cat2\"]. To remove this key\n    // from your front-matter completely, pass a value of `null`.\n    \"default_post_categories\": [],\n\n    // This value should represent the default tags for new posts.\n    // Each tag should be entered as a list item in string format\n    // with commas separating values [\"tag1\", \"tag2\"]. To remove this key\n    // from your front-matter completely, pass a value of `null`.\n    \"default_post_tags\": [],\n\n    // A boolean specifying if you want new posts to be marked as published.\n    // To remove this key from your front-matter completely, pass a value of `null`.\n    \"default_post_published\": true,\n\n    // If you need to add additional front-matter `key: value` information to\n    // your posts, you can store them in a dictionary object using a format\n    // like {\"foo\": \"bar\", \"baz\": \"qux\"}. This dictionary will be appended to\n    // any of the enabled default keys above (Reminder: the `title` and `layout`\n    // keys will always be included, so **DO NOT** include them in the extras dictionary).\n    \"default_post_extras\": {},\n\n    /** ***********************************************************************************\n     * If for some reason you want to change the way either the date\n     * or the datetime string is formatted, you can override those formats\n     * here using valid Python datetime.strftime() format codes.\n     *\n     * If you need a refresher on these codes, have a look at the Python\n     * documentation found here:\n     *\n     * http://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior\n     * ******************************************************************************\n     */\n\n    // A valid Python strftime string\n    \"insert_date_format\": \"%Y-%m-%d\",\n\n    // A valid Python strftime string\n    \"insert_datetime_format\": \"%Y-%m-%d %H:%M:%S\"\n\n}\n\n```\n\nFor per-project settings, make sure you add your Jekyll settings correctly (read [Issue #16](https://github.com/23maverick23/sublime-jekyll/issues/16) if you have questions on formatting).\n\n```python\n{\n    \"folders\":\n    [\n        {\n            \"follow_symlinks\": true,\n            \"path\": \"/Users/username/site/\"\n        }\n    ],\n\n    \"settings\":\n    {\n        \"Jekyll\":\n        {\n            \"posts_path\": \"/Users/username/site/_posts\",\n            \"drafts_path\": \"/Users/username/site/_drafts\",\n        }\n    }\n}\n```\n\nWhat's Included\n---------------\n\n### Screenshots\n\n![nsoa_console.png](https://github.com/23maverick23/sublime-jekyll/raw/master/Screenshots/sublime_jekyll_screenshot.png \"sublime-jekyll\")\n\n> Theme: [Centurion](https://sublime.wbond.net/packages/Theme%20-%20Centurion)\n\n> Color Scheme: [Tomorrow Night](https://sublime.wbond.net/packages/Tomorrow%20Color%20Schemes)\n\n> Font: [Source Code Pro](https://github.com/adobe/source-code-pro)\n\n### Syntaxes\n\n* HTML (Jekyll)\n* JSON (Jekyll)\n* Markdown (Jekyll)\n* Textile (Jekyll)\n\n### Commands & Key Bindings\n\n* Jekyll: New post => `CMD+K, CMD+P`\n* Jekyll: New draft => `CMD+K, CMD+F`\n* Jekyll: Insert current date\n* Jekyll: Insert current datetime\n* Jekyll: Open post...\n* Jekyll: Open draft...\n* Jekyll: Promote draft to post...\n\nThere are default key bindings for some commands above, however you can re-assign them in your user key bindings file (_Preferences > Package Settings > Jekyll > Key Bindings – User_).\n\n### Snippets\n\n- assign: `{% assign a = b %}`\n- capture: `{% capture %}{% endcapture %}`\n- case: `{% case %}{% endcase %}`\n- comment: `{% comment %}{% endcomment %}`\n- va: `{{ variable }}`\n- cycle: `{% cycle %}`\n- elsif: `{% elsif %}`\n- for: `{% for item in list %}{% endfor %}`\n- front-matter:\n\n    ```yaml\n    ---\n    layout: post\n    title:\n    published: true\n    categories: []\n    tags: []\n    ---\n    ```\n\n- gist: `{% gist url %}`\n- highlight: `{% highlight syntax|linenos %}{% endhighlight %}`\n- if: `{% if this %}{% endif %}`\n- ifelse: `{% if this %}{% else %}{% endif %}`\n- include: `{% include this.html %}`\n- post_url: `{% post_url url %}`\n- raw: `{% raw %}{% endraw %}`\n- unless: `{% unless this %}{% endunless %}`\n- when: `{% when this %}`\n\n### Completions\n\n#### Tags\n\n* page\n    - page.categories\n    - page.content\n    - page.date\n    - page.excerpt\n    - page.id\n    - page.path\n    - page.tags\n    - page.title\n    - page.url\n* paginator\n    - paginator.next_page\n    - paginator.next_page_path\n    - paginator.page\n    - paginator.per_page\n    - paginator.posts\n    - paginator.previous_page\n    - paginator.previous_page_path\n    - paginator.total_pages\n    - paginator.total_posts\n* site\n    - site.date\n    - site.domain\n    - site.feed_url\n    - site.pages\n    - site.permalink\n    - site.posts\n    - site.sitemap_url\n    - site.time\n    - site.related_posts\n    - site.categories\n    - site.tags\n\n#### Filters\n\n- append\n- array_to_sentence_string\n- camelize\n- capitalize\n- cgi_escape\n- date\n- date_to_long_string\n- date_to_rfc822\n- date_to_string\n- date_to_xmlschema\n- divided_by\n- downcase\n- escape\n- first\n- group_by\n- handleize\n- highlight_active_tag\n- img_tag\n- join\n- json\n- jsonify\n- last\n- link_to\n- markdownify\n- minus\n- money\n- money_with_currency\n- money_without_currency\n- newline_to_br\n- number_of_words\n- pluralize\n- plus\n- prepend\n- remove\n- remove_first\n- replace\n- replace_first\n- script_tag\n- size\n- sort\n- split\n- strip_html\n- strip_newlines\n- stylesheet_tag\n- textilize\n- times\n- trim\n- truncate\n- truncatewords\n- upcase\n- uri_escape\n- weight_with_unit\n- where\n- xml_escape\n\n### Build Systems\n\nIf desired, you can add a custom Jekyll build system to your Sublime projects. This allows you to create a specific build system for each Jekyll project you're working on. From what I can tell, a project-specific build system needs to be used, as opposed to a standard build system. This is because the `jekyll` CLT command must be run from the main Jekyll folder that contains the _config.yml file (which cannot be guaranteed to be the current project folder).\n\n```python\n{\n    \"build_systems\":\n    [\n        // This will build your Jekyll site, and print a trace to the console\n        {\n            \"name\": \"Jekyll\",\n            // Change this directory to match your top-level Jekyll project folder\n            \"working_dir\": \"/path/to/jekyll/project/root\",\n            \"cmd\": \"jekyll build -t\",\n            \"shell\": true,\n            \"encoding\": \"UTF-8\"\n        }\n    ]\n}\n```\n\nTests\n-----\n\nFeel free to open the files in [Tests ➭](https://github.com/23maverick23/sublime-jekyll/tree/master/Tests) to view the syntax highlighting, snippets, and completions, and to test adding the date commands.\n\nThanks\n------\n\nMuch of this package would not have been possible without the help (mostly unsolicited) of many community members and open source packages. A big part of my learning experience has been reviewing source code from some really great packages to get ideas for my own uses. I've listed some of those packages below - please visit them and use them as you see fit!\n\n* [liquid-syntax-mode](https://github.com/siteleaf/liquid-syntax-mode) from siteleaf (the original fork for this project)\n* [sublime-insertdate](https://github.com/FichteFoll/sublimetext-insertdate) from FichteFoll (basis of insert date commands)\n* [Sublime-AdvancedNewFile](https://github.com/skuroda/Sublime-AdvancedNewFile) from skuroda (new post creation tips)\n* [Gist](https://github.com/condemil/Gist) from condemil (new post creation tips)\n\nLicense\n-------\n\n[LICENSE ➭](LICENSE)\n\nChangelog\n---------\n\n[CHANGELOG ➭](CHANGELOG)\n\nIssues\n------\n\n[![Issue Stats](http://issuestats.com/github/23maverick23/sublime-jekyll/badge/issue?style=flat)](http://issuestats.com/github/23maverick23/sublime-jekyll)\n\nYou can log issues from the menu at right, or by [clicking here](https://github.com/23maverick23/sublime-jekyll/issues). Curious about responsiveness? Check out our [Issue Stats](http://issuestats.com/github/23maverick23/sublime-jekyll)!\n\nContribute\n----------\n\n[![Issue Stats](http://issuestats.com/github/23maverick23/sublime-jekyll/badge/pr?style=flat)](http://issuestats.com/github/23maverick23/sublime-jekyll)\n\nRead my [contributing guide ➭](CONTRIBUTING.md)\n\n**Thanks to the current contributors!**\n\n* fk128\n* Kimi\n* Marcos Ojeda\n* Robert Holak\n* svensvenson\n\n> [View the contributor graph ➭](https://github.com/23maverick23/sublime-jekyll/graphs/contributors)\n",
-			"file": "/C/Users/Hal/AppData/Roaming/Sublime Text 3/Packages/Jekyll/README.md",
-			"file_size": -1,
-			"file_write_time": -1,
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 12338,
-				"line_ending": "Windows",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"file": "spitz-jekyll.sublime-project",
-			"settings":
-			{
-				"buffer_size": 338,
+				"buffer_size": 142,
 				"line_ending": "Unix"
 			}
 		},
@@ -508,48 +495,31 @@
 			"file": "_la.yml",
 			"settings":
 			{
-				"buffer_size": 737,
+				"buffer_size": 828,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_site/la/index.html",
+			"file": "_config.yml",
 			"settings":
 			{
-				"buffer_size": 3469,
+				"buffer_size": 729,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>\n  <meta name=\"description\" content=\"{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}\">\n\n  <link href=\"bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n  <link href=\"bootstrap/css/bootstrap-responsive.min.css\" rel=\"stylesheet\">\n  <link href=\"css/flexslider.css\" rel=\"stylesheet\">\n  <link rel=\"stylesheet\" href=\"{{ \"/css/main.css\" | prepend: site.baseurl }}\">\n  <link rel=\"canonical\" href=\"{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}\">\n  <!-- <link rel=\"alternate\" type=\"application/rss+xml\" title=\"{{ site.title }}\" href=\"{{ \"/feed.xml\" | prepend: site.baseurl | prepend: site.url }}\" /> -->\n\n\n  <link href=\"bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n  <link href=\"bootstrap/css/bootstrap-responsive.min.css\" rel=\"stylesheet\">\n  <link href=\"css/flexslider.css\" rel=\"stylesheet\">\n  <link href=\"css/style.css\" rel=\"stylesheet\">\n  <link rel=\"icon\" type=\"image/png\" href=\"favicon-32x32.png\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" href=\"favicon-16x16.png\" sizes=\"16x16\" />\n</head>\n",
-			"file": "_includes/head.html",
-			"file_size": 770,
-			"file_write_time": 130849979154542488,
+			"file": "css/main.scss",
 			"settings":
 			{
-				"buffer_size": 1370,
+				"buffer_size": 1027,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "@font-face {\n    font-family: 'Underwood';\n    src: url('font/MYUNDERWOOD.TTF') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n\n}\n@font-face {\n    font-family: 'lucida_granderegular';\n    src: url('font/lucida_grande-webfont.eot');\n    src: url('font/lucida_grande-webfont.eot?#iefix') format('embedded-opentype'),\n         url('font/lucida_grande-webfont.woff') format('woff'),\n         url('font/lucida_grande-webfont.ttf') format('truetype'),\n         url('font/lucida_grande-webfont.svg#lucida_granderegular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n\n}\n\n@font-face {\n    font-family: 'lucida_grandebold';\n    src: url('font/lucida_grande_bold-webfont.eot');\n    src: url('font/lucida_grande_bold-webfont.eot?#iefix') format('embedded-opentype'),\n         url('font/lucida_grande_bold-webfont.woff') format('woff'),\n         url('font/lucida_grande_bold-webfont.ttf') format('truetype'),\n         url('font/lucida_grande_bold-webfont.svg#lucida_grandebold') format('svg');\n    font-weight: normal;\n    font-style: normal;\n\n}\n\n@font-face {\n    font-family: 'BreeSerifRegular';\n    src: url('font/BreeSerif-Regular-webfont.eot');\n    src: url('font/BreeSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),\n         url('font/BreeSerif-Regular-webfont.woff') format('woff'),\n         url('font/BreeSerif-Regular-webfont.ttf') format('truetype'),\n         url('font/BreeSerif-Regular-webfont.svg#BreeSerifRegular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n\n}\n\n@font-face {\n    font-family: 'BitterBold';\n    src: url('font/Bitter-Bold-webfont.eot');\n    src: url('font/Bitter-Bold-webfont.eot?#iefix') format('embedded-opentype'),\n         url('font/Bitter-Bold-webfont.woff') format('woff'),\n         url('font/Bitter-Bold-webfont.ttf') format('truetype'),\n         url('font/Bitter-Bold-webfont.svg#BitterBold') format('svg');\n    font-weight: normal;\n    font-style: normal;\n\n}\n\n@font-face {\n    font-family: 'LeagueGothicRegular';\n    src: url('font/League_Gothic-webfont.eot');\n    src: url('font/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),\n         url('font/League_Gothic-webfont.woff') format('woff'),\n         url('font/League_Gothic-webfont.ttf') format('truetype'),\n         url('font/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n\n}\n\n\n/** General Styles **/\n/** Blue color: #28A0BC; **/\nhtml {width:100%;height:100%;}\nbody {height:100%; width:100%;background: #fff url(../img/body-bg.jpg) no-repeat top center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; font-family: 'Underwood','lucida_granderegular'; }\nh1, h2, h3, h4, h5 {font-weight:normal;}\nimg { height:auto; max-width:100%;}\nth,td {text-align:center;}\nul {padding:0;}\na { outline: 0;}\na:focus { outline: 0;}\np {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}\nfooter {\n    margin-top: 40px;}\n/* set desktop resolution */\n.container { margin:0 auto; position:relative; width:auto; padding:0 102px; }\n\n#header { margin: 0 auto; position:relative; padding:0 102px;}\n#header .logoContainer {position:relative;}\n#header .logoContainer a {display:inline-block;vertical-align:bottom;margin:5px auto;}\n#header .logoContainer a img {max-width:160px;}\n#header h1 {font-size:24px;font-weight:700; color:black; line-height:1.5; text-align:center; margin:10px auto; display:inline-block; vertical-align:bottom; position:relative; left:-50px;;}\n\n#header .topData { text-align:right; margin-right:230px; position:absolute; bottom:0; margin-bottom:10px; right:0;; /* right:0; */; }\n.social-links li {\n    display: inline; }\n.social-links > li > a {height:80px;width:80px;display:inline-block;}\n.social-links li.subMenu ul {list-style:none;text-align:left;padding:10px;z-index:200;background:#3399cc;left:0;top:50px;}\n#header .topData .social-links li.subMenu ul a {display:block;}\n#header .topData .social-links a img {}\n#header .topData .locations {\n    background: #3399cc;\n    padding: 6px 0;\n    font-weight: 500;\n    color: white;\n}\n#header .topData .locations span {padding: 0 6px;}\n#mainContent {min-height:300px;position:relative;z-index:auto;;margin-top:10px;margin-top:8px;}\n.contact #mainContent .content {text-align:center;}\n#mainContent .copy {margin: 50px 0;}\n\n/*Flexslider */\n/* #mainContent .flexslider {border:none;overflow:hidden;margin:0 auto;z-index:auto;} */\n/* #mainContent .flexslider .slides img {border-radius:2px;position:relative;} */\n/* #mainContent .flex-control-paging {text-align:right;z-index:100;bottom:12px;right:8px;} */\n/* #mainContent .flex-control-paging li a:hover {opacity:.8;} */\n/* #mainContent .flex-control-paging li a {\n    background:white;\n    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.7);\n    -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.7);\n    box-shadow: inset 0 0 3px rgba(0,0,0,0.7);\n    font-size: 0;\n    line-height: 0;\n} */\n/* #mainContent .flex-control-paging li a.flex-active {\n    background:#cc6633;\n} */\n.flexslider {border:none;overflow:hidden;margin:0 auto;z-index:auto;}\n.flexslider .slides img {border-radius:2px;position:relative;}\n.flex-control-paging {text-align:right;z-index:100;bottom:12px;right:8px;}\n.flex-control-paging li a:hover {opacity:.8;}\n.flex-control-paging li a {\n    background:white;\n    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.7);\n    -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.7);\n    box-shadow: inset 0 0 3px rgba(0,0,0,0.7);\n    font-size: 0;\n    line-height: 0;\n}\n.flex-control-paging li a.flex-active {\n    background:#cc6633;\n}\n\n#mainContent .col-golden-sm, #mainContent .col-golden-lg {\n}\n#mainContent .location-info {\n    text-align: center;\n    z-index: 100;\n    padding: 0 0 5% 0;\n    \n}\n#mainContent .location-info h2 {\n    color: #333333;\n    font-size: 38px;\n\n}\n#mainContent .location-info > div {\n    padding:5px 0;\n}\n#mainContent .location-info .delivery-options {margin-top:20px;}\n#mainContent .location-info .hours ul {\n    list-style: none;}\n#mainContent .locationInfo { position:relative; z-index:200;}\n#mainContent .locationInfo ul {list-style:none;margin:0 auto;text-align:center;padding: 60px 0 15px 0;width:100%;}\n#mainContent .locationInfo ul li p {color:white;font-size:14px;}\n#mainContent .locationInfo ul li {padding:10px 0;;}\n#mainContent .locationInfo ul .social-links a {display:inline-block; width:6%; margin:0px 2px; }\n#mainContent .locationInfo dt {color:white; font-weight:400;}\n#mainContent .locationInfo dt {padding:10px 0;}\n#mainContent .content {width:100%; margin:20px 0;}\n#mainContent .content h2 {text-align:center;margin:20px auto;font-size:38px;}\n#mainContent .content strong {font-size:18px;}\n#mainContent .content p {font-size:13px;}\n#mainContent .locationInfo .contact .row {text-align:center; width:100%; margin:0 auto;}\n#mainContent .locationInfo .contact .row h4,#mainContent .locationInfo .contact .row h3 {color:white;}\n#mainContent .locationInfo .contact .row h3 {text-decoration: underline}\n#mainContent .locationInfo .contact .row p, #mainContent .locationInfo .contact .row a {font-size:14px; padding:30px 0; color:black;}\n#mainContent .locationInfo .contact {padding-top:40px; padding-bottom:50px;}\n\n#mainContent .locationInfo table {width:87%; margin:0 auto;}\n#mainContent .locationInfo th {color:white; font-weight:400; width:1%; font-size:17px;}\n#mainContent .locationInfo td {padding:10px 0 0 0; color:black; width:auto; vertical-align:top;;}\n#mainContent .locationInfo td a {color:black;}\n/* #mainContent .locationInfo dt,#mainContent .locationInfo dd { display:inline;} */\n#mainContent .locationInfo dd a {color:black;}\n#mainContent .locationTitle {background: transparent url(../img/location-ribbon.png) no-repeat center;height:150px;background-size:82% 76%;position:absolute;top:-79px;left:0;right:0;}\n#mainContent .locationTitle h2 { text-align:center; color:white; text-transform:uppercase; position:relative; top:17%; font-size:24px;}\n#menuContainer { height:50px; background-size:auto 100%; position:relative; z-index:100;}\n#menuContainer a {text-decoration:none;}\n#menuContainer .menuBg{\n    background: transparent url(../img/menu-cont-bg_black.png) repeat-x;\n    background-size: auto 100%;\n    width: 100%;\n    height: 50px;\n    position: absolute;\n    top: 0;;\n}\n/* main menu styles */\nul.mainMenu {margin:0; float:left;/* height:50px; */}\nul.mainMenu li {list-style:none; float:left; margin:0 8px 0 0; background: transparent url(../img/divid-menu.png) no-repeat right 56%; padding-right:8px; display:block; }\nul.mainMenu li a {color:#fff; font-size:16px; text-transform: uppercase;  font-family: 'Underwood','Helvetica Neue'; line-height:50px; display:block; padding:0 10px 0 5px;}\nul.mainMenu li:last-child {background:none;}\nul.mainMenu .addTxt {display:none;}\n\nul li.subMenu {position:relative;}\nul li.subMenu ul {z-index:10; display:none; top:38px; left:-5px; margin:0; background: black; border:0; padding:0px 0 5px 6px; border-radius:5px; box-shadow: 0px 10px 13px 2px #5E7487; -moz-box-shadow: 0px 10px 13px 2px #5E7487; -webkit-box-shadow: 0px 10px 13px 2px #5E7487;position: absolute;}\nul li.subMenu ul li {float:none; background:none; white-space:nowrap; margin:2px 0;}\nul li.subMenu ul a { color:#fff; font-size:14px; text-transform: uppercase; font-family: 'Underwood','Helvetica Neue'; line-height:27px; margin:1px 0; display:inline-block; }\nul li.subMenu ul li:hover a {background:#2f5e70; border-radius:5px;}\nul li.subMenu ul.opened { display: block; }\n\n\n/* ul.mainMenu li.subMenu:hover ul {display:block;} */\n\n\ndiv.order {position:absolute; margin-right:0; float:right; background:transparent url(../img/book-table.png) no-repeat top center; background-size:100% 100%; top:-14px; right:94px; width:162px; overflow:visible; min-height:115px;}\n.order ul li.subMenu ul {\n    z-index: 200;\n    position: absolute;\n    top: 74px;\n    left: 0px;\n    list-style: none;\n    background: transparent url(../img/book-table2.png) no-repeat top center;\n    text-align: center;\n    box-shadow: none;\n    width: 162px;\n    padding-bottom: 48px;\n    background-size: 100% 100%;\n    background-position: 0px -25px;;\n}\n.order ul li.subMenu {list-style:none;position:static;width:100%;height:100%;;}\n.order ul li.subMenu ul li a {}\n\na.order { text-align:center; position:relative; font-family: 'Underwood','lucida_granderegular'; line-height:27px; text-transform: uppercase; display:block; color:#fff; background-size:100% 100%; font-size:20px; z-index:100; top:16px; left:3px; padding:0 15px;}\n/* order online */\n\n\n\n/* social icons */\n\nul.social {list-style:none; margin:0 0 10px 0;}\nul.social li {display:inline-block; margin-left:10px;}\nul.social a {background: transparent url(../img/socialicons.png) no-repeat; display:block; width:31px; height:31px; text-indent:-9999px; text-align:left;}\nul.social a.fb {background-position:-1px 0;}\nul.social a.fb:hover {background-position:-1px -31px;}\nul.social a.twit {background-position:-43px 0;}\nul.social a.twit:hover {background-position:-43px -31px;}\nul.social a.rss {background-position:-87px 0;}\nul.social a.rss:hover {background-position:-87px -31px;}\nul.social a.mail {background-position:-129px 0;}\nul.social a.mail:hover {background-position:-129px -31px;}\n\naddress {color: #ffffff; font-size:12px; font-family: 'helvetica neue light'; margin:0 0 15px 0; width:240px; background-color: #417489; padding: 5px 10px 5px 0; }\n.phone-address {color: #b45138; font-size:12px; font-family: 'helvetica neue light'; margin:0 0 15px 0; width:210px; }\n.fb {background-image: url('../img/fb-icon.png'); }\n\n\n.column1 {width:66%;}\n.column2 {width:34%; background: transparent url(../img/column2-bg.png) repeat-y 50% 0;}\n.c2btm {background:transparent url(../img/column2-btm.png) no-repeat bottom center; width:34%; height:249px; float:right; clear:right;}\n.column2.nobackg {background:none;}\n.oneColumn {}\n\n/* boxes */\n\n.box1 {margin-top:30px;}\n.box1 .top {height:36px; background: transparent url(../img/box1-top.png) no-repeat top center; }\n.box1 .mid {background: transparent url(../img/box1-mid.png) repeat-y 50% 0; min-height:72px;}\n.box1 .btm {height:36px; background: transparent url(../img/box1-btm.png) no-repeat top center;}\n\n.box1 h4.curved {position:relative; top:-15px; color:#cee5e5; font-size:25px; font-family: 'Underwood','lucida_granderegular'; text-transform:uppercase; margin:0; text-align:center; text-rendering:auto; font-weight:normal;}\n.box1 span.subTitle {display:block; text-align:center; margin:5px 0; font-size:16px; color:#fff; font-family: 'Underwood','lucida_granderegular';}\n.box1 .mCont {padding:10px 50px 0 50px;}\n.box1 h5 {font-weight:normal; font-size:13px; text-transform: uppercase; color:#fff; font-family: 'Underwood','lucida_granderegular'; margin:15px 0 3px 0;}\n.box1 h5 span {color:#9ec1b5; font-size:12px; font-family: 'BitterBold'; padding-right:5px;}\n.box1 p {color:#fff; font-size:12px; line-height:17px; text-align:justify; margin:0; padding:0;}\n.box1 a {color:#cb5c40; font-size:12px; line-height:12px; text-align:right; font-family: 'Underwood','lucida_granderegular'; float:right; text-transform:uppercase;}\n\np.centering {text-align:center; line-height:20px;}\n\n.box2 {background: transparent url(../img/box2-bg.png) no-repeat top center; text-align:center; line-height:24px; height:60px; padding-top:74px; position:relative; top:-1px; font-family: 'BreeSerifRegular'; font-size:23px; color:#fff; text-transform: uppercase;}\n\n.box3 {background: transparent url(../img/box3-bg.png) no-repeat top center; text-align:center; line-height:24px; height:143px; padding-top:50px; position:relative; top:-5px;}\n.box3 .tx1 {font-family: 'BreeSerifRegular'; font-size:21px; line-height:21px; padding:10px 0 5px 0; display:block; text-align:center; color:#a1907c; text-transform: uppercase; margin:0;}\n.box3 .tx2 {font-family: 'BreeSerifRegular'; font-size:21px; line-height:21px; display:block; text-align:center; color:#ca5b3f; text-transform: uppercase; margin:0;}\n.box3 .tx3 {color:#ca5b3f; font-size:16px; line-height:18px; font-family: 'Underwood','lucida_granderegular'; display:block; }\n.box3 p {font-size:12px; line-height:15px; color:#262626; width:210px; margin:6px auto; }\n\n.box4 {margin:10px auto; width:222px;}\n.box4 .mCont {background:#a1bbc6; padding:10px; text-align:center; color:#fff; font-size:12px; line-height:15px;}\n.box4 .btm {background: transparent url(../img/box4-end.png) no-repeat 0 top; height:19px; margin-bottom:4px;}\n.box4 img {float:left;}\n.box4 span.author {float:left; display:block; margin:0; padding:0 0 0 10px; color:#262626; font-size:10px; line-height:12px; font-family: 'lucida_grandebold'; width:155px;}\n\n.photoSidebar {text-align:center;}\n\n.blogContent {margin:0 auto;height:589px;}\n.blogTitle {position:relative; background: transparent url(../img/hdr2-bg.png) repeat-x 0 0; color:#fff; margin:10px 0 18px 0; padding:0 88px 0 15px;}\n.blogTitle h2 {width:50%; font-family: 'Underwood','lucida_granderegular'; font-size:18px; line-height:22px; text-transform: uppercase; display:block; float:left;}\n.blogTitle .category {width:50%; font-size:12px; padding-top:16px; color:#fff; display:block; float:right; line-height:12px; text-align:right;}\n.blogTitle .dates {background: transparent url(../img/hdr2-ribbon.png) no-repeat center top; height:67px; width:58px; position:absolute; top:-9px; right:20px; text-align:center; padding-left:7px}\n.dates .data1 {padding:8px 0 1px 0; font-family: 'Underwood','lucida_granderegular'; font-size:14px; display:inline-block;  text-shadow:0 1px 2px #050305; background: transparent url(../img/date-border-bg.png) repeat-x 0 100%;}\n.dates .data2 {padding:0 0 0 0; font-family: 'Underwood','lucida_granderegular'; font-size:18px; display:block; text-shadow:0 1px 2px #050305; }\n.blogContent img {width:100%;height:100%;}\n.blogContent p {font-size:13px; line-height:20px; color:#262626; margin:10px 0 10px 0;}\n.blogContent a {background: #ca5b3f; padding:0 25px; line-height:32px; height:32px; margin:2px 0; font-size:13px; color:#fff; display:inline-block;}\n\nhr.divider1 {height:3px; background: transparent url(../img/divider1-bg.png) repeat-x 50% 50%; margin:35px; border:none; }\nhr.divider2 {height:3px; background: transparent url(../img/divider1-bg.png) repeat-x 50% 50%; margin:35px 0; border:none; }\nhr.divider3 {height:3px; background: transparent url(../img/divider1-bg.png) repeat-x 50% 50%; margin:12px 0; border:none; }\nhr.divider4 {height:3px; background: transparent url(../img/divider1-bg.png) repeat-x 50% 50%; margin:50px 0; border:none; }\nhr.divider5 {height:3px; background: transparent url(../img/divider1-bg.png) repeat-x 50% 50%; margin:25px; border:none; }\n\n.box5 {margin:5px 30px 0 60px;}\np span.highlight {color:#457b91; font-size:16px; text-transform: uppercase; font-family: 'BitterBold';}\np span.highlight2 {font-size:17px; color:#cc5d41;}\np span.highlight3 {color:#cc5d41; font-size:16px; text-transform: uppercase; font-family: 'BitterBold';}\np.full {font-size:13px; margin:0 105px 35px 105px;}\n\n.threeColumnGallery {}\n.threeColumnGallery .tx1 {color:#ca5b3f; font-size:16px; line-height:18px; font-family: 'Underwood','lucida_granderegular'; display:block; }\n.threeColumnGallery p {font-size:12px; line-height:15px; color:#262626; margin:6px auto; }\n.threeColumnGallery .tx2 {color:#ca5b3f; font-size:15px; line-height:18px; font-family: 'Underwood','lucida_granderegular'; display:block; margin:0 0 15px 0;}\n.third {width:33%; float:left; }\n.threeColumnGallery .third {width:33%; float:left; background: transparent url(../img/shadow_divider.png) no-repeat right 10%;}\n.threeColumnGallery .third:nth-child(3) {background:none;}\n.third .mrgThird {padding:10px 35px;}\n.third img {padding:0 4px 21px 4px; background: transparent url(../img/photo-shadow.png) no-repeat bottom center;}\n\n/* headers styles */\n\n.hdr1 {background: transparent url(../img/hdr1-ribbon.png) no-repeat top center; height:67px; text-align:center; font-family: 'Underwood','lucida_granderegular'; font-size:21px; line-height:44px; margin:5px 0; color:#fff;}\n.hdr2 {background: transparent; height:29px; text-align:center; font-family: 'Underwood','lucida_granderegular'; font-size:20px; line-height:22px;  margin:20px 0; color:#3399cc; position:relative; top:29px; font-weight:600; z-index:200;}\n.hdr2 span.lft {background: transparent url(../img/orm1-left.png) no-repeat center top; width:56px; padding-right:10px; height:29px; display:inline-block; vertical-align:text-bottom;}\n.hdr2 span.rt {background: transparent url(../img/orm1-rt.png) no-repeat center top; width:56px; height:29px; padding-left:10px; display:inline-block; vertical-align:text-bottom;}\n.lft:before, .rt:before {content: \"\\00a0\";}\n\n.hdr3 {font-size:21px; color:#ca5b3f; font-family: 'Underwood','lucida_granderegular'; text-align:center; text-transform: uppercase; margin:20px 0;}\n.hdr4 {background: transparent url(../img/hdr4-ribbon.png) no-repeat top center; height:67px; text-align:center; font-family: 'BitterBold'; font-size:21px; line-height:44px; margin:5px 0; color:#fff;}\n\n.hdr5 {color:#ca5b3f; font-size:17px; font-family: 'BitterBold'; text-transform: uppercase; margin:50px 0 10px 0;}\n.hdr6 {color:#cb5c40; font-size:20px; font-family: 'BitterBold'; text-transform: uppercase; text-align:center;}\n\n.hdr7 {font-size:17px; color:#457b91; font-family: 'BitterBold';}\n\n/* sliders */\n\n/* slider1 begin */\n.slider1Back {background: transparent url(../img/slider1-shadow.png) no-repeat center 167px; position:relative; left:-66px; width:714px; margin-top:40px; height:352px; overflow:hidden;}\n.slider1 .sliderContent {padding-left:44px; height:352px;}\n.slider1 .slider-wrapper {height:352px;}\n.slider1 {width:612px; margin:0 auto 10px auto;}\n.slider1 .nivoSlider {overflow:visible;}\n\n.slider1Frame {  padding-left:45px;}\n.slider1 .frame1 {position:absolute; left:93px; top:-1px; z-index:7; }\n.slider1 .nivo-directionNav {width:100%; height:66px; position:relative; top:-160px;}\n.slider1 .nivo-directionNav a {background:transparent url(../img/slider1-controls.png) no-repeat; width:56px; height:66px; display:block; z-index:8; text-indent:-9999px; top:0;}\n.slider1 a.nivo-prevNav {background-position:-8px -9px; left:-31px;}\n.slider1 a.nivo-prevNav:hover {background-position:-8px -96px;}\n.slider1 a.nivo-nextNav {background-position:-87px -9px; right:-31px; }\n.slider1 a.nivo-nextNav:hover {background-position:-87px -96px;}\n.slider1 .nivo-controlNav {position:relative; top:-65px; z-index:8;}\n.slider1 .nivo-controlNav a {width:13px; height:13px; margin:0 1px; background: transparent url(../img/slider1-controls.png) -14px -202px; display:inline-block; text-indent:-9999px;}\n.slider1 .nivo-controlNav a.active {background-position:-50px -202px;}\n\n/* slider1 end */\n\n/* slider2 begin */\n\n.slider2 {height:417px; background: transparent url(../img/slider2-bg.jpg) no-repeat top center; padding:10px 45px 0 45px; position:relative; margin-top:30px;}\n.slider2 .anythingWindow, .slider2 .anythingSlider, .slider2 .anythingSlider .panel  {height:417px !important;}\n.slider2 .anythingSlider-default {margin:0 auto; padding:0; }\n.slider2 .setSlider2 {}\n.setSlider2 .tx1 {color:#ca5b3f; font-size:16px; line-height:18px; font-family: 'BitterBold'; display:block; }\n.setSlider2 p {font-size:12px; line-height:15px; color:#262626; margin:6px auto; }\n.setSlider2 .tx2 {color:#ca5b3f; font-size:15px; line-height:18px; font-family: 'BitterBold'; display:block; margin:0 0 15px 0;}\n.setSlider2 .third {width:33%; float:left;}\n.setSlider2 .third .mrgThird {padding:0 10px 0 10px;}\n.setSlider2 .third img {border:1px solid #bcd0d0; border-top:none; padding:7px; background:#fff; }\n.setSlider2 .third .shadd {background: transparent url(../img/slider2-photo-shadow.png) no-repeat bottom center; padding-bottom:12px;}\n\n.slider2 span.arrow a {z-index:2; background:transparent url(../img/slider2-controls-bg.png) no-repeat; width:44px; height:48px; display:block; position:absolute; outline:0;}\n.slider2 span.arrow.forward a {background-position: -67px -5px; right:-42px; top:157px;}\n.slider2 span.arrow.forward a:hover {background-position:-67px -59px;}\n.slider2 span.arrow.back a {background-position:-14px -5px; left:-43px; top:157px;}\n.slider2 span.arrow.back a:hover {background-position:-14px -59px;}\n.slider2 a.link1 {display:block; width:125px; height:46px; background: transparent url(../img/slider2-link.png) no-repeat top center; font-family: 'LeagueGothicRegular'; font-size:16px; color:#fff; text-shadow:0 1px 2px #050305; position:absolute; bottom:107px; right:-18px; padding: 0 0 0 39px; line-height:29px;}\n\n/* slider2 end */\n\n/* slider3 begin */\n\n.slider3 {background: transparent url(../img/slider3-bg.jpg) no-repeat top center; height:536px; padding:0 45px 0 45px; }\n.slider3 .anythingWindow, .slider3 .anythingSlider, .slider3 .anythingSlider .panel  {height:536px !important;}\n.slider3 .anythingSlider-default {margin:0 auto; padding:0; }\n.setSlider3 .third .mrgThird {padding:10px 22px; margin-bottom:10px;}\n.setSlider3 .third img {border:1px solid #bcd0d0; border-top:none; padding:7px; background:#fff; }\n.setSlider3 .third .shadd {background: transparent url(../img/slider3-photo-shadow.png) no-repeat bottom center; padding-bottom:14px;}\n.setSlider3 .tx1 {color:#ca5b3f; font-size:16px; line-height:18px; font-family: 'BitterBold'; display:block; margin-bottom:6px; }\n.setSlider3 .tx2 {color:#262626; font-size:13px;  font-family: 'lucida_granderegular'; padding-left:10px;}\n\n.slider3 span.arrow a {z-index:2; background:transparent url(../img/slider2-controls-bg.png) no-repeat; width:44px; height:48px; display:block; position:absolute; outline:0;}\n.slider3 span.arrow.forward a {background-position: -67px -5px; right:-42px; top:190px;}\n.slider3 span.arrow.forward a:hover {background-position:-67px -59px;}\n.slider3 span.arrow.back a {background-position:-14px -5px; left:-43px; top:190px;}\n.slider3 span.arrow.back a:hover {background-position:-14px -59px;}\n\n/* slider3 end */\n\n/* slider4 begin */\n\n.slider4 {width:100%; height:720px; background: transparent url(../img/slider4-bg.png) no-repeat bottom center; position:relative; margin-bottom:25px;}\n.slider4 .anythingWindow, .slider4 .anythingSlider  {height:710px !important;}\n.slider4 .anythingSlider-default {margin:0 auto; padding:10px 60px 0 80px; }\n\n.slider4 .hdr2 {margin:10px 0 42px 0;}\n.slider4 .slider4Set {margin: 0 10px;}\n.slider4 .slider4Set .cn1 {width:19%; float:left;}\n.slider4 .slider4Set .cn2 {width:56%; float:left;}\n.slider4 .slider4Set .cn3 {width:25%; float:right;}\n.slider4 .slider4Set img {border: 1px solid #c0bcb5; }\n.slider4 .slider4Set .tx1 {color:#43798f; font-family: 'BitterBold'; display:block; font-size:16px; padding:2px 0 6px 0;}\n.slider4 .slider4Set p {color:#262626; font-size:12px; line-height:15px;  }\n.slider4 .slider4Set .tx2 {color:#ca5b3f; font-size:13px; line-height:18px; font-family: 'BitterBold'; display:block; margin-bottom:6px; text-align:right;}\n\n.slider4 .forward a {z-index:2; background:transparent url(../img/slider2-controls-bg.png) no-repeat -67px -5px; width:44px; height:48px; display:block; position:absolute; outline:0; right:2px; bottom:50%;}\n.slider4 .forward a:hover {background-position:-67px -59px;}\n.slider4 .back, .slider4 .back a {display:none !important;}\n\n.slider4 #externalNav {text-align:center;}\n.slider4 #externalNav a {text-shadow:2px 3px 1px #295362; font-family: 'BreeSerifRegular'; font-size:11px; color:#fff; background:#2f5e70; border-radius:5px; display:inline-block; padding:0 12px; margin:2px 15px; text-transform: uppercase;}\n.slider4 #externalNav a.cur {text-decoration:underline;}\n.slider4 .pagesNr {display:inline-block; background:#477d93; position:absolute; right: 35px; bottom:15px; padding:1px 4px; width:auto; min-width:26px; text-align:center; border-radius:5px; font-family: 'BreeSerifRegular'; font-size:14px; color:#fff; text-shadow:1px 2px 2px #295362; }\n\n/* slider4 end */\n\n/* slider5 begin */\n\n.slider5 {width:100%; height:720px; background: transparent url(../img/slider5-bg.png) no-repeat bottom center; position:relative; margin-bottom:25px;}\n.slider5 .anythingWindow, .slider5 .anythingSlider  {height:630px !important;}\n.slider5 .anythingSlider-default {margin:0 auto; padding:10px 60px 0 70px; }\n\n.slider5 .half1 {width:40%; margin-right:14%; margin-top:2%; float:left;}\n.slider5 .half2 {width:39%; margin-right:2%; margin-left:2%; margin-top:2%; float:left;}\n.slider5 .hdr2 {margin:15px 0 38px 0;}\n.slider5 .slider5Set {margin: 0 10px;}\n.slider5 .slider5Set .cn1 {width:27%;}\n.slider5 .slider5Set .cn2 {width:100%; float:left;}\n.slider5 .slider5Set img {border: none; vertical-align: middle; }\n.slider5 .slider5Set .tx1 {color:#43798f; font-family: 'BitterBold'; display:inline-block; font-size:16px; padding:2px 0 6px 0;}\n.slider5 .slider5Set p {color:#262626; font-size:12px; line-height:15px; text-align: center;  }\n.slider5 .slider5Set .tx2 {color:#ca5b3f; font-size:13px; line-height:18px; font-family: 'BitterBold'; display:inline-block; float:right; margin-bottom:6px; text-align:right;}\n\n.slider5 span.arrow a {z-index:2; background:transparent url(../img/slider2-controls-bg.png) no-repeat; width:44px; height:48px; display:block; position:absolute; outline:0;}\n.slider5 span.arrow.forward a {background-position: -67px -5px; right:17px; bottom:47%;}\n.slider5 span.arrow.forward a:hover {background-position:-67px -59px;}\n\n.slider5 span.arrow.back a {background-position:-14px -5px; right:-38px; left:20px; bottom:47%;}\n.slider5 span.arrow.back a:hover {background-position:-14px -59px;}\n\n.slider5 #externalNav {text-align:center;}\n.slider5 #externalNav a {text-shadow:2px 3px 1px #295362; font-family: 'BreeSerifRegular'; font-size:11px; color:#fff; background:#2f5e70; border-radius:5px; display:inline-block; padding:0 12px; margin:0 15px; text-transform: uppercase;}\n.slider5 #externalNav a.cur {text-decoration:underline;}\n.slider5 .pagesNr {display:inline-block; background:#477d93; position:absolute; right:45px; bottom:2px; padding:1px; width:26px; text-align:center; border-radius:5px; font-family: 'BreeSerifRegular'; font-size:14px; color:#fff; text-shadow:1px 2px 2px #295362; }\n\n/* slider5 end */\n\n\n/* slider51 begin */\n\n.slider51 {width:100%; height:720px; background: transparent url(../img/order-bg.png) no-repeat bottom center; position:relative; margin-bottom:25px;}\n.slider51 .anythingWindow, .slider5 .anythingSlider  {height:630px !important;}\n.slider51 .anythingSlider-default {margin:0 auto; padding:10px 60px 0 70px; }\n\n.slider51 .half1 {width:40%; margin-right:14%; margin-top:2%; float:left;}\n.slider51 .half2 {width:39%; margin-right:2%; margin-left:2%; margin-top:2%; float:left;}\n.slider51 .hdr2 {margin:15px 0 38px 0;}\n.slider51 .slider51Set {margin: 0 10px;}\n.slider51 .slider51Set .cn1 {width:27%;}\n.slider51 .slider51Set .cn2 {width:100%; float:left;}\n.slider51 .slider51Set img {border: none; vertical-align: middle; }\n.slider51 .slider51Set .tx1 {color:#43798f; font-family: 'BitterBold'; display:inline-block; font-size:16px; padding:2px 0 6px 0;}\n.slider51 .slider51Set p {color:#262626; font-size:12px; line-height:15px; text-align: center;  }\n.slider51 .slider51Set .tx2 {color:#ca5b3f; font-size:13px; line-height:18px; font-family: 'BitterBold'; display:inline-block; float:right; margin-bottom:6px; text-align:right;}\n\n.slider51 span.arrow a {z-index:2; background:transparent url(../img/slider2-controls-bg.png) no-repeat; width:44px; height:48px; display:block; position:absolute; outline:0;}\n.slider51 span.arrow.forward a {background-position: -67px -5px; right:17px; bottom:47%;}\n.slider51 span.arrow.forward a:hover {background-position:-67px -59px;}\n\n.slider51 span.arrow.back a {background-position:-14px -5px; right:-38px; left:20px; bottom:47%;}\n.slider51 span.arrow.back a:hover {background-position:-14px -59px;}\n\n.slider51 #externalNav {text-align:center;}\n.slider51 #externalNav a {text-shadow:2px 3px 1px #295362; font-family: 'BreeSerifRegular'; font-size:11px; color:#fff; background:#2f5e70; border-radius:5px; display:inline-block; padding:0 12px; margin:0 15px; text-transform: uppercase;}\n.slider51 #externalNav a.cur {text-decoration:underline;}\n.slider51 .pagesNr {display:inline-block; background:#477d93; position:absolute; right:45px; bottom:2px; padding:1px; width:26px; text-align:center; border-radius:5px; font-family: 'BreeSerifRegular'; font-size:14px; color:#fff; text-shadow:1px 2px 2px #295362; }\n\n/* slider51 end */\n\n/* slider6 begin */\n\n.slider6Outer {background:white;}\n.slider6 {position:relative; height:auto;}\n.slider6Content {padding: 15px 18px;}\n.slider6 .slider6BorderInner {position: absolute;bottom: 0;left: 0;right: 0;background: white;border: 4px solid #E1E1E1; width: 98%;margin: 0 auto;height: 96%;top:50%;-webkit-transform: translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}\n.slider6 .slider6BorderOuter { position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; background: white; height: 100%;}\n.slider6 .nivoSlider { overflow:visible; }\n.slider6 .sliderContent {/*padding-left:42px; height:341px;*/}\n.slider6 .slider-wrapper {height:341px;}\n.slider6Back { background-size:112%; margin:50px auto; padding:2% 2%; overflow:visible; position:relative;}\n.slider6Back > img {  position: absolute;  bottom: -5%;max-width: 115%;  width: 111%;  left: -5%;}\n.slider6 .sliderContent, .slider6 .slider-wrapper  {height:468px;}\n.slider6 .frame1 {position:absolute; left:17px; top:-30px; z-index:7; }\n.slider6 .ribTxt {position:absolute; left:20px; top:14px; z-index:9;}\n.slider6 .ribTxt span {font-family: 'BreeSerifRegular'; color:#fff; font-size:15px; display:block;}\n\n.slider6 .nivo-directionNav {width:100%; height:66px; position:absolute; top:50%;-webkit-transform: translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);z-index:100;}\n.slider6 .nivo-directionNav a {background:transparent url(../img/slider1-controls.png) no-repeat; width:56px; height:66px; display:block; z-index:8; text-indent:-9999px; top:0;}\n.slider6 a.nivo-prevNav {background-position:-8px -9px; left:-44px;}\n.slider6 a.nivo-prevNav:hover {background-position:-8px -96px;}\n.slider6 a.nivo-nextNav {background-position:-87px -9px; right:-41px; }\n.slider6 a.nivo-nextNav:hover {background-position:-87px -96px;}\n.slider6 .nivo-controlNav {position:absolute; z-index:8; left:0; right:0; bottom:-84px; }\n.slider6 .nivo-controlNav .navCent {display:inline-block; text-align:center;}\n.slider6 .nivo-controlNav div.lft {display:inline-block; float:left; width:29px; height:50px; background: transparent url(../img/slider6-control-lft.png) repeat-x;}\n.slider6 .nivo-controlNav div.mid {display:inline-block; float:left; height:50px; background: transparent url(../img/slider6-control-mid.png) repeat-x;}\n.slider6 .nivo-controlNav div.rt {display:inline-block; float:left; width:29px; height:50px; background: transparent url(../img/slider6-control-rt.png) repeat-x;}\n.slider6 .nivo-controlNav a {width:13px; height:13px; padding-top:35px; margin:0 3px; background: transparent url(../img/slider1-controls.png) -88px -184px; display:inline-block; text-indent:-9999px;}\n.slider6 .nivo-controlNav a.active {background-position:-123px -184px;}\n\n/* slider6 end */\n\n/* slider7 begin */\n\n.slider7 {text-align:center; position:relative;}\n.slider7Back { height:504px;}\n.slider7 .anythingWindow, .slider7 .anythingSlider  {height:504px;}\n.slider7 .anythingSlider-default {margin:0 auto; padding:0 30px; ;background:transparent url(../img/slider7-bg.jpg) no-repeat top center; background-size:96% 94%; }\n.setSlider7 .third .mrgThird {padding:10% 7%;}\n.setSlider7 .third img { border-top:none; background:#fff; padding:0; width:97%; margin:0 auto; }\n.slider7 .third .shadd {background: transparent url(../img/slider7-photo-shadow.png) no-repeat bottom center; padding-bottom:21px;}\n.slider7 .tx1 {font-size:17px; color:#3399cc; font-family: 'Underwood','lucida_granderegular'; padding-bottom:17px; display:inline-block; font-weight:600;}\n.slider7 .tx2 {font-size:17px; color:#cc5d41; font-family: 'BitterBold'; padding-top:17px; display:inline-block;}\n.slider7 p {line-height:16px;}\n\n.slider7 span.arrow a {z-index:2; background:transparent url(../img/slider3-controls-bg.png) no-repeat; width:44px; height:48px; display:block; position:absolute; outline:0;  bottom:58%;}\n.slider7 span.arrow.forward a {background-position: -67px -5px; right:0px;}\n.slider7 span.arrow.forward a:hover {background-position:-67px -59px;}\n.slider7 span.arrow.back a {background-position:-14px -5px; left:0px;}\n.slider7 span.arrow.back a:hover {background-position:-14px -59px;}\n.slider7 a.link1 {display:block; width:125px; height:46px; background: transparent url(../img/slider2-link.png) no-repeat top center; font-family: 'LeagueGothicRegular'; font-size:16px; color:#fff; text-shadow:0 1px 2px #050305; position:absolute; bottom:96px; right:-18px; text-align:left; padding: 0 0 0 39px; line-height:29px;}\n\n/* slider7 end */\n\n/* slider8 begin */\n\n.slider8 {width:100%; height:720px; background: transparent url(../img/slider8-bg.jpg) no-repeat bottom center; position:relative; margin-bottom:25px;}\n.slider8 .anythingWindow, .slider8 .anythingSlider  {height:630px !important;}\n.slider8 .anythingSlider-default {margin:0 auto; padding:10px 60px 0 70px; }\n\n.slider8 span.arrow a {z-index:2; background:transparent url(../img/slider2-controls-bg.png) no-repeat; width:44px; height:48px; display:block; position:absolute; outline:0;}\n.slider8 span.arrow.forward a {background-position: -67px -5px; right:8px; bottom:47%;}\n.slider8 span.arrow.forward a:hover {background-position:-67px -59px;}\n\n.slider8 span.arrow.back a {background-position:-14px -5px; right:-38px; left:10px; bottom:47%;}\n.slider8 span.arrow.back a:hover {background-position:-14px -59px;}\n\n.slider8 #externalNav {text-align:center;}\n.slider8 #externalNav a {text-shadow:2px 3px 1px #b6533a; font-family: 'BreeSerifRegular'; font-size:11px; color:#fff; background:#cf5e42; border-radius:5px; display:inline-block; padding:0 12px; margin:0 15px 4px 15px; text-transform: uppercase; }\n.slider8 #externalNav a.cur {text-decoration:underline;}\n\n.slider8 .slider8Set {margin:10px 0 0 15px;}\n.slider8 .slider8Set img {border:1px solid #bcd0d0; border-top:none; padding:7px; background:#fff; }\n.slider8 .slider8Set .shadd {background: transparent url(../img/slider8-photo-shadow.png) no-repeat bottom center; padding-bottom:13px; display:inline-block; margin:5px 25px 25px 0;}\n.slider8 .container {position:relative;}\n.slider8 a.link1 {display:block; width:125px; height:46px; background: transparent url(../img/slider2-link.png) no-repeat top center; font-family: 'LeagueGothicRegular'; font-size:16px; color:#fff; text-shadow:0 1px 2px #050305; position:absolute; bottom:37px; right:-9px; text-align:left; padding: 0 0 0 39px; line-height:29px;}\n\n/* slider 8 end */\n\n.typo {margin:0 40px 0 25px;}\n.typo p {font-size:13px; line-height:22px; color:#1c1c1c;}\n.typo p.capitalize:first-letter {color:#43788d; font-size:50px; line-height:50px; margin:0 5px 0 0; font-family: 'lucida_grandebold'; float:left; display:block;}\n.typo h3 {font-size:20px; line-height:22px; padding-bottom:5px; color:#43778c; margin: 10px 0 0 0;}\n.typo h4 {color:#838078; font-size:18px; margin:10px 0; font-family: 'lucida_grandebold';}\n.typo p.grey {color:#444444; font-size:12px; line-height:16px; border:1px solid #cccccc; padding:10px 40px 10px 23px; border-left:7px solid #676666; margin:20px 0; }\n.typo p.blue {color:#444444; font-size:12px; line-height:16px; border:1px solid #cccccc; padding:10px 40px 10px 23px; border-left:7px solid #41758a; margin:20px 0; }\n\n/* contact */\n\n.box6 {margin:60px 25px 50px 25px; }\n.box6 img {border:1px solid #457b91; margin-bottom:20px;}\n.box6 p {font-size:13px; line-height:20px;}\n\n.box7 {margin:0 4px;}\n.box7 .cn1 {width:43%; float:left;}\n.box7 .cn2 {width:37%; float:left;}\n.box7 .cn3 {width:20%; float:left;}\n.box7 .cn4 {width:37%; float:left;}\nlabel {font-size:12px; color:#43788d; font-family: 'lucida_grandebold';}\ninput[type=text] {width:200px;}\ninput[type=text].error, textarea.error {border:1px solid red;}\ntextarea {height:155px;resize: none;}\ninput[type=submit] {background:#ca5b3f; font-size:13px; line-height:32px; height:32px; padding:0 35px; margin-top:5px; border:0; color:#fff; font-family: 'lucida_granderegular';}\n.box7 .cn2 a {color:#262626;}\n.box7 .cn4 img {border:1px solid #457b91; border-radius:5px; margin-top:20px;}\n\n\n.box8 {margin: 25px;}\n.box8 ul {text-align:center; margin:0; padding:0;}\n.box8 ul li {width:100%;  font-size:14px; display:inline-block; font-family: 'BitterBold'; margin:3px 0;}\n.box8 ul li a {color:#457b91; display:inline-block;}\n\n/* book a table box */\n\n.box9 {margin-top:35px; display:none;}\n.box9 .top {height:36px; background: transparent url(../img/box9-bg-top.png) no-repeat top center; }\n.box9 .mid {background: transparent url(../img/box9-bg-mid.png) repeat-y 50% 0; min-height:72px;}\n.box9 .btm {height:36px; background: transparent url(../img/box9-bg-btm.png) no-repeat top center; position:relative; top:-4px;}\n\n.box9 .mCont {padding:10px 43px 0 57px;}\n.box9 h4.curved {position:relative; top:-15px; color:#fff; font-size:25px; font-family: 'BreeSerifRegular'; text-transform:uppercase; margin:0; text-align:center; text-rendering:auto; font-weight:normal;}\n.box9 span.subTitle {display:block; text-align:center; margin:5px 0; font-size:16px; color:#fff; font-family: 'BitterBold';}\n.box9 label {color:#fff; float:left;}\n.box9 label input {margin-top:3px;}\n.box9 label.q1 {width:25%; }\n.box9 label.q1 input[type=text] {width:30px;}\n.box9 label.q2 {width:75%;}\n.box9 label.q2 input[type=text] {width:145px;}\n.box9 label input[type=text] {width:200px;}\n.box9 textarea {width:200px; height:67px;}\n.box9 form {margin:0;}\n.box9 .submitHolder {text-align:center; margin-top:5px; margin-right:13px;}\n.box9 input[type=submit] {font-size:13px; color:#fff; background:#2f5e70; border-radius:5px; display:inline-block; padding:0 12px; margin:0; position:relative; z-index:2; }\n.box9 form#bkForm .error {background:#e3e3e3; border:1px solid #000;}\n\n/* blog comments */\n\n.comments {margin:55px 25px 0 15px;}\n.comments .cn1 img {float:left; margin:0 15px 15px 0;}\n.comments span.author {color:#ca5b3f; font-size:15px; font-family: 'BitterBold'; display:inline-block; padding-right:15px; }\n.comments span.date {font-size:12px; color:#457b91; font-family: 'lucida_grandebold'; display:inline-block; }\n.comments .cn1 a {color:#ca5b3f; font-size:12px; float:right; font-family: 'BitterBold'; display:block;}\n.comments p {line-height:15px; margin-top:7px;}\n.comments ol {list-style:none;}\n.comments label {color:#ca5b3f;}\n.comments textarea {width:98%;}\n.comments input[type=submit] {float:right; padding:0 10px;}\n\n/* footer */\n/* footer {background:transparent url(../img/footer-bg.jpg) no-repeat top center; background-size: 100% 100%; min-height:400px;} */\nfooter .copyright {margin-top:15px;}\nfooter .social-links li.subMenu ul{\n    top: -168px;\n    box-shadow: -3px -4px 13px 2px #5E7487;\n        -webkit-box-shadow: -3px -4px 13px 2px #5E7487;\n        -moz-box-shadow: -3px -4px 13px 2px #5E7487;}\n#footer {position:relative;background:transparent url(../img/footer-bg.jpg) repeat-x 49% 0; min-height:340px; margin:5px 0 0 0; padding:0 30px;}\n#footer .top { height:38px; background-size:100%; background: transparent url(../img/ft-box-top.png);background-size:100% 100%;}\n#footer .mid {background: transparent url(../img/ft-box-mid.png) repeat-y 50% 100%; min-height:192px; background-size:100%; text-align:center;}\n#footer .btm {background: transparent url(../img/ft-box-btm.png) no-repeat 50% 0; height:38px; background-size:100% 100%;}\n#footer .hdr1 {position:relative; top:-29px;}\n#footer h4 {color:#cee5e5; font-size:16px; font-family: 'Underwood','lucida_granderegular'; text-transform: uppercase; margin-bottom:7px;}\n#footer h4 span.lft {background:none;}\n#footer h4 span.rt {background:none;}\n#footer h4 span:before {content: \"\";}\n\n#footer table tr.social td a {display: inline-block;  width: 14%;  opacity: .8;}\n#footer table tr.social td a img:hover {opacity:1;}\n#footer table th {color:white;}\n#footer table td {padding:6px; color:black;}\n#footer table td a {color:black;}\n#footer table { margin: 0 auto; position: relative; top:18px; width:85%;}\n\n#footer2 hr { margin:20px auto; width:80%; color: #D5D5D5;}\n#footer2 ul {margin:0 auto;}\n#footer2 .social-links { list-style:none; margin:0 auto;}\n#footer2 .social-links a { width:10%; display:inline-block;}\n\n#footer .col1 { width:24%; display:inline-block; vertical-align:top;}\n#footer .col2 {float:left; width:47%;}\n#footer .col3 {float:left; width:26%;}\n#footer .col3 {float:left; width:26%;}\n\n\n#footer span.day {font-size:12px; color:#fff; font-family: 'lucida_grandebold'; display:inline-block; line-height:15px; width:80px;}\n#footer span.hour {font-size:12px; color:#fff; font-family: 'lucida_grandebold'; display:inline-block; line-height:15px; }\n#footer .col2 .brdr {background: transparent url(../img/ft-brd.png) repeat-y top center; padding:0 20px;}\n#footer .col2 .ftMap {float:left; padding:5px 3px 0 3px; background: transparent url(../img/map-shadow.png) no-repeat center 97%;}\n#footer .col2 iframe {border:0; margin:0; overflow:hidden;}\n#footer .col2 small a {color:#cee5e5 !important; font-size:12px; padding-left:5px; display:block; }\n#footer .col2 p {float:right; width:51%; font-family: 'lucida_grandebold'; font-size:12px; line-height:14px; margin:0; color:#fff; padding-top:7px; }\n#footer .col2 a {color:#fff;}\n\n#footer .col2 h4 {margin-left:20px;}\n#footer .data1 {color:#b0a18f; font-size:11px; padding:5px 0 0 0; display:block;}\n#footer .lftMrg {padding-left:20px;}\n#footer .lftMrg a {color:#fff; font-size:12px; line-height:18px; margin-bottom:10px; display:block;}\n#footer .footNotes {margin:10px auto;position:absolute; left:0; right:0; bottom:0}\n.footNotes ul.social {width:23%; float:left; }\n.footNotes p {width:100%; float:right; font-size:12px; color:#000000; padding:9px 0 0 0; text-align:center;}\n\n/* book a table box < 959px and page without sidebar */\n\n.ipad-box9 {background: transparent url(../img/ipad-box9-bg.jpg); padding-bottom:10px;}\n.ipad-box9 label {display:inline-block; font-family: 'lucida_grandebold'; font-size:12px; color:#fff;}\n.ipad-box9 h4 {color:#fff; font-size:16px; font-family: 'BitterBold'; margin:0; padding:20px 0; text-align:center; text-rendering:auto; font-weight:normal;}\n.ipad-box9 .mCont {width:500px; margin:0 auto; padding:0;}\n\n.ipad-box9 label {color:#fff; float:left; width:228px;}\n.ipad-box9 label.q3 {padding-left:31px;}\n.ipad-box9 label input {margin-top:3px;}\n.ipad-box9 label.q1 {width:57px; }\n.ipad-box9 label.q1 input[type=text] {width:30px;}\n.ipad-box9 label.q2 {width:172px; padding-left:30px;}\n.ipad-box9 label.q2 input[type=text] {width:145px;}\n.ipad-box9 label input[type=text] {width:200px;}\n.ipad-box9 textarea {width:200px; height:50px;}\n.ipad-box9 form {margin:0;}\n.ipad-box9 .submitHolder {text-align:center; margin:0; width:270px; float:left; padding-top:30px;}\n.ipad-box9 input[type=submit] {font-size:13px; color:#fff; background:#2f5e70; border-radius:5px; display:inline-block; padding:0 12px; margin:0; position:relative; z-index:2; }\n\n/* hide elements from resolution > 959px */\n.iphoneHeadline {display:none;}\n.topBar {display:none;}\n.ipad-box9 {display:none;}\n.iphoneFooter {display:none;}\n\n\n/** media queries, adjustments **/\n@media (max-width:1200px) {\n\n    #mainContent .location-info {}\n    #mainContent .location-info h2 { font-size:30px; }\n    #mainContent {margin-bottom:0;;}\n}\n@media (max-width:1080px) {\n    #header {padding:0 8%;}\n    .container {padding: 0 8%;}\n    #mainContent .location-info h2 { font-size:24px; margin:20px auto 0 auto; }\n    #mainContent .location-info h4 { font-size:16px; }\n\n}\n@media (max-width:979px) {\n    #header .topData { margin-right:102px;}\n    #mainContent .content {margin-bottom:40px;}\n\n    .row {margin-left: -15px;}\n    .slider7 .anythingSlider-default { background:none; }\n    .slider7 a.link1 {background: #cc6633; padding:4px 28px; height:auto;width:7%;display:block;bottom:114px;right:0;left:0;border-radius:5px;margin:0 auto; }\n}\n@media (max-width: 959px) {\n    body {\n        padding:0;\n        background-size:cover;\n    }\n    .container {}\n\n    .topBar {\n        display:block;\n        height:28px;\n        position:relative;\n        z-index:3;\n    }\n    .topBar a.bookTable {width:45px; padding:27px 10px 0 18px; text-align:center; height:69px; display:block; background: transparent url(../img/ipad-book-table.png) no-repeat top center; position:absolute; right:10%; top:11px; font-family: 'LeagueGothicRegular'; font-size:20px; text-transform: uppercase; display:block; text-shadow:0 1px 2px #050305; color:#fff;}\n    .topBar .backg {background: transparent url(../img/ipad-topbar.png) repeat-x; height:28px; position:relative; z-index:2;}\n\n    .login a.bookTable {\n        display:none;\n    }\n    .login {position:static;}\n    .login ul {display:none;}\n\n   #header .topData {display:none;}\n   .topData address {position:relative; top:-54px; width:100%; margin:0;}\n   .topData ul.social {margin:0;}\n\n\n    #header .logoContainer { width:100%; text-align:center; margin:0 auto; float:none;}\n\n    .column2 {display:none;}\n\n    .c2btm {display:none;}\n\n    #menuContainer {background:none; height:auto;}\n    #menuContainer .menuBg {display:none;}\n    ul.mainMenu {width:100%; text-align:center; float:none; display:block; min-width:100%;}\n    ul.mainMenu li {background:black; padding:0 10px; float:none; margin:0 auto; display:inline-block;}\n    ul.mainMenu > li:last-child {background: black;}\n    ul.mainMenu > li:first-child {display:none;}\n    \n\n    ul.mainMenu li a {margin:0; display:block; width:100%;line-height:25px; padding:10px 0 0 0;}\n    ul.mainMenu .addTxt {display:block; font-size:12px; text-transform: none; font-family: 'Georgia'; padding: 0 0 10px 0; }\n\n    ul.mainMenu ul {position:absolute; top:66px; left:0; padding:10px 2px; min-width:128px;}\n    ul.mainMenu ul li {float:none; background:none; white-space:nowrap; margin:2px 0;}\n    ul.mainMenu ul a {padding:0 5px; }\n\n    ul.mainMenu li ul {left:0; width:100%; padding:0;}\n\n    .home #mainContent {margin-top:18px;min-height:0;;}\n    .location #mainContent,.about #mainContent {}\n    .contact #mainContent {\n        min-height:0;}\n    #mainContent .copy {margin:20px 0;}\n    #mainContent.sliderBack {background: transparent url(../img/ipad-slider1-shadow.png) no-repeat center 199px;}\n    #mainContent.fullWidth {background: none;}\n\n    .col-golden-sm,.col-golden-lg {width:100%;}\n    .column1 {width:100%;}\n    .slider1Back {background:none; width:766px; left:-41px;}\n    .slider1 .frame1 {left:119px;}\n    .slider2 {padding:10px 85px 0 85px;}\n    .slider2 a.link1 {right:32px;}\n\n    .blogContent {margin:0 45px;}\n    footer .social-links {display:initial !important;}\n    #footer { margin-top:50px; background:transparent url(../img/ipad-footer-bg.jpg) repeat-x 49% 100%;}\n    /* #footer .hdr1 {display:none;} */\n/*     #footer .top, #footer .mid, #footer .btm {\n    background: none;\n    padding: 0;} */\n    #footer .mid table th {color:white;}\n    #footer .mid table {width:98%;}\n    #footer .mid table .social a {width:16%;}\n    #footer .col3 {display:none;}\n    #footer .col1 {width:80%; padding:0 10%; }\n    #footer .col2 {width:94%; padding:0 3%;}\n    #footer .col1 {background:transparent url(../img/ipad-hours-bg.png) no-repeat top center; min-height:223px; margin-bottom:30px;}\n    #footer span.day {color:#262626; width:39%; font-family: 'lucida_granderegular'; font-size:16px; line-height:23px;}\n    #footer span.hour {color:#262626; width:59%; text-align:right; font-family: 'lucida_granderegular'; font-size:16px; line-height:23px;}\n    #footer h4 {text-align:center; text-transform:none;}\n    #footer .col1 h4 {position:relative; top:-43px; margin:0;}\n    #footer .col2 h4 {margin:0 0 15px 0;}\n    #footer h4 span:before {content: \"\\00a0\";}\n\n    #footer .col2 p {color:#262626; width:100%; float:none; padding-left:7px; margin-top: 15px;}\n    #footer .col2 p br {display:none;}\n    #footer .col2 p a {color:#262626; padding-left:6px;}\n    .footNotes {display:none;}\n\n    #footer h4  {background: transparent; height:29px; text-align:center; font-family: 'BitterBold'; font-size:20px; line-height:22px;  margin:20px 0 0 0; color:#477d93}\n    #footer h4 span.lft {background: transparent url(../img/orm1-left.png) no-repeat top center; width:56px; padding-right:10px; height:29px; display:inline-block;}\n    #footer h4 span.rt {background: transparent url(../img/orm1-rt.png) no-repeat top center; width:56px; height:29px; padding-left:10px; display:inline-block;}\n\n    #footer .col2 .ftMap {float:none; background:none;}\n    #footer .col2 iframe {width:100%; height:200px !important; padding:0; background:0; border:2px solid #cccccc; border-radius:5px;}\n    #footer .col2 small a {color:#cd5d40 !important; font-family: 'lucida_grandebold';}\n\n    /* 2_home2 */\n\n    .hdr4 {background: transparent url(../img/hdr1-ribbon.png) no-repeat top center; height:67px; text-align:center; font-family: 'BitterBold'; font-size:21px; line-height:44px; margin:5px 0; color:#fff;}\n\n    .slider7Back {background:none;height:400px;}\n    .slider7 {height:340px;}\n    .slider7 .anythingSlider-default {height:340px;padding: 0 30px; background:none;}\n    .slider7 span.arrow.back a, .slider7 span.arrow.forward a {bottom:67%;}\n    .slider7 a.link1 {right:10px; background:#cc6633; border-radius:5px; height:28px; width:auto; position:static; display:inline-block; padding:0 20px;}\n    .slider7 .third .shadd {background:none;}\n    /* .slider7 .third {width:30%; margin:1%;} */\n\n    .slider8 {width:100%; height:820px; background: none; margin-bottom:25px; text-align:center;}\n    .slider8 .anythingWindow, .slider8 .anythingSlider  {height:730px !important;}\n    .slider8 .slider8Set {margin-left:0;}\n    .slider8 .slider8Set .shadd {margin-right:5px;}\n    .slider8 a.link1 {right:10px; background:#cd5d40; border-radius:5px; height:28px; width:auto; position:static; display:inline-block; padding:0 20px;}\n    .slider8 span.arrow.back a, .slider8 span.arrow.back a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-lft.png) no-repeat top center; bottom:-28px; top:auto; left:50px;}\n    .slider8 span.arrow.forward a, .slider8 span.arrow.forward a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-rt.png) no-repeat top center; bottom:-28px; top:auto; right:50px;}\n\n    .slider6 {width:560px; margin:0 auto;}\n    .slider6 .sliderContent {padding-left:0px;}\n    .slider6Back {background:none;}\n\n    .slider6 .nivo-directionNav {top:-127px;}\n    .slider6 .frame1 {top:-25px; left:-12px; max-width:582px;}\n    .slider6Back, .slider6 .sliderContent, .slider6 .slider-wrapper {height:200px;}\n    .slider6 a.nivo-nextNav {right:-31px;}\n    .slider6 a.nivo-prevNav {left:-26px;}\n    .slider6 .ribTxt {left:-11px; top:0;}\n    .slider6 .ribTxt span {font-size:11px;}\n\n    /* 3_about */\n    .slider3 {background:none;}\n    .slider3 .anythingSlider-default {padding:0 10px 0 30px;}\n    .slider3 span.arrow.back a, .slider3 span.arrow.back a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-lft.png) no-repeat top center; bottom:110px; top:auto; left:50px;}\n    .slider3 span.arrow.forward a, .slider3 span.arrow.forward a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-rt.png) no-repeat top center; bottom:110px; top:auto; right:50px;}\n    .slider3 .third {text-align:center;}\n    .slider3 .third .mrgThird {padding:0;}\n    .slider3 .setSlider3 .tx2 {padding:0;}\n\n    /* 4_menucard1 */\n    .slider4 .anythingSlider-default { padding:10px 110px 0 130px;}\n    .slider4 .forward a {right:53px;}\n    .slider4 .pagesNr {right:76px;}\n    .typo {margin:0 60px 0 50px;}\n\n    /* 5_menucard2 */\n    .slider5 .anythingSlider-default {padding-left:15px; padding-right:15px;}\n    .slider5 .pagesNr {position:static; width:100%; background:transparent; margin-top:27px;}\n    .slider5 .pagesNr span {background:#477D93; }\n    .slider5 .pagesNr span.nr1 {border-top-left-radius:5px; border-bottom-left-radius:5px; padding:2px 0 2px 5px;}\n    .slider5 .pagesNr span.nr2 {border-top-right-radius:5px; border-bottom-right-radius:5px; padding:2px 5px 2px 0;}\n    .slider5 span.arrow.back a, .slider5 span.arrow.back a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-lft.png) no-repeat top center; bottom:-50px;}\n    .slider5 span.arrow.forward a, .slider5 span.arrow.forward a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-rt.png) no-repeat top center; bottom:-50px;}\n\n    /* 6_contact */\n    .box6 {text-align:center;}\n    .box6 p {text-align:left;}\n    .box7 {margin:0 40px;}\n    .hdr5 {margin-left:40px;}\n\n    /* 8_single */\n    .comments {padding-left:40px; padding-right:40px;}\n\n}\n\n@media (max-width:768px) {\n    #mainContent .locationInfo {margin-bottom:0;}\n    #mainContent .locationInfo table th {width:1%;}\n    #mainContent .locationInfo table td {width:2%;}\n    #mainContent .locationInfo ul .social-links a {width:7%;}\n    #mainContent .locationInfo ul li {padding:6px 0;}\n    #header {padding:0;}\n    .container {padding:0 2%;}\n}\n@media (max-width:729px) {\n    .contact #mainContent {}\n    .container {width:auto; padding:0 20px;}\n    .location #mainContent,.about #mainContent {}\n    ul.mainMenu li { margin:10px 0; padding:0; width:100% !important; display:block;}\n    ul.mainMenu li a { line-height:18px;}\n    ul.mainMenu ul {display:block; position:static; box-shadow:none; padding-top:0;}\n    ul.mainMenu ul a {padding:6px 0; display:block;}\n    ul.mainMenu .addTxt {padding-bottom:6px;}\n    ul.mainMenu li ul {position:relative; top:0;left:0;padding:0;}\n\n    .topData ul.social {display:none;}\n    .topData address {top:-10px;}\n    #header .logoContainer a { margin-top:24px; margin-bottom:10px;}\n    .topBar a.bookTable {background: transparent url(../img/iphone-book-table.png) no-repeat top center; height:60px; width:53px; font-size:16px; line-height:18px; top:20px; padding:17px 0 0 0; right:5%;}\n    #header .topData {margin-top:15px;}\n    .topData address {top:-6px; font-size:12px; display:inline-block; width:228px;}\n\n    #mainContent.sliderBack {background:none;}\n    #mainContent.fullWidth {background:none;}\n\n    \n\n    .slider1Back {width:100%; background:none; left:auto; height:auto;}\n    .slider1 {width:100%; }\n    .slider1 .sliderContent {padding:0; height:auto;}\n    .slider1 .slider-wrapper {height:auto;}\n\n    .slider1 .frame1 {display:none;}\n\n    .slider1 .nivo-controlNav {padding:0; top:-50px;}\n    .slider1 .nivo-directionNav {top:0;}\n    .slider1 .nivo-directionNav a {background:transparent url(../img/slider1-controls.png) no-repeat; width:56px; height:66px; display:block; z-index:9; text-indent:-9999px; top:0;}\n    .slider1 a.nivo-prevNav {width:30px; height:28px; background: transparent url(../img/ipad-slider5-lft.png) no-repeat top center; bottom:15px; top:auto; left:50px;}\n    .slider1 a.nivo-prevNav:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-lft.png) no-repeat top center; bottom:15px; top:auto; left:50px;}\n    .slider1 a.nivo-nextNav {width:30px; height:28px; background: transparent url(../img/ipad-slider5-rt.png) no-repeat top center; bottom:15px; top:auto; right:50px;}\n    .slider1 a.nivo-nextNav:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-rt.png) no-repeat top center; bottom:15px; top:auto; right:50px;}\n\n\n    .hdr1 {background: none; height:auto; color:#ca5b3f; font-size:19px; line-height:36px;}\n    .hdr2 {font-size:16px; line-height:24px;}\n    .hdr2 span.lft {display:none;}\n    .hdr2 span.rt {display:none;}\n    .hdr4 {background: none; color:#ca5b3f; height:53px; font-size:19px; line-height:36px;}\n\n\n    .slider2 .anythingWindow, .slider2 .anythingSlider, .slider2 .anythingSlider .panel {height:750px !important;}\n    .slider2 {padding:10px 5px 0 5px; background:none; height:830px; text-align:center;}\n\n    .slider2 span.arrow.back a, .slider2 span.arrow.back a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-lft.png) no-repeat top center; bottom:15px; top:auto; left:1px;}\n    .slider2 span.arrow.forward a, .slider2 span.arrow.forward a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-rt.png) no-repeat top center; bottom:15px; top:auto; right:1px;}\n    .slider2 a.link1 {right:10px; background:#cd5d40; border-radius:5px; height:28px; width:auto; position:static; display:inline-block; padding:0 20px;}\n\n    .setSlider2 .third {width:100%; margin-bottom:15px;}\n\n    .threeColumnGallery {text-align:center;}\n    .threeColumnGallery .third, .threeColumnGallery .third:nth-child(3) {width:100%; background:transparent url(../img/divider1-bg.png) repeat-x 50% 100%; margin-bottom:10px;}\n    .third {width:100%;}\n    .third .mrgThird {padding:7px;}\n\n    #footer .col1 {background: transparent url(../img/iphone-hours-bg.png) no-repeat center 80%; min-height:197px;}\n    #footer span.day {font-size:14px; line-height:17px;}\n    #footer span.hour {font-size:14px; line-height:17px;}\n    .blogContent {margin:0; text-align:center;}\n    .blogContent img {width:100%; text-align:left;}\n    .blogContent p {font-size:13px; line-height:20px; color:#262626; margin:10px 0 10px 0;  text-align:left;}\n    .blogContent a {background: #ca5b3f; padding:0 25px; line-height:32px; height:32px; margin:8px 0 2px 0; font-size:13px; color:#fff; display:inline-block;}\n    .blogTitle {text-align:left;}\n\n    .blogTitle {padding:0 5px;}\n    .blogTitle h2 {font-size:11px; line-height:12px; }\n    .blogTitle .category {font-size:11px; padding-top:10px;}\n    .blogTitle .dates {display:none;}\n\n\n    .slider3 {padding:0; background:none; height:1350px; text-align:center;}\n    .slider3 .anythingWindow, .slider3 .anythingSlider, .slider3 .anythingSlider .panel  {height:1300px !important;}\n\n    .slider3 span.arrow.back a, .slider3 span.arrow.back a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-lft.png) no-repeat top center; bottom:15px; top:auto; left:50px;}\n    .slider3 span.arrow.forward a, .slider3 span.arrow.forward a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-rt.png) no-repeat top center; bottom:15px; top:auto; right:50px;}\n    .slider3 .anythingSlider-default {padding:0;}\n    .setSlider3 .third .mrgThird {padding:12px;}\n    .setSlider3 .tx2 {display:block; line-height:14px;}\n    .setSlider3 .third .shadd { }\n\n    .typo {margin:0 20px;}\n\n    #footer h4 span.lft {display:none;}\n    #footer h4 span.rt {display:none;}\n    #footer .footNotes {display:block; margin-left:0;}\n    #footer .footNotes p {display:none;}\n    #footer .footNotes ul.social {width:100%; text-align:center; margin: 0;}\n    #footer ul.social a {background: transparent url(../img/iphone-socialicons.png) no-repeat top center; width:52px; height:52px; margin-top: 45px;}\n    #footer .col2 .ftMap {height:230px;}\n\n    #footer .col1 {background:none;}\n    #footer .col2 {width:100%; padding:0;}\n    #footer span.day {width:100%; display:block; text-align:center;}\n    #footer span.hour {width:100%; display:block; text-align:center; margin-bottom:5px;}\n\n    #footer ul.social a.fb {background-position:-5px -2px;}\n    #footer ul.social a.fb:hover {background-position:-5px -78px;}\n    #footer ul.social a.twit {background-position:-70px -2px;}\n    #footer ul.social a.twit:hover {background-position:-70px -78px;}\n    #footer ul.social a.rss {background-position:-134px -2px;}\n    #footer ul.social a.rss:hover {background-position:-134px -78px;}\n    #footer ul.social a.mail {background-position:-198px -2px;}\n    #footer ul.social a.mail:hover {background-position:-198px -78px;}\n\n    .slider4 {background:none; height:1186px;}\n    .slider4 .anythingWindow, .slider4 .anythingSlider {height:1150px !important;}\n    .slider4 .anythingSlider-default {padding-left:5px; padding-right:5px;}\n    .slider4 .forward a, .slider4 .forward a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-rt.png) no-repeat top center; bottom:35px; top:auto; right:5px;}\n    .slider4 .slider4Set {text-align:center;}\n    .slider4 .slider4Set .cn1 {width:100%;}\n    .slider4 .slider4Set .cn2 {width:100%;}\n    .slider4 .slider4Set .cn3 {width:100%;}\n    .slider4 #externalNav a {margin-left:4px; margin-right:4px;}\n    .slider4 .pagesNr {right:50%; margin-right:-17px;}\n    .slider4 .slider4Set .tx2 {text-align: center; padding-top:3px;}\n    .slider4 hr.divider3 {margin:18px 0;}\n\n    .slider5 {background:none; height:auto;}\n    .slider5 .anythingWindow, .slider5 .anythingSlider {height:1200px !important;}\n    .slider5 .anythingSlider-default {padding:0;}\n    .slider5 .half1 {width:45%; margin-right:5%;}\n    .slider5 .half2 {width:45%; margin-right:5%; margin-left:0;}\n    .slider5 .slider5Set .cn1 {width:100%; text-align:center; margin-bottom:5px;}\n    .slider5 .slider5Set .cn2 {width:100%; text-align:center;}\n    .slider5 .slider5Set .tx2 {text-align: center; display: block; float: none;}\n\n    .slider5 #externalNav a {margin:2px 4px;}\n    .slider5 .hdr2 span.lft {display:none;}\n    .slider5 .hdr2 span.rt {display:none;}\n\n    .box5 {margin-left:10px; margin-right:10px;}\n    .box6 p {text-align:center;}\n    .hdr5 {margin-left:30px;}\n    .box7 {margin:0 30px;}\n    .box7 .cn1 {width:100%;}\n    .box7 .cn2 {margin-top:30px; width:100%; text-align:center;}\n    .box7 .cn3 {margin-top:30px; width:100%; text-align:center;}\n    .box7 .cn4 {display:none;}\n    .box7 .cn3 br { }\n    input[type=\"text\"] {width:100%;}\n    textarea {width:100%;}\n\n    .slider6 {width:100%; margin:0 auto;}\n    .slider6 .sliderContent {padding:0;}\n    .slider6Back {background:none;}\n    .slider6 .frame1 {display:none;}\n\n\n    .ribTxt {display:none;}\n    .slider6 a.nivo-prevNav {display:none;}\n    .slider6 a.nivo-nextNav {display:none;}\n\n    .slider7Back {height:1100px;}\n    .slider7 {background:none; height:1100px;}\n    .slider7 .anythingWindow, .slider7 .anythingSlider, .slider7 .anythingSlider .panel  {height:1000px !important;}\n    .slider7 .anythingSlider-default {padding:0;}\n    .slider7 .third {width:100%;}\n    .slider7 .third .shadd {background: transparent url(../img/slider7-photo-shadow.png) no-repeat bottom center;}\n    .setSlider7 .third .mrgThird {padding:0;}\n    .slider7 span.arrow.back a, .slider7 span.arrow.back a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-lft.png) no-repeat top center; bottom:-27px; top:auto; left:6%;}\n    .slider7 span.arrow.forward a, .slider7 span.arrow.forward a:hover {width:30px; height:28px; background: transparent url(../img/ipad-slider5-rt.png) no-repeat top center; bottom:-27px; top:auto; right:6%;}\n\n    .slider8 {width:100%; height:2200px; background: none; margin-bottom:25px; text-align:center;}\n    .slider8 .anythingWindow, .slider8 .anythingSlider  {height:2100px !important; padding:0;}\n    .slider8 .slider8Set {margin-left:0;}\n    .slider8 .slider8Set .shadd {width:100%; }\n    .slider8 a.link1 {right:10px; background:#cd5d40; border-radius:5px; height:28px; width:auto; position:static; display:inline-block; padding:0 20px;}\n    .slider8 span.arrow.forward a {right:35px;}\n    .slider8 span.arrow.back a {left:35px;}\n\n    .slider8 span.arrow.back a, .slider8 span.arrow.back a:hover {left:6%;}\n    .slider8 span.arrow.forward a, .slider8 span.arrow.forward a:hover {right:6%;}\n\n    p.full {margin-left:30px; margin-right:30px;}\n\n    .comments {padding-left:5px; padding-right:5px; margin:0;}\n\n    .ipad-box9 .mCont {width:88%; margin:0; margin-left:12%;}\n    .ipad-box9 label {width:170px;}\n    .ipad-box9 label input[type=\"text\"] {width:144px;}\n    .ipad-box9 label.q2 {width:170px; padding-left:0;}\n    .ipad-box9 label.q2 input[type=\"text\"] {width:144px;}\n    .ipad-box9 label.q3 {padding-left:0;}\n    .ipad-box9 .submitHolder {text-align:right; width:165px;}\n\n\n    .iphoneHeadline {display:block; background: transparent url(../img/iphone-headline.png) repeat-x; height:235px; margin:35px 0 15px 0; text-align:center;}\n    .iphoneHeadline h1 {height:46px; margin:54px 0 0 0; display:inline-block; width:100%; font-size:32px; color:#fff; font-family: 'BreeSerifRegular'; overflow:hidden;}\n    .iphoneHeadline h1 span.lft {background: transparent url(../img/iphone-headline-lft.png) no-repeat top center; width:51px; height:25px; display:inline-block;padding-right:5px;}\n    .iphoneHeadline h1 span.rt {background: transparent url(../img/iphone-headline-rt.png) no-repeat top center; width:51px; height:25px; display:inline-block;padding-left:5px;}\n    .iphoneHeadline span.ln2 {height:70px; display:inline-block; width:100%; font-family: 'BitterBold'; text-shadow: 3px 3px 0 #376273; font-size:17px; color:#fff;}\n    .iphoneHeadline span.ln3 {display:inline-block; width:90%; margin:0 5%; font-family: 'BitterBold'; font-size:12px; line-height:15px; color:#fff;}\n\n}\n\n\n/*contact form*/\n.contactForm span.error {\n    display:block;\n    color: red;\n    position:relative;\n    top: -8px;\n}\n\n.cn1.contact {\n    min-height: 300px;\n}\n\n.box9 .form-message, .ipad-box9 .form-message {\n    color: #fff;\n}\n\n.box9 form#bkForm span.error{\n    border:0;\n    background: transparent;\n    color: red;\n    font-weight: bold;\n}\n\n.ipad-box9 .contactForm label {position: relative}\n.ipad-box9 .contactForm span.error{\n    color: #000;\n    position: absolute;\n    top: 50px;\n}\n\n@media (max-width:558px) {\n    #mainContent .locationInfo {margin-bottom:0; width:100%;}\n    #mainContent .locationInfo table {width:90%;}\n    #mainContent .locationInfo table td {width:3%;}\n    #mainContent .locationInfo ul .social-links a {width:10%;}\n    #mainContent .locationInfo ul li {padding:6px 0;}\n    }\n@media (max-width:517px) {\n    #header h1 {\n        left:0;\n        font-size:20px;\n    }\n    #header .logoContainer a {\n        width:22%;\n        margin:10px 0;\n    }\n    #header .logoContainer a img {\n        max-width:100%;\n    }\n    .social-links > li > a {height:60px;width:60px;}\n    ul.mainMenu li a {\n        padding: 5px 0;\n        line-height:normal;\n    }\n\n}\n@media (max-width:470px) {\n    #header, #footer, #menuContainer {\n        padding:0;\n    }\n    #header h1 {\n        left:0;\n        font-size:16px;\n    }\n    #header .logoContainer a {\n        width:22%;\n    }\n    #header .logoContainer a img {\n        max-width:100%;\n    }\n\n}\n\n\n@media (max-width:400px) {\n    /* #mainContent .locationInfo {min-height:326px;} */\n    #mainContent .locationInfo .contact .row h3 {font-size:18px;padding:0 20px;}\n    #mainContent .locationInfo table {width:100%;}\n    #mainContent .locationInfo table td {width:4%;font-size:12px;}\n   #mainContent .locationInfo ul .social-links a {width:14%;}\n    #mainContent .locationTitle h2 {font-size:17px;}\n    #mainContent .locationInfo th {font-size:14px;}\n    #mainContent .locationTitle { background-size: 88% 76%;}\n    #mainContent .locationInfo ul li p { font-size:12px;}\n}\n@media (max-width:350px) {\n    ul.mainMenu li a {\n        font-size:14px;\n    }\n    .social-links > li > a {height:40px;width:40px;}\n\n}\n",
-			"file": "public/css/stylesprebuild.css",
-			"file_size": 69318,
-			"file_write_time": 130831801337772991,
+			"file": "la/index.html",
 			"settings":
 			{
-				"buffer_size": 69318,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/html\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=1, minimum-scale=0.5, maximum-scale=1.0\">\n\n    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n    <title>Spitz - Home of the Döner Kebab |  Los Angeles: Little Tokyo, Loz Feliz, Eagle Rock  |  Mediterranean Street Food</title>\n    <link href=\"bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link href=\"bootstrap/css/bootstrap-responsive.min.css\" rel=\"stylesheet\">\n    <link href=\"css/flexslider.css\" rel=\"stylesheet\">\n    <link href=\"css/style.css\" rel=\"stylesheet\">\n    <link rel=\"icon\" type=\"image/png\" href=\"favicon-32x32.png\" sizes=\"32x32\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"favicon-16x16.png\" sizes=\"16x16\" />\n\n\n    <!--[if lte IE 8]>\n    	<style>\n            .slider6 .ribTxt span {\n                -ms-filter: \"progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678,sizingMethod='auto expand')\";\n                color:#fff;\n            }\n            .slider6 .ribTxt {top:-37px; left:15px; }\n    	</style>\n    <![endif]-->\n    \n\n</head>\n<body class=\"home\">\n<div id=\"header\">\n        <div class=\"logoContainer\">\n            <a href=\"index.html\"><img src=\"img/logo.png\" alt=\"Spitz - Home of the Döner Kebab\"></a>\n            <h1>Mediterranean Street Food<br/>Craft Beer - Sangria</h1>\n\n        </div>\n\n        <div class=\"topData hidden-phone\">\n            <ul class=\"social-links\">\n                <li class=\"subMenu\">\n                    <a href=\"#\"><img src=\"img/fb_300.png\"></a>\n                    <ul>\n                        <li><a target=\"_blank\" href=\"https://www.facebook.com/SpitzLittleTokyo\">Little Tokyo</a></li>\n                        <li><a href=\"https://www.facebook.com/SpitzLosFeliz\" target=\"_blank\">Los Feliz</a></li>\n                        <li><a href=\"https://www.facebook.com/SpitzEagleRock\" target=\"_blank\">Eagle Rock</a></li>\n                        <li><a href=\"https://www.facebook.com/SpitzStudioCity\" target=\"_blank\">Studio City</a></li>\n                    </ul>\n                </li>\n                <li class=\"subMenu\">\n                    <a href=\"#\"><img src=\"img/twit_300.png\"></a>\n                    <ul>\n                        <li><a target=\"_blank\" href=\"http://www.twitter.com/SpitzLitTokyo\">Little Tokyo</a></li>\n                        <li><a href=\"http://twitter.com/SpitzLosFeliz\" target=\"_blank\">Los Feliz</a></li>\n                        <li><a href=\"http://twitter.com/SpitzEagleRock\" target=\"_blank\">Eagle Rock</a></li>\n                        <li><a href=\"http://www.twitter.com/SpitzStudioCity\" target=\"_blank\">Studio City</a></li>\n                    </ul>\n                </li>\n                <li><a href=\"http://instagram.com/spitzpics\" target=\"_blank\"><img src=\"img/insta_300.png\"></a></li>\n            </ul>\n\n\n        </div>\n\n        <!-- <div class=\"clearfix\"></div> -->\n    <!-- container end -->\n</div>\n<!-- header end -->\n\n<div id=\"menuContainer\" class=\"clearfix\">\n    <!-- Flexslider Mobile-->\n    <div class=\"flexslider-mobile visible-phone\">\n      <ul class=\"slides\">\n        <li>\n            <img src=\"img/slider/home/mobile/salad.jpg\" />\n        </li>\n        <li>\n            <img class=\"lazy focusTop\" data-src=\"img/slider/home/mobile/sangria.jpg\" />\n        </li>\n        <li>\n            <img class=\"lazy\" data-src=\"img/slider/home/1920/3.jpg\" />\n        </li>\n        <li>\n            <img class=\"lazy\" data-src=\"img/slider/home/1920/4.jpg\" />\n        </li>\n        <li>\n             <img class=\"lazy\" data-src=\"img/slider/home/1920/5.jpg\" />\n        </li>\n        <li>\n             <img class=\"lazy\" data-src=\"img/slider/home/1920/6.jpg\" />\n        </li>\n        <li>\n             <img class=\"lazy focusTop\" data-src=\"img/slider/home/1920/7.jpg\" />\n        </li>\n        <li>\n             <img class=\"lazy\" data-src=\"img/slider/home/1920/8.jpg\" />\n        </li>\n        <li>\n             <img class=\"lazy focusTop\" data-src=\"img/slider/home/1920/9.jpg\" />\n        </li>\n      </ul>\n    </div>\n    <p class=\"menuBg\"></p>\n    <div class=\"container\">\n        <ul class=\"mainMenu\">\n            <li><a href=\"about.html\">About<span class=\"addTxt\">We're Real Foodies</span></a></li>\n            <li class=\"subMenu hidden-desktop\">\n              <a class=\"hidden-phone\" href=\"#\">Order <span class=\"addTxt\">Order Yummy Spitz Online!</span></a>\n              <a class=\"visible-phone\" href=\"#\">Order Online</a>\n                <ul>\n                    <li><a href=\"http://eat24hrs.com/restaurants/16728\" target=\"_blank\">Little Tokyo</a></li>\n                    <li><a href=\"http://eat24hrs.com/restaurants/19444\" target=\"_blank\">Los Feliz</a></li>\n                    <li><a href=\"http://eat24hrs.com/restaurants/16727\" target=\"_blank\">Eagle Rock</a></li>\n                    <li><a href=\"http://eat24hrs.com/restaurants/27444\" target=\"_blank\">Studio City</a></li>\n                </ul>\n            </li>\n            \n           <li class=\"subMenu\"><a href=\"#\">Menus/Catering<span class=\"addTxt hidden-phone\">Our Real Tasty Food</span></a>\n               <ul>\n                   <li><a href=\"menu/lunch-dinner.pdf\">Lunch/Dinner</a></li>\n                   <li><a href=\"menu/brunch.pdf\">Brunch</a></li>\n                   <li><a href=\"menu/catering.pdf\">Catering</a></li>\n               </ul>\n           </li>\n            <li class=\"subMenu\"><a href=\"#\">Locations<span class=\"addTxt hidden-phone\">Find Your Favorite Spitz</span></a>\n                <ul>\n                    <li><a href=\"littletokyo.html\">Little Tokyo</a></li>\n                    <li><a href=\"losfeliz.html\">Los Feliz</a></li>\n                    <li><a href=\"eaglerock.html\">Eagle Rock</a></li>\n                    <li><a href=\"studiocity.html\">Studio City</a></li>\n                    <li><a href=\"http://www.spitzslc.com\" target=\"_blank\">Salt Lake City</a></li>\n        \n                </ul>\n            </li>\n            <li><a href=\"contact.html\">Contact<span class=\"addTxt hidden-phone\">Get & Stay in Contact</span></a></li>\n        </ul>\n\n        <div class=\"order hidden-phone hidden-tablet\">\n          <ul>\n            <li class=\"subMenu\"><a class=\"order\" href=\"#\">Order Online</a>\n              <ul>\n                <li><a href=\"http://eat24hrs.com/restaurants/16728\">Little Tokyo</a></li>\n                <li><a href=\"http://eat24hrs.com/restaurants/19444\">Los Feliz</a></li>\n                <li><a href=\"http://eat24hrs.com/restaurants/16727\">Eagle Rock</a></li>\n                <li><a href=\"http://eat24hrs.com/restaurants/27444\">Studio City</a></li>\n              </ul>\n            </li>\n          </ul>\n               \n           <!--  <a href=\"order.html\" class=\"order\" id=\"bkTable\">Order Online</a> -->\n        </div>\n        <div class=\"clearfix\"></div>\n    </div>\n</div>\n\n<div id=\"mainContent\">\n    <div class=\"container\">\n        <!-- Flexslider Desktop-->\n        <div class=\"flexslider hidden-phone\">\n          <ul class=\"slides\">\n            <li>\n                <img src=\"img/slider/home/1920/1.jpg\" />\n            </li>\n            <li>\n                <img class=\"lazy focusTop\" data-src=\"img/slider/home/1920/2.jpg\" />\n            </li>\n            <li>\n                <img class=\"lazy\" data-src=\"img/slider/home/1920/3.jpg\" />\n            </li>\n            <li>\n                <img class=\"lazy\" data-src=\"img/slider/home/1920/4.jpg\" />\n            </li>\n            <li>\n                 <img class=\"lazy\" data-src=\"img/slider/home/1920/5.jpg\" />\n            </li>\n            <li>\n                 <img class=\"lazy\" data-src=\"img/slider/home/1920/6.jpg\" />\n            </li>\n            <li>\n                 <img class=\"lazy focusTop\" data-src=\"img/slider/home/1920/7.jpg\" />\n            </li>\n            <li>\n                 <img class=\"lazy\" data-src=\"img/slider/home/1920/8.jpg\" />\n            </li>\n            <li>\n                 <img class=\"lazy focusTop\" data-src=\"img/slider/home/1920/9.jpg\" />\n            </li>\n          </ul>\n        </div>\n    </div>\n</div>\n\n\n\n<footer>\n    <center>\n   \n    <ul class=\"social-links hidden-tablet hidden-desktop\">\n        <li class=\"subMenu\">\n            <a href=\"#\"><img src=\"img/fb_300.png\"></a>\n            <ul>\n                <li><a target=\"_blank\" href=\"https://www.facebook.com/SpitzLittleTokyo\">Little Tokyo</a></li>\n                <li><a href=\"https://www.facebook.com/SpitzLosFeliz\" target=\"_blank\">Los Feliz</a></li>\n                <li><a href=\"https://www.facebook.com/SpitzEagleRock\" target=\"_blank\">Eagle Rock</a></li>\n                <li><a href=\"https://www.facebook.com/SpitzStudioCity\" target=\"_blank\">Studio City</a></li>\n            </ul>\n        </li>\n        <li class=\"subMenu\">\n            <a href=\"#\"><img src=\"img/twit_300.png\"></a>\n            <ul>\n                <li><a target=\"_blank\" href=\"http://www.twitter.com/SpitzLitTokyo\">Little Tokyo</a></li>\n                <li><a href=\"http://twitter.com/SpitzLosFeliz\" target=\"_blank\">Los Feliz</a></li>\n                <li><a href=\"http://twitter.com/SpitzEagleRock\" target=\"_blank\">Eagle Rock</a></li>\n                <li><a href=\"http://www.twitter.com/SpitzStudioCity\" target=\"_blank\">Studio City</a></li>\n            </ul>\n        </li>\n        <li><a href=\"http://instagram.com/spitzpics\" target=\"_blank\"><img src=\"img/insta_300.png\"></a></li>\n    </ul>\n    <p class=\"copyright\"> © 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved.</p>\n    </center>\n</footer>\n\n<!-- <script src=\"js/jquery.js\"></script> -->\n<script src=\"js/jquery-1.11.2.min.js\"></script>\n<script src=\"js/jquery.flexslider-min.js\"></script>\n<script src=\"js/jquery.mobile.custom.min.js\"></script>\n<script src=\"js/app.js\"></script>\n\n</body>\n</html>",
-			"file": "public/index.html",
-			"file_size": 9822,
-			"file_write_time": 130831815120013113,
-			"settings":
-			{
-				"buffer_size": 9826,
+				"buffer_size": 506,
 				"line_ending": "Unix"
 			}
 		}
@@ -561,10 +531,26 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 127.0,
-		"last_filter": "install",
+		"height": 219.0,
+		"last_filter": "convert",
 		"selected_items":
 		[
+			[
+				"convert",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"prett",
+				"Pretty YAML: Reformat (Pretty Print) YAML"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -579,10 +565,6 @@
 			],
 			[
 				"ht",
-				"HTMLPrettify"
-			],
-			[
-				"prett",
 				"HTMLPrettify"
 			],
 			[
@@ -681,13 +663,31 @@
 	"expanded_folders":
 	[
 		"/C/CODING/spitz/spitz-jekyll",
-		"/C/CODING/spitz/spitz-jekyll/_includes",
+		"/C/CODING/spitz/spitz-jekyll/_sass",
 		"/C/CODING/spitz/spitz-jekyll/_site",
-		"/C/CODING/spitz/spitz-jekyll/_site/la"
+		"/C/CODING/spitz/spitz-jekyll/_site/css",
+		"/C/CODING/spitz/spitz-jekyll/css",
+		"/C/CODING/spitz/spitz-jekyll/la"
 	],
 	"file_history":
 	[
+		"/C/CODING/spitz/spitz-jekyll/_site/css/main.css",
+		"/C/CODING/spitz/spitz-jekyll/_sass/_base.scss",
+		"/C/CODING/spitz/spitz-jekyll/.gitignore",
 		"/C/CODING/spitz/spitz-jekyll/index.html",
+		"/C/CODING/spitz/spitz-jekyll/package.json",
+		"/C/CODING/spitz/spitz-jekyll/_config.yml",
+		"/C/CODING/spitz/spitz-jekyll/_la.yml",
+		"/C/Users/Hal/AppData/Roaming/Sublime Text 3/Packages/User/YAML.sublime-settings",
+		"/C/CODING/spitz/spitz-jekyll/spitz-jekyll.sublime-project",
+		"/C/CODING/spitz/spitz-jekyll/css/main.scss",
+		"/C/CODING/spitz/spitz-jekyll/public/index.html",
+		"/C/CODING/spitz/spitz-jekyll/_sass/_layout.scss",
+		"/C/CODING/spitz/spitz-jekyll/_site/la/index.html",
+		"/C/CODING/spitz/spitz-jekyll/_includes/head.html",
+		"/C/CODING/spitz/spitz-jekyll/public/css/stylesprebuild.css",
+		"/C/CODING/spitz/spitz-jekyll/gulpfile.js",
+		"/C/Users/Hal/AppData/Roaming/Sublime Text 3/Packages/Jekyll/README.md",
 		"/C/CODING/spitz/spitz-jekyll/feed.xml",
 		"/C/CODING/spitz/spitz-jekyll/config/global.json",
 		"/C/CODING/spitz/spitz-jekyll/cloud/main.js",
@@ -798,23 +798,7 @@
 		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/scss/layout/_awblog-addon.scss",
 		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/scss/layout/_about.scss",
 		"/C/CODING/strollingwild/repo/magento/app/design/frontend/strollingwild/default/template/checkout/cart/minicart/items.phtml",
-		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/scss/layout/_category.scss",
-		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/scss/module/_checkout-cart-addon.scss",
-		"/C/CODING/strollingwild/repo/magento/app/design/frontend/strollingwild/default/template/catalog/category/view.phtml",
-		"/C/CODING/strollingwild/vagrant/httpdocs/magento/app/design/frontend/strollingwild/default/template/catalog/category/view.phtml",
-		"/E/Documents/Strolling Wild/resources/site-history/theme-files/b4-switching-to-rwd/layout/default/template/checkout/cart/minicart/items.phtml",
-		"/E/Documents/Strolling Wild/resources/for-the-site/code/font-awesome-4.2.0/fonts/FontAwesome.otf",
-		"/C/CODING/strollingwild/repo/magento/skin/frontend/rwd/default/js/app.js",
-		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/scss/layout/_lookbook.scss",
-		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/scss/core/_common-standard.scss",
-		"/E/Documents/Strolling Wild/resources/for-the-site/code/font-awesome-4.2.0/scss/_core.scss",
-		"/C/CODING/strollingwild/repo/magento/skin/frontend/rwd/default/scss/module/_product-list.scss",
-		"/E/Documents/Strolling Wild/resources/magento-factory-files/magento-1.9.0.1/magento/app/code/core/Mage/Catalog/Model/Category.php",
-		"/C/CODING/strollingwild/repo/magento/app/design/frontend/strollingwild/default/template/catalog/category/view.phtml.save",
-		"/C/CODING/strollingwild/repo/magento/app/design/frontend/strollingwild/default/template/catalog/category/view-collection.phtml",
-		"/E/Documents/Strolling Wild/resources/for-the-site/code/breakpoints_sample.scss",
-		"/E/Documents/Strolling Wild/resources/for-the-site/code/font-awesome-4.2.0/scss/_icons.scss",
-		"/E/Documents/Strolling Wild/resources/for-the-site/code/font-awesome-4.2.0/scss/font-awesome.scss"
+		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/scss/layout/_category.scss"
 	],
 	"find":
 	{
@@ -1184,24 +1168,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Hal/AppData/Roaming/Sublime Text 3/Packages/Jekyll/README.md",
+					"file": "Gemfile",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12338,
+						"buffer_size": 142,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6388,
-								6073
+								48,
+								48
 							]
 						],
 						"settings":
@@ -1209,179 +1193,89 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Jekyll/Syntaxes/Markdown (Jekyll).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1624.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "spitz-jekyll.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 338,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								338,
-								338
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "_la.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 737,
+						"buffer_size": 828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								737,
-								737
+								0,
+								828
 							]
 						],
 						"settings":
@@ -1389,61 +1283,151 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								729,
+								729
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
@@ -1459,19 +1443,19 @@
 				},
 				{
 					"buffer": 3,
-					"file": "_site/la/index.html",
+					"file": "css/main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3469,
+						"buffer_size": 1027,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								594,
+								594
 							]
 						],
 						"settings":
@@ -1479,61 +1463,151 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "la/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								506,
+								506
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
@@ -1547,280 +1621,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "_includes/head.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1370,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								610,
-								610
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "public/css/stylesprebuild.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 69318,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "public/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9826,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								869,
-								68
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1886,6 +1686,42 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"bas.",
+				"_sass\\_base.scss"
+			],
+			[
+				"index",
+				"la\\index.html"
+			],
+			[
+				"main.css",
+				"_site\\css\\main.css"
+			],
+			[
+				"main.scss",
+				"css\\main.scss"
+			],
+			[
+				"config.",
+				"_config.yml"
+			],
+			[
+				"confi",
+				"_config.yml"
+			],
+			[
+				"gemfil",
+				"Gemfile"
+			],
+			[
+				"_la.",
+				"_la.yml"
+			],
+			[
+				"package",
+				"package.json"
+			],
 			[
 				"style",
 				"public\\css\\stylesprebuild.css"
@@ -2361,42 +2197,6 @@
 			[
 				"blockabout",
 				"strollingwild\\repo\\magento\\app\\code\\local\\StrollingWild\\AboutPage\\Block\\About.php"
-			],
-			[
-				"catalogview.phtml",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\template\\catalog\\category\\view.phtml"
-			],
-			[
-				"categoryview.phtml",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\template\\catalog\\category\\view.phtml"
-			],
-			[
-				"product-list-ad",
-				"strollingwild\\repo\\magento\\skin\\frontend\\strollingwild\\default\\scss\\module\\_product-list-addon.scss"
-			],
-			[
-				"aboutsys",
-				"strollingwild\\repo\\magento\\app\\code\\local\\StrollingWild\\AboutPage\\etc\\system.xml"
-			],
-			[
-				"aboutsystem.",
-				"strollingwild\\repo\\magento\\app\\code\\local\\StrollingWild\\AboutPage\\etc\\system.xml"
-			],
-			[
-				"onepage.scss",
-				"strollingwild\\repo\\magento\\skin\\frontend\\strollingwild\\default\\scss\\module\\_iwd-onepage.scss"
-			],
-			[
-				"homepage",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\template\\page\\html\\homepage.phtml"
-			],
-			[
-				"checkoutcart-add",
-				"strollingwild\\repo\\magento\\skin\\frontend\\strollingwild\\default\\scss\\module\\_checkout-cart-addon.scss"
-			],
-			[
-				"minicartitems",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\template\\checkout\\cart\\minicart\\items.phtml"
 			]
 		],
 		"width": 0.0
