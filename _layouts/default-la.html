@@ -9,10 +9,16 @@
 
     <div class="page-content">
       <div class="wrapper">
+        <div class="hidden-phone">
+          {% include menu-la.html %}
+        </div>
         {{ content }}
+        <div class="visible-phone">
+          {% include menu-la.html %}
+        </div>
       </div>
     </div>
-
+    {% include js.html %}
     {% include footer-la.html %}
 
   </body>

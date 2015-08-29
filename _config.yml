@@ -1,16 +1,30 @@
-# Site settings
-title: "Spitz - Home of the Döner Kebab |  Los Angeles: Little Tokyo, Loz Feliz, Eagle Rock  |  Mediterranean Street Food"
-email: managingspitz@gmail.com
-description: > 
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+layout: "default-la"
+title: "Los Feliz | Spitz - Home of the Döner Kebab |  Los Angeles: Little Tokyo, Loz Feliz, Eagle Rock  |  Mediterranean Street Food"
+email: "managingspitz@gmail.com"
+# description: > 
+#   Write an awesome description for your new site here. You can edit <?php $this-> ?>
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://eatatspitz.com" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-# github_username:  jekyll
-
+url: "http://eatatspitz.com"
+copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
 # Build settings
-markdown: kramdown
+# markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock","*.sublime-*"]
-gems: ["octopress-autoprefixer"]
+# gems: ["octopress-autoprefixer"]
+
+defaults: 
+  -
+    scope:
+      path: "la"
+    values:
+      layout: "default-la"
+      title: "Spitz - Home of the Döner Kebab |  Los Angeles: Little Tokyo, Loz Feliz, Eagle Rock  |  Mediterranean Street Food"
+      email: "managingspitz@gmail.com"
+      # description: > 
+      #   Write an awesome description for your new site here. You can edit this
+      #   line in _config.yml. It will appear in your document head meta (for
+      #   Google search results) and in your feed.xml site description.
+      baseurl: "" # the subpath of your site, e.g. /blog/
+      url: "http://eatatspitz.com"
+      # copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
