@@ -26,6 +26,9 @@ function fitSlider() {
     if (!$('.fitImage').length) {
       return false; 
     }
+    if !($(window).width() > 959) {
+      return false;
+    }
     var image = $('.fitImage');
     var windowHeight = $(window).height();
     var imageBottom = image.offset().top+image.height();

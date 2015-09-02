@@ -198,8 +198,12 @@ ul.mainMenu li a {color:#fff; font-size:16px; text-transform: uppercase;  font-f
 /*ul.mainMenu li:last-child {background:none;}*/
 ul.mainMenu .addTxt {display:none;}
 ul.mainMenu.tablet .flexy {
+    display:-webkit-flex;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: space-between;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top:10px;
 }
 ul.mainMenu.tablet .flexy > li:not(.order-link) {
