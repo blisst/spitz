@@ -193,7 +193,7 @@ footer {
 }
 /* main menu styles */
 ul.mainMenu {margin:0; float:left;/* height:50px; */}
-ul.mainMenu li {list-style:none; float:left; margin:0 8px 0 0; background: black; padding-right:8px; display:block; }
+ul.mainMenu li {list-style:none; float:left; margin:0 8px 0 0; background: transparent; padding-right:8px; display:block; }
 ul.mainMenu li a {color:#fff; font-size:16px; text-transform: uppercase;  font-family: 'Underwood','Helvetica Neue'; line-height:50px; display:block; padding:0 10px 0 5px;}
 /*ul.mainMenu li:last-child {background:none;}*/
 ul.mainMenu .addTxt {display:none;}
@@ -213,13 +213,14 @@ ul.mainMenu.tablet .addTxt {
 ul.mainMenu.tablet > .order-link {
     width:100%;
     display:block;
+    margin-top:10px;
 }
 
 ul li.subMenu {position:relative;}
 ul li.subMenu ul {z-index:10; display:none; top:36px; left:-5px; margin:0; background: black; border:0; padding:0px 0 5px 6px; border-radius:5px; box-shadow: 0px 10px 13px 2px #5E7487; -moz-box-shadow: 0px 10px 13px 2px #5E7487; -webkit-box-shadow: 0px 10px 13px 2px #5E7487;position: absolute;}
-ul li.subMenu ul li {float:none; background:none; white-space:nowrap; margin:2px 0;}
+ul li.subMenu ul li {float:none; background:none; white-space:nowrap; margin:2px 0; display:block;}
 ul li.subMenu ul a { color:#fff; font-size:14px; text-transform: uppercase; font-family: 'Underwood','Helvetica Neue'; line-height:27px; margin:0; display:inline-block; }
-ul li.subMenu ul li:hover a {background:#2f5e70; border-radius:5px; padding:0 5%;}
+ul li.subMenu ul li:hover a {background:#2f5e70; border-radius:5px;}
 ul li.subMenu ul.opened { display: block; }
 
 
@@ -762,8 +763,8 @@ footer .social-links li.subMenu ul{
     .row {margin-left: -15px;}
     .slider7 .anythingSlider-default { background:none; }
     .slider7 a.link1 {background: #cc6633; padding:4px 28px; height:auto;width:7%;display:block;bottom:114px;right:0;left:0;border-radius:5px;margin:0 auto; }
-}
-@media (max-width: 959px) {
+/* }
+@media (max-width: 959px) { */
     body {
         padding:0;
         background-size:cover;
@@ -784,7 +785,9 @@ footer .social-links li.subMenu ul{
     }
     .login {position:static;}
     .login ul {display:none;}
-
+    #header h1 {
+        font-size:20px;
+    }
    #header .topData {display:none;}
    .topData address {position:relative; top:-54px; width:100%; margin:0;}
    .topData ul.social {margin:0;}

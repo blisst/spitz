@@ -3,7 +3,6 @@ function fitSlider() {
   if (!$('.flexslider').length) {
     return false;
   }
-
   var windowHeight = $(window).height();
   var flexBottom = $('.flexslider').offset().top+$('.flexslider').height();
   var heightChange = (flexBottom - windowHeight + 11 );
@@ -26,7 +25,7 @@ function fitSlider() {
     if (!$('.fitImage').length) {
       return false; 
     }
-    if !($(window).width() > 959) {
+    if (!$(window).width() > 959) {
       return false;
     }
     var image = $('.fitImage');

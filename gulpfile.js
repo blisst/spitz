@@ -103,7 +103,7 @@ gulp.task('prefix', function(cb) {
 gulp.task('watch', function() {
     // gulp.watch(['_sass/*.scss','css/*.scss'], ['sass']);
 
-    gulp.watch(['_sass/*.scss', '_config.yml', 'css/*.scss', 'css/*.css', '_layouts/**/*.*', '_includes/**/*.*', 'la/**/*.*', 'slc/**/*.*'], ['jekyll-rebuild']);
+    gulp.watch(['_sass/*.scss', '_config.yml', 'assets/**/*.*','css/*.scss', 'css/*.css', '_layouts/**/*.*', '_includes/**/*.*', 'la/**/*.*', 'slc/**/*.*'], ['jekyll-rebuild']);
 });
 
 /**
