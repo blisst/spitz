@@ -226,9 +226,12 @@ ul.mainMenu.tablet .flexy {
     margin-top:10px;
 }
 ul.mainMenu.tablet .flexy > li:not(.order-link) {
-    width:32%;
+    flex-grow:1;
     margin:0;
     padding:0;
+}
+ul.mainMenu.tablet .flexy > li:not(.order-link):not(:first-child):not(:last-child) {
+    margin:0 10px;
 }
 ul.mainMenu.tablet .addTxt {
     padding:0;
