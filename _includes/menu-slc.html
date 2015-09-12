@@ -1,0 +1,64 @@
+<div id="menuContainer" class="clearfix">
+    <p class="menuBg"></p>
+    <div class="container">
+        <ul class="mainMenu hidden-tablet">
+            <li class="visible-desktop"><a href="about.html">About<span class="addTxt">We're Real Foodies</span></a></li>
+            <div class="hidden-desktop">
+            {% include order-online-slc.html %}
+            </div>
+            
+           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt hidden-phone">Our Real Tasty Food</span></a>
+               <ul>
+                   <li><a href="menus/for-here.pdf">Lunch/Dinner</a></li>
+                   <li><a href="menus/Brunch.pdf">Brunch</a></li>
+                   <li><a href="menus/Catering.pdf">Catering</a></li>
+               </ul>
+           </li>
+            <li class="subMenu"><a href="#">Locations<span class="addTxt hidden-phone">Find Your Favorite Spitz</span></a>
+                <ul>
+                    <li><a href="downtown.html">Downtown SLC</a></li>
+                    <li><a href="sugarhouse.html">Sugarhouse</a></li>
+                    <li><a href="//eatatspitz.com" target="_blank">Los Angeles</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact<span class="addTxt hidden-phone">Get & Stay in Contact</span></a></li>
+        </ul>
+
+        <ul class="mainMenu tablet visible-tablet">
+            {% include order-online-slc.html %}
+          <div class="flexy">
+           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt hidden-phone">Our Real Tasty Food</span></a>
+               <ul>
+                   <li><a href="menus/for-here.pdf">Lunch/Dinner</a></li>
+                   <li><a href="menus/Brunch.pdf">Brunch</a></li>
+                   <li><a href="menus/Catering.pdf">Catering</a></li>
+               </ul>
+           </li>
+           <li class="subMenu"><a href="#">Locations<span class="addTxt hidden-phone">Find Your Favorite Spitz</span></a>
+               <ul>
+                   <li><a href="downtown.html">Downtown SLC</a></li>
+                   <li><a href="sugarhouse.html">Sugarhouse</a></li>
+                   <li><a href="//eatatspitz.com" target="_blank">Los Angeles</a></li>
+               </ul>
+           </li>
+            <li><a href="contact.html">Contact<span class="addTxt hidden-phone">Get & Stay in Contact</span></a></li>
+            </div>
+        </ul>
+
+        <div class="order hidden-phone hidden-tablet">
+          <div class="top"></div>
+          <ul>
+            <li class="subMenu"><a class="order" href="#">Order Online</a>
+              <ul>
+                <li><a href="//salt-lake-city.eat24hours.com/spitz-sugarhouse/53313" target="_blank">Sugarhouse</a></li>
+              </ul>
+
+            </li>
+          </ul>
+          <div class="bottom"></div>
+               
+           <!--  <a href="order.html" class="order" id="bkTable">Order Online</a> -->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

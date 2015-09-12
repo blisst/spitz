@@ -140,17 +140,13 @@ gulp.task('copyassets', function() {
 /**
  * SLC build
  */
-gulp.task('slc', ['browser-sync-la', 'watch']);
+gulp.task('slc', ['browser-sync-slc', 'watch']);
 
 /**
  * LA build
  */
 gulp.task('la', ['browser-sync-la', 'watch']);
 
-/**
- * LA build with Parse
- */
-gulp.task('la', ['browser-sync-la', 'watch']);
 
 /**
  * Default task, running just `gulp` will compile the sass,

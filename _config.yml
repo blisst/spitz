@@ -1,10 +1,10 @@
-layout: "default-la"
-title: "Spitz - Home of the Döner Kebab | Los Angeles | Mediterranean Street Food"
-email: "managingspitz@gmail.com"
-description: "Welcome to Spitz, home of the Döner Kebab, and Los Angeles' best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://eatatspitz.com"
-copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+# layout: "default-la"
+# title: "Spitz - Home of the Döner Kebab | Los Angeles | Mediterranean Street Food"
+# email: "managingspitz@gmail.com"
+# description: "Welcome to Spitz, home of the Döner Kebab, and Los Angeles' best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+# baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://eatatspitz.com"
+# copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
 # Build settings
 # markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock","*.sublime-*"]
@@ -16,7 +16,23 @@ defaults:
       path: "la"
     values:
       layout: "default-la"
-      title: "Spitz - Home of the Döner Kebab |  Los Angeles: Little Tokyo, Loz Feliz, Eagle Rock  |  Mediterranean Street Food"
+      title: "Spitz - Home of the Döner Kebab | Los Angeles |  Mediterranean Street Food"
+      email: "managingspitz@gmail.com"
+      description: "Welcome to Spitz, home of the Döner Kebab, and Los Angeles' best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+      # description: > 
+      #   Write an awesome description for your new site here. You can edit this
+      #   line in _config.yml. It will appear in your document head meta (for
+      #   Google search results) and in your feed.xml site description.
+      baseurl: "" # the subpath of your site, e.g. /blog/
+      url: "http://eatatspitz.com"
+      copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+  -
+    scope:
+      path: "slc"
+    values:
+      layout: "default-slc"
+      title: "Spitz SLC - Home of the Doner Kebab - Restaurant in Salt Lake City, UT"
+      description: "Welcome to Spitz, home of the Döner Kebab, and Salt Lake City's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
       email: "managingspitz@gmail.com"
       # description: > 
       #   Write an awesome description for your new site here. You can edit this
@@ -24,4 +40,4 @@ defaults:
       #   Google search results) and in your feed.xml site description.
       baseurl: "" # the subpath of your site, e.g. /blog/
       url: "http://eatatspitz.com"
-      # copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+      copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."

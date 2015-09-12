@@ -1,23 +1,61 @@
 ---
-layout: default
 ---
-
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
+  <!-- Flexslider Mobile-->
+  <div class="flexslider-mobile visible-phone">
+    <ul class="slides">
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+          <img src="/assets/images/slider/home/mobile/chicken.jpg" />
       </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+      <li>
+          <img class="lazy focusTop" data-src="/assets/images/slider/home/mobile/salad.jpg" />
+      </li>
+      <li>
+          <img class="lazy" data-src="/assets/images/slider/home/mobile/frenchfries.jpg" />
+      </li>
+      <li>
+          <img class="lazy" data-src="/assets/images/slider/home/mobile/sangria.jpg" />
+      </li>
+      <li>
+           <img class="lazy" data-src="/assets/images/slider/home/mobile/falafel.jpg" />
+      </li>
+    </ul>
+  </div>
+  <div id="mainContent" class="hidden-phone">
+      <div class="container">
+          <!-- Flexslider Desktop-->
+          <div class="flexslider">
+            <ul class="slides">
+              <li>
+                  <img src="/assets/images/slider/home/1920/1.jpg" />
+              </li>
+              <!-- <li>
+                  <img class="lazy focusTop" data-src="/assets/images/slider/home/1920/2.jpg" />
+              </li> -->
+              <li>
+                  <img class="lazy" data-src="/assets/images/slider/home/1920/3.jpg" />
+              </li>
+              <li>
+                  <img class="lazy" data-src="/assets/images/slider/home/1920/4.jpg" />
+              </li>
+              <!-- <li>
+                   <img class="lazy" data-src="/assets/images/slider/home/1920/5.jpg" />
+              </li> -->
+              <li>
+                   <img class="lazy" data-src="/assets/images/slider/home/1920/6.jpg" />
+              </li>
+              <li>
+                   <img class="lazy focusTop" data-src="/assets/images/slider/home/1920/7.jpg" />
+              </li>
+              <li>
+                   <img class="lazy" data-src="/assets/images/slider/home/1920/8.jpg" />
+              </li>
+              <li>
+                   <img class="lazy focusTop" data-src="/assets/images/slider/home/1920/9.jpg" />
+              </li>
+            </ul>
+          </div>
+      </div>
+  </div>
 </div>
+
