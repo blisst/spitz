@@ -4,6 +4,9 @@ var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var cp = require('child_process');
 var gulpCopy = require('gulp-copy');
+var cssmin = require('gulp-cssmin');
+var imagemin = require('gulp-imagemin');
+var uncss = require('gulp-uncss');
 // var shell = require('gulp-shell');
 var runSequence = require('run-sequence');
 var runningBuild;
@@ -34,7 +37,7 @@ gulp.task('build', function() {
 });
 
 gulp.task('jekyll-build', function(callback) {
-    runSequence('build', 'prefix', 'copyassets', callback);
+    runSequence('build', 'css', 'copyassets', callback);
 });
 
 /**
@@ -84,14 +87,18 @@ gulp.task('sass', function() {
 });
 
 /**
- * Autoprefix
+ * Autoprefix, minify, unCSS
  */
-gulp.task('prefix', function(cb) {
+gulp.task('css', function(cb) {
     return gulp.src('_site/css/style.css')
         .pipe(prefix({
             browsers: ['last 2 versions'],
             cascade: true
         }))
+        .pipe(cssmin())
+        // .pipe(uncss({
+        //     html: ['_site/**/*.html']
+        // }))
         .pipe(gulp.dest('.'));
     // cb(err);
 });
