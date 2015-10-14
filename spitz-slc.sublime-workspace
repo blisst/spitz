@@ -488,22 +488,51 @@
 	"buffers":
 	[
 		{
-			"file": "/E/Desktop/iphone 5 stuff",
+			"file": "slc/employment.html",
 			"settings":
 			{
-				"buffer_size": 47,
+				"buffer_size": 3102,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Beats to colors on the web\nDarryl77",
-			"file": "/E/Desktop/Visualization ideas",
-			"file_size": 26,
-			"file_write_time": 130845292305866578,
+			"file": "_includes/menu-slc.html",
 			"settings":
 			{
-				"buffer_size": 35,
-				"line_ending": "Windows"
+				"buffer_size": 3308,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "slc/about.html",
+			"settings":
+			{
+				"buffer_size": 3195,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 4148,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "slc/downtown.html",
+			"settings":
+			{
+				"buffer_size": 1894,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "slc/sugarhouse.html",
+			"settings":
+			{
+				"buffer_size": 1882,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -675,6 +704,10 @@
 	],
 	"file_history":
 	[
+		"/E/Desktop/PubSport Manifesto",
+		"/C/CODING/spitz/spitz-jekyll/_layouts/default-slc.html",
+		"/E/Desktop/Visualization ideas",
+		"/E/Desktop/iphone 5 stuff",
 		"/C/Users/Hal/.ssh/rolltide.pub",
 		"/C/CODING/strollingwild/repo/.git/config",
 		"/C/CODING/spitz/spitz-jekyll/_includes/menu-slc.html",
@@ -684,7 +717,6 @@
 		"/C/CODING/spitz/spitz-jekyll/slc/employment.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/footer-slc.html",
 		"/C/CODING/spitz/spitz-jekyll/css/style.css",
-		"/C/CODING/spitz/spitz-jekyll/_layouts/default-slc.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/social-links-slc.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/header-slc.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/js.html",
@@ -799,10 +831,7 @@
 		"/C/CODING/strollingwild/repo/magento/skin/frontend/rwd/default/js/minicart.js",
 		"/C/CODING/strollingwild/vagrant/httpdocs/magento/app/design/frontend/strollingwild/default/template/catalog/product/view.phtml",
 		"/C/CODING/strollingwild/repo/magento/app/code/local/StrollingWild/FreeFirstSocks/etc/system.xml",
-		"/E/Documents/Strolling Wild/resources/for-the-site/code/owl-carousel/owl.carousel.js",
-		"/C/CODING/strollingwild/repo/magento/app/code/local/StrollingWild/Ajaxreview/etc/config.xml",
-		"/C/CODING/strollingwild/repo/magento/app/design/frontend/rwd/default/layout/review.xml",
-		"/C/xampp/htdocs/magento/app/design/frontend/strollingwild/default/template/review/product/view/list.phtml"
+		"/E/Documents/Strolling Wild/resources/for-the-site/code/owl-carousel/owl.carousel.js"
 	],
 	"find":
 	{
@@ -948,6 +977,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"---\n",
 			"menus",
 			"opened",
 			".copy",
@@ -1074,8 +1104,7 @@
 			"arizonia",
 			"break;",
 			">>>>",
-			"HEAD",
-			"heAd"
+			"HEAD"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1181,54 +1210,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/E/Desktop/iphone 5 stuff",
+					"file": "slc/employment.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 47,
+						"buffer_size": 3102,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/E/Desktop/Visualization ideas",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 35,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								35,
-								35
+								684,
+								684
 							]
 						],
 						"settings":
@@ -1293,13 +1292,477 @@
 								"bh_tag_content"
 							],
 							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_includes/menu-slc.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2754,
+								2754
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "slc/about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								377,
+								377
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2079,
+								2079
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1050.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "slc/downtown.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1577,
+								1577
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 476.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "slc/sugarhouse.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1761,
+								1761
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1366,6 +1829,34 @@
 		"selected_items":
 		[
 			[
+				"downto",
+				"slc\\downtown.html"
+			],
+			[
+				"menu-slc",
+				"_includes\\menu-slc.html"
+			],
+			[
+				"sugar",
+				"slc\\sugarhouse.html"
+			],
+			[
+				"down",
+				"slc\\downtown.html"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"about",
+				"slc\\about.html"
+			],
+			[
+				"employ",
+				"slc\\employment.html"
+			],
+			[
 				"menu-sl",
 				"_includes\\menu-slc.html"
 			],
@@ -1392,10 +1883,6 @@
 			[
 				"js.html",
 				"_includes\\js.html"
-			],
-			[
-				"about",
-				"la\\about.html"
 			],
 			[
 				"little",
@@ -1454,16 +1941,8 @@
 				"_includes\\order-online-slc.html"
 			],
 			[
-				"menu-slc",
-				"_includes\\menu-slc.html"
-			],
-			[
 				"menu-la",
 				"_includes\\menu-la.html"
-			],
-			[
-				"gulp",
-				"gulpfile.js"
 			],
 			[
 				"order-onl",
@@ -1860,22 +2339,6 @@
 			[
 				"catalog-product-add",
 				"strollingwild\\repo\\magento\\skin\\frontend\\strollingwild\\default\\scss\\module\\_catalog-product-addon.scss"
-			],
-			[
-				"misc_sc",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\template\\page\\html\\head\\misc_scripts.phtml"
-			],
-			[
-				"layoutloca",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\layout\\local.xml"
-			],
-			[
-				"sales_s",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\template\\page\\html\\sales_scripts.phtml"
-			],
-			[
-				"header.phtml",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\template\\page\\html\\header.phtml"
 			]
 		],
 		"width": 0.0
