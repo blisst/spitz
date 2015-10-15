@@ -1,4 +1,3 @@
-#_site/*
 _parse/*
 .sass-cache
 node_modules/*
