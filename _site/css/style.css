@@ -101,6 +101,9 @@ img { height:auto; max-width:100%;}
 th,td {text-align:center;}
 ul {padding:0;}
 a { outline: 0;}
+.not-found {
+    margin:5% auto 10% auto;
+}
 a:focus { outline: 0;}
 a:hover {text-decoration: none;}
 p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
