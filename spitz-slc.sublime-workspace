@@ -496,12 +496,11 @@
 			}
 		},
 		{
-			"contents": "As someone who has overseen a small development team, I understand that the kind of person you want to bring on at DogVacay is self-motivated, versatile, highly skilled, and independent, but who is at the same time an excellent team player.  You need someone who you can depend on and trust to solve problems individually but whose solutions also work well in the context of the company and other engineer's goals.  I understand this because I have experienced the frustration that comes when I could not depend on another team member's solutions, or had to coddle them along through the whole process.\n\nKnowing this, I believe I am the perfect person for DogVacay.\n\nI have the skills--most recently, having no previous web app experience, I planned and built an Ember.js app from the ground up, with a Parse.com backend, integrated with a variety of APIs via REST/AJAX, and am now well versed in Node, NPM, Bower, Ember-CLI, etc.  It also briefly used Elasticsearch, so I am aware of Logstash, Kibana, Lucene/Solr.  I was presented with the challenge of \"build a JS web app,\" and I solved the problem, and am now a well above-average Javascripter.\n\nI did the same thing with PHP/Magento a year earlier--zero to hero, with custom Magento modules, my own server and everything.  Through this experience I also learned SEO, SASS, Grunt/Gulp, factors affecting page speed (GZIP, caching, Redis, etc.), and social media marketing, in order to get people to the site and give them a smooth experience while there.\n\nEverything I've done has used Bootstrap or Foundation and auto-prefixing to yield cross-browser, responsive sites.\n\nThe point is: I am the kind of developer who will come up with novel solutions to problems, and who you can depend on for results.  I use version control for every project and know how to work in teams.  I get along with any kind of person and generally have a habit of making people happier.  Plus I love the idea of supporting happier pups and pup-owners!  \n\nI hope you'll consider me to join your illustrious team!\nThank you!",
+			"file": "_config.yml",
 			"settings":
 			{
-				"buffer_size": 2054,
-				"line_ending": "Windows",
-				"name": "As someone who has overseen a small development te"
+				"buffer_size": 2418,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -684,12 +683,24 @@
 		"/C/CODING/spitz/spitz-jekyll/_includes",
 		"/C/CODING/spitz/spitz-jekyll/_site",
 		"/C/CODING/spitz/spitz-jekyll/_site/slc",
+		"/C/CODING/spitz/spitz-jekyll/assets",
+		"/C/CODING/spitz/spitz-jekyll/assets/js",
 		"/C/CODING/spitz/spitz-jekyll/css",
+		"/C/CODING/spitz/spitz-jekyll/la",
 		"/C/CODING/spitz/spitz-jekyll/slc"
 	],
 	"file_history":
 	[
+		"/C/CODING/react-learn/react-0.14.0/examples/README.md",
 		"/C/CODING/spitz/spitz-jekyll/slc/CNAME",
+		"/C/CODING/spitz/spitz-jekyll/css/style.css",
+		"/C/CODING/spitz/spitz-jekyll/_includes/menu-slc.html",
+		"/C/CODING/spitz/spitz-jekyll/_includes/order-online-slc.html",
+		"/C/CODING/spitz/spitz-jekyll/slc/about.html",
+		"/C/CODING/spitz/spitz-jekyll/la/about.html",
+		"/C/CODING/spitz/spitz-jekyll/slc/index.html",
+		"/C/CODING/spitz/spitz-jekyll/slc/404.html",
+		"/C/CODING/spitz/spitz-jekyll/_includes/header-slc.html",
 		"/C/CODING/spitz/spitz-jekyll/_site/slc/index.html",
 		"/C/CODING/spitz/spitz-jekyll/_site/slc/assets/js/app.js",
 		"/C/CODING/spitz/spitz-jekyll/_includes/js.html",
@@ -699,16 +710,11 @@
 		"/C/CODING/spitz/spitz-jekyll/_includes/head.html",
 		"/C/CODING/spitz/spitz-jekyll/package.json",
 		"/C/CODING/spitz/spitz-jekyll/_config.yml",
-		"/C/CODING/spitz/spitz-jekyll/_includes/header-slc.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/footer-slc.html",
-		"/C/CODING/spitz/spitz-jekyll/_includes/menu-slc.html",
-		"/C/CODING/spitz/spitz-jekyll/_includes/order-online-slc.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/social-links-slc.html",
 		"/C/CODING/spitz/spitz-jekyll/slc/employment.html",
-		"/C/CODING/spitz/spitz-jekyll/slc/about.html",
 		"/C/CODING/spitz/spitz-jekyll/slc/contact.html",
 		"/C/CODING/spitz/spitz-jekyll/slc/downtown.html",
-		"/C/CODING/spitz/spitz-jekyll/slc/index.html",
 		"/C/CODING/spitz/spitz-jekyll/slc/sugarhouse.html",
 		"/C/CODING/spitz/spitz-jekyll/_la.yml",
 		"/C/CODING/spitz/spitz-jekyll/_slc.yml",
@@ -720,7 +726,6 @@
 		"/E/Desktop/tvmedia",
 		"/E/Desktop/PS ocnsiderations",
 		"/E/Desktop/Order bar bottom padding space",
-		"/C/CODING/spitz/spitz-jekyll/css/style.css",
 		"/C/CODING/spitz/spitz-jekyll/spitz-slc.sublime-project",
 		"/C/CODING/spitz/spitz-jekyll/la/index.html",
 		"/C/CODING/spitz/spitz-jekyll/la/.htaccess",
@@ -733,7 +738,6 @@
 		"/C/CODING/spitz/spitz-jekyll/css/style.css.back.css",
 		"/C/CODING/spitz/spitz-jekyll/_layouts/default-la.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/header-la.html",
-		"/C/CODING/spitz/spitz-jekyll/la/about.html",
 		"/C/CODING/spitz/spitz-jekyll/la/losfeliz.html",
 		"/C/CODING/spitz/spitz-jekyll/la/studiocity.html",
 		"/C/CODING/spitz/spitz-jekyll/la/eaglerock.html",
@@ -814,9 +818,7 @@
 		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/scss/mixin/_vertical-center-absolute.scss",
 		"/C/CODING/strollingwild/repo/magento/app/design/frontend/strollingwild/default/template/review/customer/list.phtml",
 		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/scss/core/bootstrap/_golden-bootstrap.scss",
-		"/C/CODING/strollingwild/repo/magento/app/design/frontend/strollingwild/default/template/page/html/head/misc_scripts.phtml",
-		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/js/app.js",
-		"/C/CODING/strollingwild/repo/magento/skin/frontend/rwd/default/scss/layout/_footer.scss"
+		"/C/CODING/strollingwild/repo/magento/app/design/frontend/strollingwild/default/template/page/html/head/misc_scripts.phtml"
 	],
 	"find":
 	{
@@ -962,6 +964,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".home",
+			"eat",
+			"eat24",
 			"copyassets",
 			"/assets",
 			"menus",
@@ -1086,10 +1091,7 @@
 			"reviews",
 			"review",
 			"attribut",
-			"attr",
-			"opc-discount-coupon-form",
-			"top",
-			"alexbrush"
+			"attr"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1187,7 +1189,7 @@
 			"glyph-link-text",
 			"header-top-link-container"
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -1196,7 +1198,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1213,7 +1215,7 @@
 						[
 							[
 								192,
-								192
+								111
 							]
 						],
 						"settings":
@@ -1221,61 +1223,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
@@ -1286,76 +1288,71 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "_config.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2054,
+						"buffer_size": 2418,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								702,
-								702
+								1988,
+								1988
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"auto_name": "As someone who has overseen a small development te",
 							"bh_regions":
 							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -1365,17 +1362,25 @@
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
-							"default_dir": "C:\\CODING\\spitz\\spitz-jekyll",
 							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 196.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1492,70 +1497,72 @@
 							"auto_name": "184.168.221.2",
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1622,6 +1629,42 @@
 		"selected_items":
 		[
 			[
+				"order",
+				"_includes\\order-online-slc.html"
+			],
+			[
+				"slcab",
+				"slc\\about.html"
+			],
+			[
+				"about.",
+				"la\\about.html"
+			],
+			[
+				"config.",
+				"_config.yml"
+			],
+			[
+				"style",
+				"css\\style.css"
+			],
+			[
+				"404",
+				"slc\\404.html"
+			],
+			[
+				"index",
+				"slc\\index.html"
+			],
+			[
+				"menu-slc",
+				"_includes\\menu-slc.html"
+			],
+			[
+				"header-slc",
+				"_includes\\header-slc.html"
+			],
+			[
 				"js.html",
 				"_includes\\js.html"
 			],
@@ -1658,10 +1701,6 @@
 				".gitignore"
 			],
 			[
-				"config.",
-				"_config.yml"
-			],
-			[
 				"gitigno",
 				".gitignore"
 			],
@@ -1680,10 +1719,6 @@
 			[
 				"downto",
 				"slc\\downtown.html"
-			],
-			[
-				"menu-slc",
-				"_includes\\menu-slc.html"
 			],
 			[
 				"sugar",
@@ -1742,16 +1777,8 @@
 				"style.css"
 			],
 			[
-				"about.",
-				"la\\about.html"
-			],
-			[
 				"conf",
 				"_config.yml"
-			],
-			[
-				"index",
-				"slc\\index.html"
 			],
 			[
 				"confi",
@@ -1790,10 +1817,6 @@
 				"_includes\\menu-slc.html"
 			],
 			[
-				"header-slc",
-				"_includes\\header-slc.html"
-			],
-			[
 				"footer-la",
 				"_includes\\footer-la.html"
 			],
@@ -1828,10 +1851,6 @@
 			[
 				"app.",
 				"assets\\js\\app.js"
-			],
-			[
-				"style",
-				"css\\style.css"
 			],
 			[
 				"bootstrapres",
@@ -2120,18 +2139,6 @@
 			[
 				"productview.phtml",
 				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\template\\catalog\\product\\view.phtml"
-			],
-			[
-				"reviewlist.phtml",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\template\\review\\customer\\list.phtml"
-			],
-			[
-				"youamaajaxlogin.phtml",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\template\\youama\\ajaxlogin\\ajaxlogin.phtml"
-			],
-			[
-				"youama.scss",
-				"strollingwild\\repo\\magento\\skin\\frontend\\strollingwild\\default\\scss\\module\\youama\\_ajaxlogin.scss"
 			]
 		],
 		"width": 0.0
