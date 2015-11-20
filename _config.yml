@@ -34,7 +34,8 @@ defaults:
       title: "Spitz SLC - Home of the Doner Kebab - Restaurant in Salt Lake City, UT"
       description: "Welcome to Spitz, home of the Döner Kebab, and Salt Lake City's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
       email: "info@spitzslc.com"
-      order-sugarhouse-link: "//www.2lazy4food.com/#!ourfavorites/c1163"
+      order-sugarhouse-link: "//eat24hrs.com/restaurants/order2/menu.php?id=53313"
+      order-downtown-link: "//www.2lazy4food.com/#!ourfavorites/nwjoc"
       # description: > 
       #   Write an awesome description for your new site here. You can edit this
       #   line in _config.yml. It will appear in your document head meta (for
