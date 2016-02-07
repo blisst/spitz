@@ -102,6 +102,7 @@ gulp.task('sass', function() {
  */
 gulp.task('css', function(cb) {
     gulp.src('_assets/css/style.css')
+        // .pipe(uncss({'./**/*.html'}))
         .pipe(prefix({
             browsers: ['last 2 versions'],
             cascade: true
