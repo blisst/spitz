@@ -1,0 +1,33 @@
+---
+layout: "default-la"
+title: "Spitz - Home of the Döner Kebab | Los Angeles | Mediterranean Street Food"
+email: "managingspitz@gmail.com"
+url: "http://eatatspitz.com"
+copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+---
+<div class="home">
+	<!-- Flexslider Mobile-->
+	<div class="flexslider-mobile visible-phone">
+	  <ul class="slides">
+	  	{% for photo in page.front-photos-mobile %}
+	  	    <li>
+	  	    	<img src="{{photo.path}}" class="lazy {{photo.classes}}" />
+  	    	</li>	 
+  	  	{% endfor %}
+	  </ul>
+	</div>
+	<div id="mainContent" class="hidden-phone">
+	    <div class="container">
+	        <!-- Flexslider Desktop-->
+	        <div class="flexslider">
+	          <ul class="slides">
+	  		  	{% for photo in page.front-photos %}
+	  		  	    <li>
+	  		  	    	<img src="{{photo.path}}" class="lazy {{photo.classes}}" />
+	  	  	    	</li>	 
+	  	  	  	{% endfor %}
+	          </ul>
+	        </div>
+	    </div>
+	</div>
+</div>

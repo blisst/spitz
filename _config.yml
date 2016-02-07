@@ -43,3 +43,97 @@ defaults:
       baseurl: "" # the subpath of your site, e.g. /blog/
       url: "http://spitzslc.com"
       copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+  -
+    scope:
+      path: "minnesota"
+    values:
+      layout: "default-minnesota"
+      title: "Spitz SLC - Home of the Doner Kebab - Restaurant in St. Paul, MN"
+      description: "Welcome to Spitz, home of the Döner Kebab, and St. Paul's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+      email: "****"
+      front-photos:
+        - {path: index/wrap.jpg}
+        - {path: index/salad.jpg}
+        - {path: index/sangria.jpg}
+        - {path: index/falafel-and-veggies.jpg}
+        - {path: index/vinyl-dj.jpg}
+        - {path: index/KegWall.jpg}
+        - {path: index/fries.jpg}
+        - {path: index/wraps-and-fries.jpg}
+        - {path: index/wraps.jpg}
+        - {path: index/patrons.jpg}
+        - {path: index/your-order.jpg}
+        - {path: index/Rox4y.jpg}
+        - {path: index/dj.jpg}
+        - {path: index/your-order.jpg}
+        - {path: index/Spitz_LT2_Aug-99.jpg}
+      front-photos-mobile:
+        - {path: index/mobile/wrap.jpg}
+        - {path: index/mobile/salad.jpg}
+        - {path: index/mobile/sangria.jpg}
+        - {path: index/mobile/falafel-and-veggies.jpg}
+        - {path: index/mobile/vinyl-dj.jpg}
+        - {path: index/mobile/KegWall.jpg}
+        - {path: index/mobile/fries.jpg}
+        - {path: index/mobile/wraps-and-fries.jpg}
+        - {path: index/mobile/wraps.jpg}
+        - {path: index/mobile/patrons.jpg}
+        - {path: index/mobile/your-order.jpg}
+        - {path: index/mobile/Rox4y.jpg}
+        - {path: index/mobile/dj.jpg}
+        - {path: index/mobile/your-order.jpg}
+        - {path: index/mobile/Spitz_LT2_Aug-99.jpg}
+      # description: > 
+      #   Write an awesome description for your new site here. You can edit this
+      #   line in _config.yml. It will appear in your document head meta (for
+      #   Google search results) and in your feed.xml site description.
+      baseurl: "" # the subpath of your site, e.g. /blog/
+      url: "http://spitzslc.com"
+      copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+  -
+    scope:
+      path: "san_diego"
+    values:
+      layout: "default-la"
+      title: "Spitz SLC - Home of the Doner Kebab - Restaurant in St. Paul, MN"
+      description: "Welcome to Spitz, home of the Döner Kebab, and St. Paul's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+      email: "****"
+      front-photos:
+        - {path: img/index/slider/wrap.jpg}
+        - {path: img/index/slider/salad.jpg}
+        - {path: img/index/slider/sangria.jpg}
+        - {path: img/index/slider/falafel-and-veggies.jpg}
+        - {path: img/index/slider/vinyl-dj.jpg}
+        - {path: img/index/slider/KegWall.jpg}
+        - {path: img/index/slider/fries.jpg}
+        - {path: img/index/slider/wraps-and-fries.jpg}
+        - {path: img/index/slider/wraps.jpg}
+        - {path: img/index/slider/patrons.jpg}
+        - {path: img/index/slider/your-order.jpg}
+        - {path: img/index/slider/Rox4y.jpg}
+        - {path: img/index/slider/dj.jpg}
+        - {path: img/index/slider/your-order.jpg}
+        - {path: img/index/slider/Spitz_LT2_Aug-99.jpg}
+      front-photos-mobile:
+        - {path: img/index/slider/mobile/wrap.jpg}
+        - {path: img/index/slider/mobile/salad.jpg}
+        - {path: img/index/slider/mobile/sangria.jpg}
+        - {path: img/index/slider/mobile/falafel-and-veggies.jpg}
+        - {path: img/index/slider/mobile/vinyl-dj.jpg}
+        - {path: img/index/slider/mobile/KegWall.jpg}
+        - {path: img/index/slider/mobile/fries.jpg}
+        - {path: img/index/slider/mobile/wraps-and-fries.jpg}
+        - {path: img/index/slider/mobile/wraps.jpg}
+        - {path: img/index/slider/mobile/patrons.jpg}
+        - {path: img/index/slider/mobile/your-order.jpg}
+        - {path: img/index/slider/mobile/Rox4y.jpg}
+        - {path: img/index/slider/mobile/dj.jpg}
+        - {path: img/index/slider/mobile/your-order.jpg}
+        - {path: img/index/slider/mobile/Spitz_LT2_Aug-99.jpg}
+      # description: > 
+      #   Write an awesome description for your new site here. You can edit this
+      #   line in _config.yml. It will appear in your document head meta (for
+      #   Google search results) and in your feed.xml site description.
+      baseurl: "" # the subpath of your site, e.g. /blog/
+      url: "http://spitzslc.com"
+      copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
