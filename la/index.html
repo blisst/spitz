@@ -1,63 +1,39 @@
 ---
-layout: "default-la"
-title: "Spitz - Home of the Döner Kebab | Los Angeles | Mediterranean Street Food"
-email: "managingspitz@gmail.com"
-url: "http://eatatspitz.com"
-copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
 ---
 <div class="home">
 	<!-- Flexslider Mobile-->
 	<div class="flexslider-mobile visible-phone">
 	  <ul class="slides">
-	    <li>
-	        <img src="/assets/images/slider/home/mobile/chicken.jpg" />
-	    </li>
-	    <li>
-	        <img class="lazy focusTop" data-src="/assets/images/slider/home/mobile/salad.jpg" />
-	    </li>
-	    <li>
-	        <img class="lazy" data-src="/assets/images/slider/home/mobile/frenchfries.jpg" />
-	    </li>
-	    <li>
-	        <img class="lazy" data-src="/assets/images/slider/home/mobile/sangria.jpg" />
-	    </li>
-	    <li>
-	         <img class="lazy" data-src="/assets/images/slider/home/mobile/falafel.jpg" />
-	    </li>
+
+	  	{% if page.front-photos-mobile %}
+	  	{% assign photos-mobile = page.front-photos %}
+	  	{% else %}
+	  	{% assign photos-mobile = site.front-photos-mobile %}
+	  	{% endif %}
+
+	  	{% for photo in photos-mobile %}
+	  	    <li>
+	  	    	<img src="{{photo.path}}" class="lazy {{photo.classes}}" />
+  	    	</li>	 
+  	  	{% endfor %}
 	  </ul>
 	</div>
 	<div id="mainContent" class="hidden-phone">
 	    <div class="container">
 	        <!-- Flexslider Desktop-->
-	        <div class="flexslider">
+	        <div class="flexslider fitSlider">
 	          <ul class="slides">
-	            <li>
-	                <img src="/assets/images/slider/home/1920/1.jpg" />
-	            </li>
-	            <li>
-	                <img class="lazy focusTop" data-src="/assets/images/slider/home/1920/2.jpg" />
-	            </li>
-	            <li>
-	                <img class="lazy" data-src="/assets/images/slider/home/1920/3.jpg" />
-	            </li>
-	            <li>
-	                <img class="lazy" data-src="/assets/images/slider/home/1920/4.jpg" />
-	            </li>
-	            <li>
-	                 <img class="lazy" data-src="/assets/images/slider/home/1920/5.jpg" />
-	            </li>
-	            <li>
-	                 <img class="lazy" data-src="/assets/images/slider/home/1920/6.jpg" />
-	            </li>
-	            <li>
-	                 <img class="lazy focusTop" data-src="/assets/images/slider/home/1920/7.jpg" />
-	            </li>
-	            <li>
-	                 <img class="lazy" data-src="/assets/images/slider/home/1920/8.jpg" />
-	            </li>
-	            <li>
-	                 <img class="lazy focusTop" data-src="/assets/images/slider/home/1920/9.jpg" />
-	            </li>
+					{% if page.front-photos %}
+					{% assign photos = page.front-photos %}
+					{% else %}
+					{% assign photos = site.front-photos %}
+					{% endif %}
+				  	{% for photo in photos %}
+				  	    <li>
+				  	    	<img src="{{photo.path}}" class="lazy {{photo.classes}}" />
+			  	    	</li>	 
+			  	  	{% endfor %}
+
 	          </ul>
 	        </div>
 	    </div>

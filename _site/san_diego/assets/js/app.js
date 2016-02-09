@@ -1,19 +1,21 @@
 //New stuff
 function fitSlider() {
-  if (!$('.flexslider').length) {
+  if (!$('.fitSlider').length) {
     return false;
   }
   var windowHeight = $(window).height();
-  var flexBottom = $('.flexslider').offset().top+$('.flexslider').height();
+  var flexBottom = $('.fitSlider').offset().top+$('.fitSlider').height();
   var heightChange = (flexBottom - windowHeight + 11 );
-  var newHeight = $('.flexslider').height() - heightChange;
+  var newHeight = $('.fitSlider').height() - heightChange;
   if (flexBottom > windowHeight) {
-    $('.flexslider').height(newHeight);
-    $('#mainContent .flexslider .slides img:not(.focusTop)').css('top',-heightChange/2);
+    $('.fitSlider').height(newHeight);
+    $('#mainContent .fitSlider .slides img:not(.focusTop, .focusBottom, .specialStyle)').css('top',-heightChange/2);
+    $('#mainContent .fitSlider .slides img.focusBottom').css('top',-heightChange);
+
   }
   else {
-    $('.flexslider').css('height','');
-    $('#mainContent .flexslider .slides img:not(.focusTop)').css('top','');
+    $('.fitSlider').css('height','');
+    $('#mainContent .fitSlider .slides img:not(.focusTop, .focusBottom, .specialStyle)').css('top','');
     
   }
   if ($('.col-golden-lg, .col-golden-sm').length) {
@@ -124,8 +126,8 @@ $(window).load(function() {
  fitSlider();
 });
 $(window).load(fitImage);
-$(window).resize(fitImage);
-$(window).resize(fitSlider);
+$(window).resize(_.debounce(fitImage, 500));
+$(window).resize(_.debounce(fitSlider, 500));
 
 
 // Opening and closing menus
