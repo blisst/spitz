@@ -7,9 +7,11 @@
 # copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
 # Build settings
 # markdown: kramdown
-exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock","*.sublime-*"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock","*.sublime-*","WORKFLOW.md"]
 # gems: ["octopress-autoprefixer"]
-
+logo: "assets/images/logo_new.png"
+logo_no_words: "assets/images/logo_no_words.png"
+seal: "assets/images/seal.png"
 defaults: 
   -
     scope:
@@ -99,37 +101,35 @@ defaults:
       description: "Welcome to Spitz, home of the Döner Kebab, and St. Paul's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
       email: "****"
       front-photos:
-        - {path: img/index/slider/wrap.jpg}
-        - {path: img/index/slider/salad.jpg}
-        - {path: img/index/slider/sangria.jpg}
-        - {path: img/index/slider/falafel-and-veggies.jpg}
-        - {path: img/index/slider/vinyl-dj.jpg}
-        - {path: img/index/slider/KegWall.jpg}
-        - {path: img/index/slider/fries.jpg}
-        - {path: img/index/slider/wraps-and-fries.jpg}
-        - {path: img/index/slider/wraps.jpg}
-        - {path: img/index/slider/patrons.jpg}
-        - {path: img/index/slider/your-order.jpg}
-        - {path: img/index/slider/Rox4y.jpg}
-        - {path: img/index/slider/dj.jpg}
-        - {path: img/index/slider/your-order.jpg}
-        - {path: img/index/slider/Spitz_LT2_Aug-99.jpg}
+        - {path: assets/images/slider/index/mobile/wraps.jpg}
+        - {path: assets/images/slider/index/mobile/wraps-and-fries.jpg}
+        - {path: assets/images/slider/index/mobile/falafel-and-veggies.jpg}
+        - {path: assets/images/slider/index/mobile/vinyl-dj.jpg}
+        - {path: assets/images/slider/index/mobile/sangria.jpg}
+        - {path: assets/images/slider/index/mobile/salad.jpg}
+        - {path: assets/images/slider/index/mobile/wrap.jpg}
+        - {path: assets/images/slider/index/mobile/KegWall.jpg}
+        - {path: assets/images/slider/index/mobile/beer-taps.jpg}
+        - {path: assets/images/slider/index/mobile/fries.jpg}
+        - {path: assets/images/slider/index/mobile/dj.jpg}
+        - {path: assets/images/slider/index/mobile/your-order.jpg}
+        - {path: assets/images/slider/index/mobile/dj.jpg}
+        - {path: assets/images/slider/index/mobile/patrons.jpg}
       front-photos-mobile:
-        - {path: img/index/slider/mobile/wrap.jpg}
-        - {path: img/index/slider/mobile/salad.jpg}
-        - {path: img/index/slider/mobile/sangria.jpg}
-        - {path: img/index/slider/mobile/falafel-and-veggies.jpg}
-        - {path: img/index/slider/mobile/vinyl-dj.jpg}
-        - {path: img/index/slider/mobile/KegWall.jpg}
-        - {path: img/index/slider/mobile/fries.jpg}
-        - {path: img/index/slider/mobile/wraps-and-fries.jpg}
-        - {path: img/index/slider/mobile/wraps.jpg}
-        - {path: img/index/slider/mobile/patrons.jpg}
-        - {path: img/index/slider/mobile/your-order.jpg}
-        - {path: img/index/slider/mobile/Rox4y.jpg}
-        - {path: img/index/slider/mobile/dj.jpg}
-        - {path: img/index/slider/mobile/your-order.jpg}
-        - {path: img/index/slider/mobile/Spitz_LT2_Aug-99.jpg}
+        - {path: assets/images/slider/index/mobile/wraps.jpg}
+        - {path: assets/images/slider/index/mobile/wraps-and-fries.jpg}
+        - {path: assets/images/slider/index/mobile/falafel-and-veggies.jpg}
+        - {path: assets/images/slider/index/mobile/vinyl-dj.jpg}
+        - {path: assets/images/slider/index/mobile/sangria.jpg}
+        - {path: assets/images/slider/index/mobile/salad.jpg}
+        - {path: assets/images/slider/index/mobile/wrap.jpg}
+        - {path: assets/images/slider/index/mobile/KegWall.jpg}
+        - {path: assets/images/slider/index/mobile/beer-taps.jpg}
+        - {path: assets/images/slider/index/mobile/fries.jpg}
+        - {path: assets/images/slider/index/mobile/dj.jpg}
+        - {path: assets/images/slider/index/mobile/your-order.jpg}
+        - {path: assets/images/slider/index/mobile/dj.jpg}
+        - {path: assets/images/slider/index/mobile/patrons.jpg}
       # description: > 
       #   Write an awesome description for your new site here. You can edit this
       #   line in _config.yml. It will appear in your document head meta (for

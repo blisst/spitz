@@ -115,7 +115,7 @@ footer {
 #header { margin: 0 auto; position:relative; padding:0 102px;}
 #header .logoContainer {position:relative;}
 #header .logoContainer a {display:inline-block;vertical-align:bottom;margin:5px auto;}
-#header .logoContainer a img {max-width:160px;}
+#header .logoContainer a img {max-width:225px;}
 #header h1 {font-size:24px;font-weight:700; color:black; line-height:1.5; text-align:center; margin:10px auto; display:inline-block; vertical-align:bottom; position:relative; left:-50px;;}
 
 #header .topData { text-align:right; margin-right:230px; position:absolute; bottom:0; margin-bottom:10px; right:0;; /* right:0; */; }
@@ -1268,11 +1268,8 @@ footer .social-links li.subMenu ul{
         font-size:20px;
     }
     #header .logoContainer a {
-        width:22%;
         margin:10px 0;
-    }
-    #header .logoContainer a img {
-        max-width:100%;
+        width:70%;
     }
     .social-links > li > a {height:60px;width:60px;}
     ul.mainMenu li a {
@@ -1288,9 +1285,6 @@ footer .social-links li.subMenu ul{
     #header h1 {
         left:0;
         font-size:16px;
-    }
-    #header .logoContainer a {
-        width:22%;
     }
     #header .logoContainer a img {
         max-width:100%;
