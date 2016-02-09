@@ -105,6 +105,10 @@ a { outline: 0;}
 .not-found {
     margin:5% auto 10% auto;
 }
+img.blur {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
 a:focus { outline: 0;}
 a:hover {text-decoration: none;}
 p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
@@ -115,9 +119,9 @@ footer {
 #header .topData { padding-right: 14%;}
 #header { margin: 0 auto; position:relative; padding:10px 102px;}
 #header .logoContainer {position:relative; top:5px;}
-#header .logoContainer a, #header .logoContainer h1 { display:inline-block; vertical-align: text-top;}
+#header .logoContainer a, #header .logoContainer h1 { display:inline-block; vertical-align: text-bottom;}
 #header .logoContainer a img {max-width:225px;}
-#header h1 {margin:0; font-size:20px;font-weight:700; color:black; line-height:1.5; text-align:center;}
+#header h1 {margin:0; margin-left:15px; font-size:16px;font-weight:700; color:black; line-height:1.5; text-align:center;}
 .f-right { float: right;}
 .f-left { float:left;}
 .social-links { margin:0; }

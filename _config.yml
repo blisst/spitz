@@ -77,7 +77,7 @@ defaults:
     scope:
       path: "minnesota"
     values:
-      layout: "default-minnesota"
+      layout: "default-mn"
       title: "Spitz St. Paul - Home of the Doner Kebab - Restaurant in St. Paul, MN"
       description: "Welcome to Spitz, home of the Döner Kebab, and St. Paul's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
       email: "****"
