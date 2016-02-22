@@ -92,7 +92,7 @@ defaults:
     scope:
       path: "san_diego"
     values:
-      layout: "default-la"
+      layout: "default-sd"
       title: "Spitz - Home of the Döner Kebab | San Diego | Mediterranean Street Food"
       description: "Welcome to Spitz, home of the Döner Kebab, and San Diego's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
       email: "****"
