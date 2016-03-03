@@ -1,5 +1,6 @@
 @font-face {
     font-family: 'american_typewriter';
+    src: url('font/american-typewriter.ttf') format('truetype');
     src: url('font/american-typewriter.eot');
     src: url('font/american-typewriter.eot?#iefix') format('embedded-opentype'),
          url('font/american-typewriter.ttf') format('truetype');
