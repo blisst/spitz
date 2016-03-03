@@ -1,4 +1,14 @@
 @font-face {
+    font-family: 'american_typewriter';
+    src: url('font/american-typewriter.eot');
+    src: url('font/american-typewriter.eot?#iefix') format('embedded-opentype'),
+         url('font/american-typewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'Underwood';
     src: url('font/MYUNDERWOOD.TTF') format('truetype');
     font-weight: normal;
@@ -67,16 +77,14 @@
 
 
 /*SLC Specific*/
-.slc #header .topData {
-    margin-right:102px;
-}
+
 .slc footer .social-links li.subMenu ul {
     top: -112px;
 }
 @media (max-width:1080px) {
-    .slc #header .topData {
-        margin-right: 8% !important;
-    }
+/*     .slc #header .topData {
+    // margin-right: 8% !important;
+} */
     .slc #header .social-links > li > a  {
         height:60px;
         width:60px;
@@ -95,7 +103,7 @@
 /** General Styles **/
 /** Blue color: #28A0BC; **/
 html {width:100%;height:100%;}
-body {height:100%; width:100%;background: #fff url(../images/body-bg.jpg) no-repeat top center fixed;background-size: cover; font-family: 'Underwood','lucida_granderegular'; }
+body {height:100%; width:100%;background: #fff url(../images/body-bg.jpg) no-repeat top center fixed;background-size: cover; font-family: 'american_typewriter','Underwood','lucida_granderegular'; }
 h1, h2, h3, h4, h5 {font-weight:normal;}
 img { height:auto; max-width:100%;}
 th,td {text-align:center;}
@@ -150,11 +158,11 @@ footer {
     background: transparent !important;
 }
 #mc_embed_signup label {
-    font-family: 'Underwood','Helvetica Neue' !important;
+    font-family: 'american_typewriter','Underwood','Helvetica Neue' !important;
     color: rgb(51, 51, 51) !important;
 }
 #mc-embedded-subscribe {
-    font-family: 'Underwood','Helvetica Neue' !important;
+    font-family: 'american_typewriter','Underwood','Helvetica Neue' !important;
 }
 #mc_embed_signup .indicates-required {
     float:right;
@@ -246,7 +254,7 @@ footer {
 /* main menu styles */
 ul.mainMenu {margin:0; float:left;/* height:50px; */}
 ul.mainMenu li {list-style:none; float:left; margin:0 8px 0 0; background: transparent; padding-right:8px; display:block; }
-ul.mainMenu li a {color:#fff; font-size:16px; text-transform: uppercase;  font-family: 'Underwood','Helvetica Neue'; line-height:50px; display:block; padding:0 10px 0 5px;}
+ul.mainMenu li a {color:#fff; font-size:16px; text-transform: uppercase;  font-family: 'american_typewriter','Underwood','Helvetica Neue'; line-height:50px; display:block; padding:0 10px 0 5px;}
 /*ul.mainMenu li:last-child {background:none;}*/
 ul.mainMenu .addTxt {display:none;}
 ul.mainMenu.tablet .flexy {
@@ -274,7 +282,7 @@ ul.mainMenu.tablet > .order-link {
 ul li.subMenu {position:relative;}
 ul li.subMenu ul {z-index:10; display:none; top:36px; left:-5px; margin:0; background: black; border:0; padding:0px 0 5px 6px; border-radius:5px; box-shadow: 0px 10px 13px 2px #5E7487; -moz-box-shadow: 0px 10px 13px 2px #5E7487; -webkit-box-shadow: 0px 10px 13px 2px #5E7487;position: absolute;}
 ul li.subMenu ul li {float:none; background:none; white-space:nowrap; margin:2px 0; display:block;}
-ul li.subMenu ul a { color:#fff; font-size:14px; text-transform: uppercase; font-family: 'Underwood','Helvetica Neue'; line-height:27px; margin:0; display:inline-block; }
+ul li.subMenu ul a { color:#fff; font-size:14px; text-transform: uppercase; font-family: 'american_typewriter','Underwood','Helvetica Neue'; line-height:27px; margin:0; display:inline-block; }
 ul li.subMenu ul li:hover a {background:#2f5e70; border-radius:5px;}
 ul li.subMenu ul.opened { display: block; }
 
@@ -332,7 +340,7 @@ div.order {position:absolute; margin-right:0; float:right;
 .order ul li.subMenu {list-style:none;position:static;width:100%;height:100%;;}
 .order ul li.subMenu ul li a {}
 
-a.order { text-align:center; position:relative; font-family: 'Underwood','lucida_granderegular'; line-height:27px; text-transform: uppercase; display:block; color:#fff; background-size:100% 100%; font-size:20px; z-index:100; 
+a.order { text-align:center; position:relative; font-family: 'american_typewriter','Underwood','lucida_granderegular'; line-height:27px; text-transform: uppercase; display:block; color:#fff; background-size:100% 100%; font-size:20px; z-index:100; 
     /*top:16px; left:3px; */
     padding:0px 15px 7px}
 /* order online */
@@ -371,13 +379,13 @@ address {color: #ffffff; font-size:12px; font-family: 'helvetica neue light'; ma
 .box1 .mid {background: transparent url(../images/box1-mid.png) repeat-y 50% 0; min-height:72px;}
 .box1 .btm {height:36px; background: transparent url(../images/box1-btm.png) no-repeat top center;}
 
-.box1 h4.curved {position:relative; top:-15px; color:#cee5e5; font-size:25px; font-family: 'Underwood','lucida_granderegular'; text-transform:uppercase; margin:0; text-align:center; text-rendering:auto; font-weight:normal;}
-.box1 span.subTitle {display:block; text-align:center; margin:5px 0; font-size:16px; color:#fff; font-family: 'Underwood','lucida_granderegular';}
+.box1 h4.curved {position:relative; top:-15px; color:#cee5e5; font-size:25px; font-family: 'american_typewriter','Underwood','lucida_granderegular'; text-transform:uppercase; margin:0; text-align:center; text-rendering:auto; font-weight:normal;}
+.box1 span.subTitle {display:block; text-align:center; margin:5px 0; font-size:16px; color:#fff; font-family: 'american_typewriter','Underwood','lucida_granderegular';}
 .box1 .mCont {padding:10px 50px 0 50px;}
-.box1 h5 {font-weight:normal; font-size:13px; text-transform: uppercase; color:#fff; font-family: 'Underwood','lucida_granderegular'; margin:15px 0 3px 0;}
+.box1 h5 {font-weight:normal; font-size:13px; text-transform: uppercase; color:#fff; font-family: 'american_typewriter','Underwood','lucida_granderegular'; margin:15px 0 3px 0;}
 .box1 h5 span {color:#9ec1b5; font-size:12px; font-family: 'BitterBold'; padding-right:5px;}
 .box1 p {color:#fff; font-size:12px; line-height:17px; text-align:justify; margin:0; padding:0;}
-.box1 a {color:#cb5c40; font-size:12px; line-height:12px; text-align:right; font-family: 'Underwood','lucida_granderegular'; float:right; text-transform:uppercase;}
+.box1 a {color:#cb5c40; font-size:12px; line-height:12px; text-align:right; font-family: 'american_typewriter','Underwood','lucida_granderegular'; float:right; text-transform:uppercase;}
 
 p.centering {text-align:center; line-height:20px;}
 
@@ -386,7 +394,7 @@ p.centering {text-align:center; line-height:20px;}
 .box3 {background: transparent url(../images/box3-bg.png) no-repeat top center; text-align:center; line-height:24px; height:143px; padding-top:50px; position:relative; top:-5px;}
 .box3 .tx1 {font-family: 'BreeSerifRegular'; font-size:21px; line-height:21px; padding:10px 0 5px 0; display:block; text-align:center; color:#a1907c; text-transform: uppercase; margin:0;}
 .box3 .tx2 {font-family: 'BreeSerifRegular'; font-size:21px; line-height:21px; display:block; text-align:center; color:#ca5b3f; text-transform: uppercase; margin:0;}
-.box3 .tx3 {color:#ca5b3f; font-size:16px; line-height:18px; font-family: 'Underwood','lucida_granderegular'; display:block; }
+.box3 .tx3 {color:#ca5b3f; font-size:16px; line-height:18px; font-family: 'american_typewriter','Underwood','lucida_granderegular'; display:block; }
 .box3 p {font-size:12px; line-height:15px; color:#262626; width:210px; margin:6px auto; }
 
 .box4 {margin:10px auto; width:222px;}
@@ -1035,10 +1043,11 @@ footer .social-links li.subMenu ul{
     .contact #mainContent {}
     .container {width:auto; padding:0 20px;}
     .location #mainContent,.about #mainContent {}
-    ul.mainMenu li { margin:10px 0; padding:4px 0; width:100% !important; display:block;}
+    ul.mainMenu li { margin:10px 0; padding:8px 0; width:100% !important; display:block;}
     ul.mainMenu li a { line-height:18px;}
     ul.mainMenu ul {display:block; position:static; box-shadow:none; padding-top:0;}
-    ul.mainMenu ul a {padding:6px 0; display:block;}
+    ul.mainMenu ul li {padding:0;}
+    ul.mainMenu ul a {padding:8px 0; display:block; }
     ul.mainMenu .addTxt {padding-bottom:6px;}
     ul.mainMenu li ul {position:relative; top:0;left:0;padding:0;}
 

@@ -1,9 +1,6 @@
 ---
-layout: "default-sd"
-title: "Contact Us | Spitz - Home of the Döner Kebab | San Diego | Mediterranean Street Food"
-email: "managingspitz@gmail.com"
+page_name: "Contact Us"
 excerpt: "Parties, office gatherings, film shoots?  Spitz caters all events!  We will set up and deliver our famous döner kebabs and sides as party platters or a large buffet for groups as small as 10 and as large as 150.  Get in touch today!"
-copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
 ---
 <div class="contact">
     <div id="mainContent">
@@ -15,9 +12,9 @@ copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
                         <h2>Contact Us</h2>  
                         <div class="copy">
                             <h4>Management</h4>
-                            <a href="mailto:spitzsd@gmail.com">spitzsd@gmail.com</a>
+                            <a href="mailto:{{page.management-email}}">{{page.contact-hillcrest.management-email}}</a>
                             <h4>Phone</h4>
-                            <a href="tel:+16193268556">619-326-8556</a>
+                            <a href="tel:+1{{ page.contact-hillcrest.phone | replace: '-','' }}">{{page.contact-hillcrest.phone}}</a>
                         </div>
                     </div>
                 </div>

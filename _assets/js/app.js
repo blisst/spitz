@@ -1,4 +1,4 @@
-//New stuff
+//SHITBAG//New stuff
 function fitSlider() {
   if (!$('.fitSlider').length) {
     return false;

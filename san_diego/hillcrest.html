@@ -1,8 +1,6 @@
 ---
-layout: "default-sd"
-title: "Hillcrest | Spitz - Home of the Döner Kebab | San Diego | Mediterranean Street Food"
+page_name: "Hillcrest"
 excerpt: "Stop by Spitz Hillcrest for the best sangria and happy-hour in town.  A craft beer and some relaxing time on our patio is the perfect compliment to our famous fries, falafel, döner kebab sandwiches and wraps."
-copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
 ---
 <div class="location">
   <div class="flexslider-mobile visible-phone">
@@ -36,7 +34,7 @@ copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
           </div>     
           <div class="phone col-xs-12 col-sm-4 col-md-12" >
             <h4>Phone</h4>
-            <span>(619) 326-8556</span>
+            <span><a href="tel:+1{{ page.contact-hillcrest.phone | replace: '-','' }}">{{page.contact-hillcrest.phone}}</a></span>
           </div>
           <div class="delivery-options">
             <!-- <p>*Curbside Pickup Available</p> -->
@@ -45,7 +43,7 @@ copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
       </div>
 
       <div class="col-golden-lg hidden-phone">
-        <div class="flexslider">
+        <div class="flexslider fitSlider">
           <ul class="slides">
             <li>
               <img src="img/location/inside.jpg" />

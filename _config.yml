@@ -14,31 +14,19 @@ logo_no_words: "assets/images/logo_no_words.png"
 seal: "assets/images/seal.png"
 front-photos:
   - {path: assets/images/slider/index/wraps.jpg}
-  - {path: assets/images/slider/index/wraps-and-fries.jpg, classes: focusBottom }
-  - {path: assets/images/slider/index/falafel-and-veggies.jpg}
-  - {path: assets/images/slider/index/vinyl-dj.jpg}
-  - {path: assets/images/slider/index/sangria.jpg}
   - {path: assets/images/slider/index/salad.jpg}
-  - {path: assets/images/slider/index/wrap.jpg}
-  - {path: assets/images/slider/index/KegWall.jpg, classes: focusBottom}
+  - {path: assets/images/slider/index/vinyl-dj.jpg}
+  - {path: assets/images/slider/index/wraps-and-fries.jpg, classes: focusBottom }
+  - {path: assets/images/slider/index/sangria.jpg}
   - {path: assets/images/slider/index/beer-taps.jpg}
-  - {path: assets/images/slider/index/fries.jpg}
-  - {path: assets/images/slider/index/dj.jpg}
-  - {path: assets/images/slider/index/your-order.jpg}
   - {path: assets/images/slider/index/patrons.jpg}
 front-photos-mobile:
   - {path: assets/images/slider/index/mobile/wraps.jpg}
-  - {path: assets/images/slider/index/mobile/wraps-and-fries.jpg}
-  - {path: assets/images/slider/index/mobile/falafel-and-veggies.jpg}
-  - {path: assets/images/slider/index/mobile/vinyl-dj.jpg}
-  - {path: assets/images/slider/index/mobile/sangria.jpg}
   - {path: assets/images/slider/index/mobile/salad.jpg}
-  - {path: assets/images/slider/index/mobile/wrap.jpg}
-  - {path: assets/images/slider/index/mobile/KegWall.jpg}
+  - {path: assets/images/slider/index/mobile/vinyl-dj.jpg}
+  - {path: assets/images/slider/index/mobile/wraps-and-fries.jpg} 
+  - {path: assets/images/slider/index/mobile/sangria.jpg}
   - {path: assets/images/slider/index/mobile/beer-taps.jpg}
-  - {path: assets/images/slider/index/mobile/fries.jpg}
-  - {path: assets/images/slider/index/mobile/dj.jpg}
-  - {path: assets/images/slider/index/mobile/your-order.jpg}
   - {path: assets/images/slider/index/mobile/patrons.jpg}
 defaults: 
   -
@@ -56,6 +44,7 @@ defaults:
       baseurl: "" # the subpath of your site, e.g. /blog/
       url: "http://eatatspitz.com"
       copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+
   -
     scope:
       path: "slc"
@@ -78,7 +67,7 @@ defaults:
       path: "minnesota"
     values:
       layout: "default-mn"
-      title: "Spitz St. Paul - Home of the Doner Kebab - Restaurant in St. Paul, MN"
+      title: "Spitz Minneapolis - Home of the Doner Kebab - Restaurant in St. Paul, MN"
       description: "Welcome to Spitz, home of the Döner Kebab, and St. Paul's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
       email: "****"
       # description: > 
@@ -93,7 +82,7 @@ defaults:
       path: "san_diego"
     values:
       layout: "default-sd"
-      title: "Spitz - Home of the Döner Kebab | San Diego | Mediterranean Street Food"
+      title: "Spitz San Diego - Home of the Döner Kebab | Mediterranean Street Food"
       description: "Welcome to Spitz, home of the Döner Kebab, and San Diego's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
       email: "****"
       # description: > 
@@ -103,3 +92,9 @@ defaults:
       baseurl: "" # the subpath of your site, e.g. /blog/
       url: "http://spitzsd.com"
       copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+      order-online:
+        - {title: "Hillcrest", link: "http://san-diego.eat24hours.com/spitz-hillcrest/67272"}
+      contact-hillcrest:
+        management-email: spitzsd@gmail.com
+        phone: "619-326-8556"
+
