@@ -13,7 +13,7 @@ excerpt: "Welcome to Spitz, home of the Döner Kebab, and Salt Lake City's best 
 
       {% for photo in photos-mobile %}
           <li>
-            <img src="{{photo.path}}" class="lazy {{photo.classes}}" />
+            <img data-src="{{ photo.path }}"class="lazy {{photo.classes}}" />
           </li>  
         {% endfor %}
 <!--       <li>
@@ -45,7 +45,7 @@ excerpt: "Welcome to Spitz, home of the Döner Kebab, and Salt Lake City's best 
               {% endif %}
                 {% for photo in photos %}
                     <li>
-                      <img src="{{photo.path}}" class="lazy {{photo.classes}}" />
+                      <img data-src="{{ photo.path }}"class="lazy {{photo.classes}}" />
                     </li>  
                 {% endfor %}
               <!-- <li>

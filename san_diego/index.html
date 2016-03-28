@@ -13,7 +13,7 @@
 
 	  	{% for photo in photos-mobile %}
 	  	    <li>
-	  	    	<img src="{{photo.path}}" class="lazy {{photo.classes}}" />
+	  	    	<img data-src="{{ photo.path }}"class="lazy {{photo.classes}}" />
   	    	</li>	 
   	  	{% endfor %}
 	  </ul>
@@ -30,7 +30,7 @@
 					{% endif %}
 				  	{% for photo in photos %}
 				  	    <li>
-				  	    	<img src="{{photo.path}}" class="lazy {{photo.classes}}" />
+	  	    				<img data-src="{{ photo.path }}"class="lazy {{photo.classes}}" />
 			  	    	</li>	 
 			  	  	{% endfor %}
 
