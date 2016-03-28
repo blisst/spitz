@@ -3,6 +3,9 @@ function fitSlider() {
   if (!$('.fitSlider').length) {
     return false;
   }
+  
+  $('.fitSlider').css('height','');
+
   var windowHeight = $(window).height();
   var flexBottom = $('.fitSlider').offset().top+$('.fitSlider').height();
   var heightChange = (flexBottom - windowHeight + 11 );
@@ -49,6 +52,7 @@ $(window).load(function() {
   if (!$('.flexslider').length) {
     return false;
   }
+
   $('.flexslider').flexslider({
       // Options here : https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties
       directionNav: false,
@@ -66,6 +70,9 @@ $(window).load(function() {
             var src = $(this).attr('data-src');
             $(this).attr('src', src).removeAttr('data-src');
           });
+        
+        fitSlider();
+
       },
       before: function(slider) { // Fires asynchronously with each slider animation
         var slides     = slider.slides,
@@ -83,6 +90,9 @@ $(window).load(function() {
             var src = $(this).attr('data-src');
             $(this).attr('src', src).removeAttr('data-src');
           });
+
+        fitSlider();
+
       }
     });
   $('.flexslider-mobile').flexslider({
@@ -103,6 +113,9 @@ $(window).load(function() {
             var src = $(this).attr('data-src');
             $(this).attr('src', src).removeAttr('data-src');
           });
+        fitSlider();
+
+
       },
       before: function(slider) { // Fires asynchronously with each slider animation
         var slides     = slider.slides,
@@ -120,6 +133,9 @@ $(window).load(function() {
             var src = $(this).attr('data-src');
             $(this).attr('src', src).removeAttr('data-src');
           });
+
+        fitSlider();
+
       }
     });
 
