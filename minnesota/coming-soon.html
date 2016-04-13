@@ -1,0 +1,49 @@
+---
+---
+<style>
+.flex-control-nav.flex-control-paging {display:none;}
+.container {padding:0;}
+#mainContent{margin:0;}
+.flexslider {opacity:.8;}
+h1 {color:black;}
+.page-content, .page-content > .wrapper { height:100%; width:100%;}
+.photo-slider {
+	-webkit-transition: background 0.5s linear;
+-moz-transition: background 0.5s linear;
+-o-transition: background 0.5s linear;
+transition: background 0.5s linear;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    opacity:.7;
+
+}
+body {background-position: 0 -188px}
+</style>
+{% if page.front-photos %}
+{% assign photos = page.front-photos %}
+{% else %}
+{% assign photos = site.front-photos %}
+{% endif %}
+<div style="position:absolute;top:50%;transform:translateY(-50%); right:0;left:0;text-align:center;z-index:100;">
+	<img src="{{site.seal}}" />
+	<h1>Coming soon...</h1>
+</div>
+<div class="photo-slider" style='background-image:url( {{ photos[0].path }} )'>
+</div>
+<div class="hidden backgrounds">
+{% for photo in photos %}
+	<img src="{{photo.path}}" class="photo" />
+{% endfor %}
+</div> 
+
+<script>
+var ind = 1;
+setInterval(function(){
+	$backgrounds = $('.backgrounds img');
+	ind = ind >= $backgrounds.length ? 0 : ind;
+	$('.photo-slider').css('background-image', 'url('+$($backgrounds[ind]).attr('src')+')');
+	ind++;
+}, 5000);
+
+</script>

@@ -67,8 +67,8 @@ defaults:
       path: "minnesota"
     values:
       layout: "default-mn"
-      title: "Spitz Minneapolis - Home of the Doner Kebab - Restaurant in St. Paul, MN"
-      description: "Welcome to Spitz, home of the Döner Kebab, and St. Paul's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+      title: "Spitz Minneapolis - Home of the Doner Kebab - Restaurant in Minneapolis, MN"
+      description: "Welcome to Spitz, home of the Döner Kebab, and Minneapolis's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
       email: "****"
       # description: > 
       #   Write an awesome description for your new site here. You can edit this
