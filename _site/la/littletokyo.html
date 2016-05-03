@@ -61,104 +61,103 @@
   </div>
 </header>
 
+    <script src="assets/js/jquery-1.11.2.min.js"></script>
+<script src="assets/js/jquery.flexslider-min.js"></script>
+<script src="assets/js/jquery.mobile.custom.min.js"></script>
+<script src="assets/js/underscore-min.js"></script>
+<script src="assets/js/app.js"></script>
 
+
+<script>
+	if (window.location.host === 'eatatspitz.com') {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-66891655-1', 'auto');
+		ga('send', 'pageview');
+	}
+	else if (window.location.host === 'spitzslc.com') {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-43902203-1', 'spitzslc.com');
+		ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+
+	}
+
+
+
+</script>
+
+
+
+    <style>
+  #menuContainer {
+  background: url(assets/images/menu-cont-bg_black.png) repeat-x;
+    background-size: auto 100%;
+    width: 100%;
+    height: 50px;
+  /*  position: absolute;
+    top: 0;*/
+  }
+
+  .submenu {
+    display:none;
+  }
+  .menu-item {
+    position:relative;
+  }
+
+  .menu-item.clicked .submenu{
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+  }
+</style>
+<div id="menuContainer" class="clearfix">
+  <div class="menu flex">
+    <div class="menu-item">
+      <a href="about.html">About</a>
+    </div>
+    <div class="menu-item">
+      <a class="no-click">Submenu</a>
+      <div class="submenu">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    $('.menu-item a').click(function(e) {
+      console.log(e);
+      var menuItem = $(this).closest('.menu-item');
+      if (menuItem.hasClass('clicked')) {
+        menuItem.removeClass('clicked');
+      } else {
+        menuItem.addClass('clicked');
+      }
+      e.stopPropagation();
+      return false;
+    });
+  });
+</script>
+    
     <div class="page-content">
       <div class="wrapper">
         <div class="hidden-phone">
-          <div id="menuContainer" class="clearfix">
-    <p class="menuBg"></p>
-    <div class="container">
-        <ul class="mainMenu hidden-tablet">
-            <li class="visible-desktop"><a href="about.html">About</a></li>
-            <li class="subMenu hidden-desktop">
-              <a class="hidden-phone" href="#">Order <span class="addTxt">Order Yummy Spitz Online!</span></a>
-              <a class="visible-phone" href="#">Order Online</a>
-                <ul>
-                    <li><a href="http://eat24hrs.com/restaurants/16728" target="_blank">Little Tokyo</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/19444" target="_blank">Los Feliz</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/16727" target="_blank">Eagle Rock</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/27444" target="_blank">Studio City</a></li>
-                </ul>
-            </li>
-            
-           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt hidden-phone">Our Real Tasty Food</span></a>
-               <ul>
-                   <li><a target="_blank" href="menus/lunch-dinner.pdf">Lunch/Dinner</a></li>
-                   <li><a target="_blank" href="menus/brunch.pdf">Brunch</a></li>
-                   <li><a target="_blank" href="menus/catering.pdf">Catering</a></li>
-                   <li><a target="_blank" href="menus/beerandwine.pdf">Beer & Wine</a></li>
-               </ul>
-           </li>
-            <li class="subMenu"><a href="#">Locations<span class="addTxt hidden-phone">Find Your Favorite Spitz</span></a>
-                <ul>
-                    <li><a href="littletokyo.html">Little Tokyo</a></li>
-                    <li><a href="losfeliz.html">Los Feliz</a></li>
-                    <li><a href="eaglerock.html">Eagle Rock</a></li>
-                    <li><a href="studiocity.html">Studio City</a></li>
-                    <li><a href="//spitzsd.com" target="_blank">San Diego</a></li>
-                    <li><a href="//spitzslc.com" target="_blank">Salt Lake City</a></li>
-        
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact<span class="addTxt hidden-phone">Get & Stay in Contact</span></a></li>
-        </ul>
-
-        <ul class="mainMenu tablet visible-tablet">
-            <li class="subMenu order-link">
-              <a  href="#">Order <span class="addTxt">Order Yummy Spitz Online!</span></a>
-                <ul>
-                    <li><a href="http://eat24hrs.com/restaurants/16728" target="_blank">Little Tokyo</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/19444" target="_blank">Los Feliz</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/16727" target="_blank">Eagle Rock</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/27444" target="_blank">Studio City</a></li>
-                </ul>
-            </li>
-          <div class="flexy">
-           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt hidden-phone">Our Real Tasty Food</span></a>
-               <ul>
-                   <li><a target="_blank" href="menus/lunch-dinner.pdf">Lunch/Dinner</a></li>
-                   <li><a target="_blank" href="menus/brunch.pdf">Brunch</a></li>
-                   <li><a target="_blank" href="menus/catering.pdf">Catering</a></li>
-                   <li><a target="_blank" href="menus/beerandwine.pdf">Beer & Wine</a></li>
-                   
-               </ul>
-           </li>
-            <li class="subMenu"><a href="#">Locations<span class="addTxt hidden-phone">Find Your Favorite Spitz</span></a>
-                <ul>
-                    <li><a href="littletokyo.html">Little Tokyo</a></li>
-                    <li><a href="losfeliz.html">Los Feliz</a></li>
-                    <li><a href="eaglerock.html">Eagle Rock</a></li>
-                    <li><a href="studiocity.html">Studio City</a></li>
-                    <li><a href="//spitzsd.com" target="_blank">San Diego</a></li>
-                   <li><a href="//spitzslc.com" target="_blank">Salt Lake City</a></li>
-        
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact<span class="addTxt hidden-phone">Get & Stay in Contact</span></a></li>
-            </div>
-        </ul>
-
-        <div class="order hidden-phone hidden-tablet">
-          <div class="top"></div>
-
-          <ul>
-            <li class="subMenu"><a class="order" href="#">Order Online</a>
-              <ul>
-                <li><a href="http://eat24hrs.com/restaurants/16728">Little Tokyo</a></li>
-                <li><a href="http://eat24hrs.com/restaurants/19444">Los Feliz</a></li>
-                <li><a href="http://eat24hrs.com/restaurants/16727">Eagle Rock</a></li>
-                <li><a href="http://eat24hrs.com/restaurants/27444">Studio City</a></li>
-              </ul>
-            </li>
-          </ul>
-          <div class="bottom"></div>
-
-               
-           <!--  <a href="order.html" class="order" id="bkTable">Order Online</a> -->
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
         </div>
         <div class="location">
   <div class="flexslider-mobile visible-phone">
@@ -229,138 +228,67 @@
 </div>
 
         <div class="visible-phone">
-          <div id="menuContainer" class="clearfix">
-    <p class="menuBg"></p>
-    <div class="container">
-        <ul class="mainMenu hidden-tablet">
-            <li class="visible-desktop"><a href="about.html">About</a></li>
-            <li class="subMenu hidden-desktop">
-              <a class="hidden-phone" href="#">Order <span class="addTxt">Order Yummy Spitz Online!</span></a>
-              <a class="visible-phone" href="#">Order Online</a>
-                <ul>
-                    <li><a href="http://eat24hrs.com/restaurants/16728" target="_blank">Little Tokyo</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/19444" target="_blank">Los Feliz</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/16727" target="_blank">Eagle Rock</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/27444" target="_blank">Studio City</a></li>
-                </ul>
-            </li>
-            
-           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt hidden-phone">Our Real Tasty Food</span></a>
-               <ul>
-                   <li><a target="_blank" href="menus/lunch-dinner.pdf">Lunch/Dinner</a></li>
-                   <li><a target="_blank" href="menus/brunch.pdf">Brunch</a></li>
-                   <li><a target="_blank" href="menus/catering.pdf">Catering</a></li>
-                   <li><a target="_blank" href="menus/beerandwine.pdf">Beer & Wine</a></li>
-               </ul>
-           </li>
-            <li class="subMenu"><a href="#">Locations<span class="addTxt hidden-phone">Find Your Favorite Spitz</span></a>
-                <ul>
-                    <li><a href="littletokyo.html">Little Tokyo</a></li>
-                    <li><a href="losfeliz.html">Los Feliz</a></li>
-                    <li><a href="eaglerock.html">Eagle Rock</a></li>
-                    <li><a href="studiocity.html">Studio City</a></li>
-                    <li><a href="//spitzsd.com" target="_blank">San Diego</a></li>
-                    <li><a href="//spitzslc.com" target="_blank">Salt Lake City</a></li>
-        
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact<span class="addTxt hidden-phone">Get & Stay in Contact</span></a></li>
-        </ul>
+          <style>
+  #menuContainer {
+  background: url(assets/images/menu-cont-bg_black.png) repeat-x;
+    background-size: auto 100%;
+    width: 100%;
+    height: 50px;
+  /*  position: absolute;
+    top: 0;*/
+  }
 
-        <ul class="mainMenu tablet visible-tablet">
-            <li class="subMenu order-link">
-              <a  href="#">Order <span class="addTxt">Order Yummy Spitz Online!</span></a>
-                <ul>
-                    <li><a href="http://eat24hrs.com/restaurants/16728" target="_blank">Little Tokyo</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/19444" target="_blank">Los Feliz</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/16727" target="_blank">Eagle Rock</a></li>
-                    <li><a href="http://eat24hrs.com/restaurants/27444" target="_blank">Studio City</a></li>
-                </ul>
-            </li>
-          <div class="flexy">
-           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt hidden-phone">Our Real Tasty Food</span></a>
-               <ul>
-                   <li><a target="_blank" href="menus/lunch-dinner.pdf">Lunch/Dinner</a></li>
-                   <li><a target="_blank" href="menus/brunch.pdf">Brunch</a></li>
-                   <li><a target="_blank" href="menus/catering.pdf">Catering</a></li>
-                   <li><a target="_blank" href="menus/beerandwine.pdf">Beer & Wine</a></li>
-                   
-               </ul>
-           </li>
-            <li class="subMenu"><a href="#">Locations<span class="addTxt hidden-phone">Find Your Favorite Spitz</span></a>
-                <ul>
-                    <li><a href="littletokyo.html">Little Tokyo</a></li>
-                    <li><a href="losfeliz.html">Los Feliz</a></li>
-                    <li><a href="eaglerock.html">Eagle Rock</a></li>
-                    <li><a href="studiocity.html">Studio City</a></li>
-                    <li><a href="//spitzsd.com" target="_blank">San Diego</a></li>
-                   <li><a href="//spitzslc.com" target="_blank">Salt Lake City</a></li>
-        
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact<span class="addTxt hidden-phone">Get & Stay in Contact</span></a></li>
-            </div>
-        </ul>
+  .submenu {
+    display:none;
+  }
+  .menu-item {
+    position:relative;
+  }
 
-        <div class="order hidden-phone hidden-tablet">
-          <div class="top"></div>
-
-          <ul>
-            <li class="subMenu"><a class="order" href="#">Order Online</a>
-              <ul>
-                <li><a href="http://eat24hrs.com/restaurants/16728">Little Tokyo</a></li>
-                <li><a href="http://eat24hrs.com/restaurants/19444">Los Feliz</a></li>
-                <li><a href="http://eat24hrs.com/restaurants/16727">Eagle Rock</a></li>
-                <li><a href="http://eat24hrs.com/restaurants/27444">Studio City</a></li>
-              </ul>
-            </li>
-          </ul>
-          <div class="bottom"></div>
-
-               
-           <!--  <a href="order.html" class="order" id="bkTable">Order Online</a> -->
-        </div>
-        <div class="clearfix"></div>
+  .menu-item.clicked .submenu{
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+  }
+</style>
+<div id="menuContainer" class="clearfix">
+  <div class="menu flex">
+    <div class="menu-item">
+      <a href="about.html">About</a>
     </div>
+    <div class="menu-item">
+      <a class="no-click">Submenu</a>
+      <div class="submenu">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script>
+  $(function() {
+    $('.menu-item a').click(function(e) {
+      console.log(e);
+      var menuItem = $(this).closest('.menu-item');
+      if (menuItem.hasClass('clicked')) {
+        menuItem.removeClass('clicked');
+      } else {
+        menuItem.addClass('clicked');
+      }
+      e.stopPropagation();
+      return false;
+    });
+  });
+</script>
         </div>
       </div>
     </div>
-    <script src="assets/js/jquery-1.11.2.min.js"></script>
-<script src="assets/js/jquery.flexslider-min.js"></script>
-<script src="assets/js/jquery.mobile.custom.min.js"></script>
-<script src="assets/js/underscore-min.js"></script>
-<script src="assets/js/app.js"></script>
-
-
-<script>
-	if (window.location.host === 'eatatspitz.com') {
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-66891655-1', 'auto');
-		ga('send', 'pageview');
-	}
-	else if (window.location.host === 'spitzslc.com') {
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-43902203-1', 'spitzslc.com');
-		ga('require', 'displayfeatures');
-		ga('send', 'pageview');
-
-	}
-
-
-
-</script>
-
-
-
     <footer>
     <center>
     <ul class="social-links hidden-tablet hidden-desktop">

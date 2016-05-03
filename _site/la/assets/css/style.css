@@ -118,6 +118,9 @@ img.blur {
     -webkit-filter: blur(1px);
     filter: blur(1px);
 }
+.flex {
+    display:flex;
+}
 a:focus { outline: 0;}
 a:hover {text-decoration: none;}
 p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
