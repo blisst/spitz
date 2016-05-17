@@ -488,14 +488,6 @@
 	"buffers":
 	[
 		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 4426,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "_config.yml",
 			"settings":
 			{
@@ -504,15 +496,45 @@
 			}
 		},
 		{
-			"file": "minnesota/index.html",
+			"contents": "<div id=\"menuContainer\" class=\"clearfix\">\n    <p class=\"menuBg\"></p>\n    <div class=\"container\">\n        <ul class=\"mainMenu hidden-tablet\">\n            <li class=\"visible-desktop\"><a href=\"about.html\">About</a></li>\n            <li class=\"subMenu hidden-desktop\">\n              <a class=\"hidden-phone\" href=\"#\">Order <span class=\"addTxt\">Order Yummy Spitz Online!</span></a>\n              <a class=\"visible-phone\" href=\"#\">Order Online</a>\n                <ul>\n                    <li>\n                      <div class=\"flex\">\n                        <span>\n                        <a href=\"https://postmates.com/la/spitz-home-of-the-doner-kabab-los-angeles\" target=\"_blank\">Delivery</a>\n                        <a href=\"http://eat24hrs.com/restaurants/16728\" target=\"_blank\">Takeout</a>\n                      </div>\n                      <a href=\"http://eat24hrs.com/restaurants/16728\" target=\"_blank\">Little Tokyo</a>\n                    </li>\n                    <li><a href=\"http://eat24hrs.com/restaurants/19444\" target=\"_blank\">Los Feliz</a></li>\n                    <li><a href=\"http://eat24hrs.com/restaurants/16727\" target=\"_blank\">Eagle Rock</a></li>\n                    <li><a href=\"http://eat24hrs.com/restaurants/27444\" target=\"_blank\">Studio City</a></li>\n                </ul>\n            </li>\n            \n           <li class=\"subMenu\"><a href=\"#\">Menus/Catering<span class=\"addTxt hidden-phone\">Our Real Tasty Food</span></a>\n               <ul>\n                   <li><a target=\"_blank\" href=\"menus/lunch-dinner.pdf\">Lunch/Dinner</a></li>\n                   <li><a target=\"_blank\" href=\"menus/brunch.pdf\">Brunch</a></li>\n                   <li><a target=\"_blank\" href=\"menus/catering.pdf\">Catering</a></li>\n                   <li><a target=\"_blank\" href=\"menus/beerandwine.pdf\">Beer & Wine</a></li>\n               </ul>\n           </li>\n            <li class=\"subMenu\"><a href=\"#\">Locations<span class=\"addTxt hidden-phone\">Find Your Favorite Spitz</span></a>\n                <ul>\n                    <li><a href=\"littletokyo.html\">Little Tokyo</a></li>\n                    <li><a href=\"losfeliz.html\">Los Feliz</a></li>\n                    <li><a href=\"eaglerock.html\">Eagle Rock</a></li>\n                    <li><a href=\"studiocity.html\">Studio City</a></li>\n                    <li><a href=\"//spitzsd.com\" target=\"_blank\">San Diego</a></li>\n                    <li><a href=\"//spitzslc.com\" target=\"_blank\">Salt Lake City</a></li>\n        \n                </ul>\n            </li>\n            <li><a href=\"contact.html\">Contact<span class=\"addTxt hidden-phone\">Get & Stay in Contact</span></a></li>\n        </ul>\n\n        <ul class=\"mainMenu tablet visible-tablet\">\n            <li class=\"subMenu order-link\">\n              <a  href=\"#\">Order <span class=\"addTxt\">Order Yummy Spitz Online!</span></a>\n                <ul>\n                    <li><a href=\"http://eat24hrs.com/restaurants/16728\" target=\"_blank\">Little Tokyo</a></li>\n                    <li>\n                       <div class=\"flex\">\n                        <a href=\"https://postmates.com/la/spitz-home-of-the-doner-kabab-los-angeles\" target=\"_blank\">Delivery</a>\n                        <a href=\"http://eat24hrs.com/restaurants/16728\" target=\"_blank\">Takeout</a>\n                      </div>\n                    </li>\n                    <li><a href=\"http://eat24hrs.com/restaurants/19444\" target=\"_blank\">Los Feliz</a></li>\n                    <li><a href=\"http://eat24hrs.com/restaurants/16727\" target=\"_blank\">Eagle Rock</a></li>\n                    <li><a href=\"http://eat24hrs.com/restaurants/27444\" target=\"_blank\">Studio City</a></li>\n                </ul>\n            </li>\n          <div class=\"flexy\">\n           <li class=\"subMenu\"><a href=\"#\">Menus/Catering<span class=\"addTxt hidden-phone\">Our Real Tasty Food</span></a>\n               <ul>\n                   <li><a target=\"_blank\" href=\"menus/lunch-dinner.pdf\">Lunch/Dinner</a></li>\n                   <li><a target=\"_blank\" href=\"menus/brunch.pdf\">Brunch</a></li>\n                   <li><a target=\"_blank\" href=\"menus/catering.pdf\">Catering</a></li>\n                   <li><a target=\"_blank\" href=\"menus/beerandwine.pdf\">Beer & Wine</a></li>\n                   \n               </ul>\n           </li>\n            <li class=\"subMenu\"><a href=\"#\">Locations<span class=\"addTxt hidden-phone\">Find Your Favorite Spitz</span></a>\n                <ul>\n                    <li><a href=\"littletokyo.html\">Little Tokyo</a></li>\n                    <li><a href=\"losfeliz.html\">Los Feliz</a></li>\n                    <li><a href=\"eaglerock.html\">Eagle Rock</a></li>\n                    <li><a href=\"studiocity.html\">Studio City</a></li>\n                    <li><a href=\"//spitzsd.com\" target=\"_blank\">San Diego</a></li>\n                   <li><a href=\"//spitzslc.com\" target=\"_blank\">Salt Lake City</a></li>\n        \n                </ul>\n            </li>\n            <li><a href=\"contact.html\">Contact<span class=\"addTxt hidden-phone\">Get & Stay in Contact</span></a></li>\n            </div>\n        </ul>\n\n        <div class=\"order hidden-phone hidden-tablet\">\n          <div class=\"top\"></div>\n\n          <ul>\n            <li class=\"subMenu\"><a class=\"order\" href=\"#\">Order Online</a>\n              <ul>\n                <li><a href=\"http://eat24hrs.com/restaurants/16728\">Little Tokyo</a></li>\n                <li>\n                Little Tokyo\n                   <div class=\"flex\">\n                        <a href=\"https://postmates.com/la/spitz-home-of-the-doner-kabab-los-angeles\" target=\"_blank\">Delivery</a>\n                        <a href=\"http://eat24hrs.com/restaurants/16728\" target=\"_blank\">Takeout</a>\n                      </div>\n                </li>\n                <li><a href=\"http://eat24hrs.com/restaurants/19444\">Los Feliz</a></li>\n                <li><a href=\"http://eat24hrs.com/restaurants/16727\">Eagle Rock</a></li>\n                <li><a href=\"http://eat24hrs.com/restaurants/27444\">Studio City</a></li>\n              </ul>\n            </li>\n          </ul>\n          <div class=\"bottom\"></div>\n\n               \n           <!--  <a href=\"order.html\" class=\"order\" id=\"bkTable\">Order Online</a> -->\n        </div>\n        <div class=\"clearfix\"></div>\n    </div>\n</div>",
+			"file": "_includes/menu-la.html.back.html",
+			"file_size": 6281,
+			"file_write_time": 131067284366594875,
 			"settings":
 			{
-				"buffer_size": 1050,
+				"buffer_size": 6235,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_layouts/default-mn.html",
+			"file": "_includes/menu-la.html",
+			"settings":
+			{
+				"buffer_size": 5139,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "a<head>\n	<meta charset=\"utf-8\">\n	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n	<title>{% if page.page_name %}{{ page.title | prepend: \" | \" | prepend: page.page_name }}{% else %}{{page.title}}{% endif %}</title>\n	<meta name=\"description\" content=\"{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}\">\n	\n	<link href=\"{{ \"assets/css/golden-bootstrap.min.css\" | prepend: site.baseurl }}\" rel=\"stylesheet\">\n	<link href=\"{{ \"assets/css/bootstrap/css/bootstrap.min.css\" | prepend: site.baseurl }}\" rel=\"stylesheet\">\n	<link href=\"{{ \"assets/css/bootstrap/css/bootstrap-responsive.min.css\" | prepend: site.baseurl }}\" rel=\"stylesheet\">\n	<link href=\"{{ \"assets/css/flexslider.css\" | prepend: site.baseurl }}\" rel=\"stylesheet\">\n	<link rel=\"stylesheet\" href=\"{{ \"assets/css/style.min.css\" | prepend: site.baseurl }}\">\n\n	<!-- <link rel=\"stylesheet\" href=\"{{ \"/css/main.css\" | prepend: site.baseurl }}\"> -->\n	<link rel=\"canonical\" href=\"{{ page.url | replace:'index.html','' | replace: '/la','' | replace: '/slc','' | prepend: site.baseurl | prepend: site.url }}\">\n	<link rel=\"icon\" href=\"assets/favicon.ico\"> \n</head>\n",
+			"file": "_includes/head.html",
+			"file_size": 1278,
+			"file_write_time": 131014594392415176,
+			"settings":
+			{
+				"buffer_size": 1262,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_includes/footer-la.html",
+			"settings":
+			{
+				"buffer_size": 1464,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_layouts/default-la.html",
 			"settings":
 			{
 				"buffer_size": 454,
@@ -520,47 +542,19 @@
 			}
 		},
 		{
-			"file": "_includes/menu-mn.html",
+			"file": "_includes/js.html",
 			"settings":
 			{
-				"buffer_size": 4722,
+				"buffer_size": 1231,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "la/about.html",
+			"file": "gulpfile.js",
 			"settings":
 			{
-				"buffer_size": 2849,
+				"buffer_size": 4426,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "---\npage_name: About\nemail: \"managingspitz@gmail.com\"\nexcerpt: \"Founders Bryce Rademan and Robert Wicklund laid the groundwork for Spitz while studying at Occidental College in Los Angeles. Discovered while on a semester abroad in Spain, Rademan fell in love with Döner Kebab.\"\n---\n<div class=\"about\">\n  <div id=\"mainContent\">\n  <img src=\"assets/images/about.jpg\" class=\"visible-phone visible-tablet\"/> \n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12\">\n          <div class=\"content\">\n            <img src=\"assets/images/about.jpg\" style=\"width:50%;margin: 0 0 10px 10px\" class=\"pull-right hidden-phone hidden-tablet\"/>  \n            <h2>The Story (THE FOOD!!)</h2>\n            <!-- <p class=\"hidden-phone hidden-tablet\"><strong>The Story</strong></p> -->\n            <p style=\"margin-top: -5px;\">The groundwork for Spitz was laid in 2005 at Occidental College in Los Angeles.  Founder Bryce Rademan returned from a semester studying abroad in Europe with dreams of bringing the Mediterranean street food (specifically döner kebab or “spit” of rotating meat) he fell in love with home to the U.S.  That spring he teamed up with close friend Robert Wicklund and both set aside their law school ambitions to follow their entrepreneurial instincts.</p>\n            <p>Rademan and Wicklund set about learning everything they could about the cuisine and tested countless versions of recipes in their school’s kitchens... taking what they had eaten every night on the streets of Europe and combining it with the California freshness, color 1and flavor they were inspired by in Los Angeles.  They hashed out a business plan and on April 12th, 2006 the first Spitz location was opened a mile from their alma mater.</p>\n            <p>With support from a strong community of friends, family and local businesses Spitz quickly became a Los Angeles sensation, recognized by many local media outlets as one of the best new concepts of the year.  Since then Spitz has expanded to 4 locations in the Los Angeles area and added a craft beer, housemade sangria and seasonal cocktail program to all it’s locations cementing them as a place where you can truly hangout, relax, and enjoy their distinctive street food creations.</p>\n            <p>(Recently Spitz has expanded with friends, family and former employees into new markets in Salt Lake City, San Diego and Minneapolis.)</p>\n            <p><strong>Thank you Döner Crew…  Keep rocking the kebab</strong></p>\n            <p>We wouldn’t be here if it weren’t for our great and loyal customers.  It’s for you that we work hard every day to reinvent the street food experience and raise the bar on our industry.  Thank you so much and hope to see you around the resto soon!</p>\n          </div>\n\n        </div>\n\n      </div>\n    </div>\n    <!-- container -->\n\n\n  </div>\n</div>\n",
-			"file": "minnesota/about.html",
-			"file_size": 2900,
-			"file_write_time": 131036204590522057,
-			"settings":
-			{
-				"buffer_size": 2850,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "WORKFLOW.md",
-			"settings":
-			{
-				"buffer_size": 280,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "18007827892",
-			"settings":
-			{
-				"buffer_size": 11,
-				"line_ending": "Windows",
-				"name": "18007827892"
 			}
 		}
 	],
@@ -719,26 +713,37 @@
 	"expanded_folders":
 	[
 		"/C/CODING/spitz/spitz-jekyll",
+		"/C/CODING/spitz/spitz-jekyll/_assets",
+		"/C/CODING/spitz/spitz-jekyll/_assets/css",
+		"/C/CODING/spitz/spitz-jekyll/_assets/js",
 		"/C/CODING/spitz/spitz-jekyll/_includes",
 		"/C/CODING/spitz/spitz-jekyll/_layouts",
-		"/C/CODING/spitz/spitz-jekyll/_resources",
-		"/C/CODING/spitz/spitz-jekyll/la",
+		"/C/CODING/spitz/spitz-jekyll/_site",
+		"/C/CODING/spitz/spitz-jekyll/_site/la",
 		"/C/CODING/spitz/spitz-jekyll/minnesota",
 		"/C/CODING/spitz/spitz-jekyll/san_diego",
 		"/C/CODING/spitz/spitz-jekyll/slc"
 	],
 	"file_history":
 	[
+		"/C/CODING/spitz/spitz-jekyll/WORKFLOW.md",
+		"/C/CODING/spitz/spitz-jekyll/_assets/js/app.js",
 		"/C/CODING/spitz/spitz-jekyll/_includes/footer-la.html",
+		"/C/CODING/spitz/spitz-jekyll/la/index.html",
+		"/C/CODING/spitz/spitz-jekyll/_assets/css/style.css",
+		"/C/CODING/spitz/spitz-jekyll/slc/index.html",
+		"/C/CODING/spitz/spitz-jekyll/la/losfeliz.html",
+		"/C/CODING/spitz/spitz-jekyll/gulpfile.js",
+		"/C/CODING/spitz/spitz-jekyll/_config.yml",
+		"/C/CODING/spitz/spitz-jekyll/minnesota/index.html",
+		"/C/CODING/spitz/spitz-jekyll/_layouts/default-mn.html",
+		"/C/CODING/spitz/spitz-jekyll/_includes/menu-mn.html",
+		"/C/CODING/spitz/spitz-jekyll/la/about.html",
+		"/C/CODING/spitz/spitz-jekyll/minnesota/about.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/menu-la.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/header-la.html",
-		"/C/CODING/spitz/spitz-jekyll/gulpfile.js",
 		"/C/CODING/spitz/spitz-jekyll/san_diego/about.html",
-		"/C/CODING/spitz/spitz-jekyll/WORKFLOW.md",
 		"/C/CODING/spitz/spitz-jekyll/_layouts/default-slc.html",
-		"/C/CODING/spitz/spitz-jekyll/slc/index.html",
-		"/C/CODING/spitz/spitz-jekyll/la/about.html",
-		"/C/CODING/spitz/spitz-jekyll/_config.yml",
 		"/C/CODING/spitz/spitz-jekyll/san_diego/hillcrest.html",
 		"/C/CODING/spitz/spitz-jekyll/slc/downtown.html",
 		"/C/CODING/spitz/spitz-jekyll/slc/sugarhouse.html",
@@ -746,13 +751,9 @@
 		"/C/CODING/spitz/spitz-jekyll/la/eaglerock.html",
 		"/C/CODING/spitz/spitz-jekyll/la/littletokyo.html",
 		"/C/CODING/spitz/spitz-jekyll/slc/.htaccess",
-		"/C/CODING/spitz/spitz-jekyll/_assets/js/app.js",
 		"/C/CODING/spitz/spitz-jekyll/slc/about.html",
-		"/C/CODING/spitz/spitz-jekyll/la/losfeliz.html",
 		"/C/CODING/spitz/spitz-jekyll/la/studiocity.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/menu-slc.html",
-		"/C/CODING/spitz/spitz-jekyll/la/index.html",
-		"/C/CODING/spitz/spitz-jekyll/_assets/css/style.css",
 		"/C/CODING/spitz/spitz-jekyll/_assets/css/font/American Typewriter Regular.ttf",
 		"/C/CODING/spitz/spitz-jekyll/san_diego/index.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/js.html",
@@ -775,8 +776,6 @@
 		"/C/CODING/spitz/spitz-jekyll/_includes/order-online-slc.html",
 		"/C/CODING/spitz/spitz-jekyll/_includes/order-online-la.html",
 		"/C/CODING/spitz/spitz-jekyll/_old/Gruntfile.js",
-		"/C/CODING/spitz/spitz-jekyll/_layouts/default-mn.html",
-		"/C/CODING/spitz/spitz-jekyll/minnesota/index.html",
 		"/C/CODING/spitz/spitz-jekyll/minnesota/CNAME",
 		"/C/CODING/spitz/spitz-jekyll/_layouts/default-la.html",
 		"/C/CODING/spitz/spitz-jekyll/san_diego/CNAME",
@@ -854,9 +853,7 @@
 		"/C/CODING/strollingwild/repo/magento/skin/frontend/strollingwild/default/scss/module/youama/_ajaxlogin.scss",
 		"/C/CODING/strollingwild/repo/magento/app/design/frontend/strollingwild/default/template/aw_blog/new_blog/related_posts.phtml",
 		"/C/CODING/strollingwild/repo/magento/app/design/frontend/strollingwild/default/template/catalog/product/view/media.phtml",
-		"/C/CODING/strollingwild/repo/magento/skin/frontend/rwd/default/scss/core/_common.scss",
-		"/C/CODING/strollingwild/repo/magento/app/design/frontend/rwd/default/layout/catalog.xml",
-		"/C/xampp/htdocs/magento/app/design/frontend/strollingwild/default/template/catalog/product/view/attributes.phtml"
+		"/C/CODING/strollingwild/repo/magento/skin/frontend/rwd/default/scss/core/_common.scss"
 	],
 	"find":
 	{
@@ -1002,6 +999,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"display:flex",
+			"flex",
 			"american_typewriter",
 			"assign",
 			"font-family",
@@ -1127,9 +1126,7 @@
 			"review",
 			"attribut",
 			"attr",
-			"opc-discount-coupon-form",
-			"top",
-			"alexbrush"
+			"opc-discount-coupon-form"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1240,103 +1237,11 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4426,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4356,
-								4356
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1791.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "_config.yml",
 					"semi_transient": false,
 					"settings":
@@ -1348,8 +1253,8 @@
 						"selection":
 						[
 							[
-								3343,
-								3343
+								1339,
+								1339
 							]
 						],
 						"settings":
@@ -1357,61 +1262,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
@@ -1421,7 +1326,100 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 716.0,
+						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_includes/menu-la.html.back.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1840,
+								1840
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1429,11 +1427,196 @@
 				},
 				{
 					"buffer": 2,
-					"file": "minnesota/index.html",
+					"file": "_includes/menu-la.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1050,
+						"buffer_size": 5139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								898,
+								898
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 339.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_includes/footer-la.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1464,
 						"regions":
 						{
 						},
@@ -1449,244 +1632,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_layouts/default-mn.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 454,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								426,
-								426
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "_includes/menu-mn.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4722,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								935,
-								935
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
@@ -1704,11 +1704,195 @@
 				},
 				{
 					"buffer": 5,
-					"file": "la/about.html",
+					"file": "_layouts/default-la.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2849,
+						"buffer_size": 454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								454,
+								454
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 75.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_includes/js.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								776,
+								776
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4426,
 						"regions":
 						{
 						},
@@ -1724,287 +1908,74 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "minnesota/about.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2850,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1570,
-								1570
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1791.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "WORKFLOW.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 280,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								143,
-								191
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11,
-								11
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_name": "18007827892",
-							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -2071,6 +2042,66 @@
 		"selected_items":
 		[
 			[
+				"wor",
+				"WORKFLOW.md"
+			],
+			[
+				"defaul",
+				"_layouts\\default-la.html"
+			],
+			[
+				"js",
+				"_includes\\js.html"
+			],
+			[
+				"app.j",
+				"_assets\\js\\app.js"
+			],
+			[
+				"head",
+				"_includes\\head.html"
+			],
+			[
+				"footer-l",
+				"_includes\\footer-la.html"
+			],
+			[
+				"default-",
+				"_layouts\\default-la.html"
+			],
+			[
+				"index",
+				"la\\index.html"
+			],
+			[
+				"inex.html",
+				"la\\index.html"
+			],
+			[
+				"slcinde",
+				"slc\\index.html"
+			],
+			[
+				"style",
+				"_assets\\css\\style.css"
+			],
+			[
+				"men-",
+				"_includes\\menu-la.html"
+			],
+			[
+				"los",
+				"la\\losfeliz.html"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"config",
+				"_config.yml"
+			],
+			[
 				"work",
 				"WORKFLOW.md"
 			],
@@ -2095,10 +2126,6 @@
 				"_config.yml"
 			],
 			[
-				"gulp",
-				"gulpfile.js"
-			],
-			[
 				"header-la",
 				"_includes\\header-la.html"
 			],
@@ -2115,10 +2142,6 @@
 				"_assets\\js\\app.js"
 			],
 			[
-				"config",
-				"_config.yml"
-			],
-			[
 				"sdabout",
 				"san_diego\\about.html"
 			],
@@ -2129,10 +2152,6 @@
 			[
 				".htac",
 				"slc\\.htaccess"
-			],
-			[
-				"style",
-				"_assets\\css\\style.css"
 			],
 			[
 				"conf",
@@ -2151,20 +2170,12 @@
 				"_includes\\menu-la.html"
 			],
 			[
-				"index",
-				"la\\index.html"
-			],
-			[
 				"menu-la",
 				"_includes\\menu-la.html"
 			],
 			[
 				"header-slc",
 				"_includes\\header-slc.html"
-			],
-			[
-				"head",
-				"_includes\\head.html"
 			],
 			[
 				"default-s",
@@ -2185,10 +2196,6 @@
 			[
 				"slcin",
 				"slc\\index.html"
-			],
-			[
-				"js",
-				"_includes\\js.html"
 			],
 			[
 				"js.",
@@ -2347,10 +2354,6 @@
 				"_includes\\js.html"
 			],
 			[
-				"default-",
-				"_layouts\\default-la.html"
-			],
-			[
 				"gitig",
 				".gitignore"
 			],
@@ -2383,10 +2386,6 @@
 				"css\\style.css"
 			],
 			[
-				"app.j",
-				"assets\\js\\app.js"
-			],
-			[
 				"app.",
 				"assets\\js\\app.js"
 			],
@@ -2409,10 +2408,6 @@
 			[
 				"cssstyle",
 				"css\\style.css"
-			],
-			[
-				"los",
-				"la\\losfeliz.html"
 			],
 			[
 				"stuio",
@@ -2481,10 +2476,6 @@
 			[
 				"default-a",
 				"_layouts\\default-la.html"
-			],
-			[
-				"footer-l",
-				"_includes\\footer-la.html"
 			],
 			[
 				"heade",
@@ -2561,26 +2552,6 @@
 			[
 				"local.scss",
 				"strollingwild\\repo\\magento\\skin\\frontend\\strollingwild\\default\\scss\\_local.scss"
-			],
-			[
-				"index.php",
-				"strollingwild\\repo\\magento\\index.php"
-			],
-			[
-				"layoutlocal.xml",
-				"strollingwild\\repo\\magento\\app\\design\\frontend\\strollingwild\\default\\layout\\local.xml"
-			],
-			[
-				"footer-add",
-				"strollingwild\\repo\\magento\\skin\\frontend\\strollingwild\\default\\scss\\layout\\_footer-addon.scss"
-			],
-			[
-				"homepage.scss",
-				"strollingwild\\repo\\magento\\skin\\frontend\\strollingwild\\default\\scss\\layout\\_homepage.scss"
-			],
-			[
-				"homepage.scs",
-				"strollingwild\\repo\\magento\\skin\\frontend\\strollingwild\\default\\scss\\layout\\_homepage.scss"
 			]
 		],
 		"width": 0.0
