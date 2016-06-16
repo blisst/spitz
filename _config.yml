@@ -44,6 +44,11 @@ defaults:
       baseurl: "" # the subpath of your site, e.g. /blog/
       url: "http://eatatspitz.com"
       copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+      order-links:
+        - {name: Little Tokyo, delivery: "https://postmates.com/la/spitz-los-angeles", takeout: "http://eat24hrs.com/restaurants/16728"}
+        - {name: Los Feliz, delivery: "https://postmates.com/la/spitz-home-of-the-doner-kabab-los-angeles", takeout: "http://eat24hrs.com/restaurants/19444"}
+        - {name: Eagle Rock, delivery: "https://postmates.com/la/spitz-los-angeles-2", takeout: "http://eat24hrs.com/restaurants/16727"}
+        - {name: Studio City, delivery: "https://postmates.com/la/spitz-studio-city", takeout: "http://eat24hrs.com/restaurants/27444"}
 
   -
     scope:
