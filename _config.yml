@@ -59,7 +59,8 @@ defaults:
       description: "Welcome to Spitz, home of the Döner Kebab, and Salt Lake City's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
       email: "info@spitzslc.com"
       order-sugarhouse-link: "//eat24hrs.com/restaurants/order2/menu.php?id=53313"
-      order-downtown-link: //eat24hrs.com/restaurants/order2/menu.php?id=65032"
+      order-downtown-link: "//eat24hrs.com/restaurants/order2/menu.php?id=65032"
+      order-cottonwood-link: "//www.yelp.com/biz/spitz-cottonwood-salt-lake-city"
       # description: > 
       #   Write an awesome description for your new site here. You can edit this
       #   line in _config.yml. It will appear in your document head meta (for
