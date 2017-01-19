@@ -33,7 +33,7 @@ function getFolders(dir) {
  */
 gulp.task('build', function(cb) {
     browserSync.notify(messages.jekyllBuild);
-    cp.spawnSync('jekyll.bat', ['build'], {
+    cp.spawnSync('jekyll', ['build'], {
         stdio: 'inherit'
     });
     cb();

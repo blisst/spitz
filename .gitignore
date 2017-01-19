@@ -1,3 +1,4 @@
+.DS_STORE
 _parse/*
 .sass-cache
 node_modules/*
