@@ -1,0 +1,41 @@
+---
+---
+<div class="home">
+	<!-- Flexslider Mobile-->
+	<div class="flexslider-mobile visible-phone">
+	  <ul class="slides">
+
+	  	{% if page.front-photos-mobile %}
+	  	{% assign photos-mobile = page.front-photos %}
+	  	{% else %}
+	  	{% assign photos-mobile = site.front-photos-mobile %}
+	  	{% endif %}
+
+	  	{% for photo in photos-mobile %}
+	  	    <li>
+	  	    	<img data-src="{{ photo.path }}"class="lazy {{photo.classes}}" />
+  	    	</li>	 
+  	  	{% endfor %}
+	  </ul>
+	</div>
+	<div id="mainContent" class="hidden-phone">
+	    <div class="container">
+	        <!-- Flexslider Desktop-->
+	        <div class="flexslider fitSlider">
+	          <ul class="slides">
+					{% if page.front-photos %}
+					{% assign photos = page.front-photos %}
+					{% else %}
+					{% assign photos = site.front-photos %}
+					{% endif %}
+				  	{% for photo in photos %}
+				  	    <li>
+				  	    	<img data-src="{{ photo.path }}"class="lazy {{photo.classes}}" />
+			  	    	</li>	 
+			  	  	{% endfor %}
+
+	          </ul>
+	        </div>
+	    </div>
+	</div>
+</div>
