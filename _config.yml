@@ -107,7 +107,7 @@ defaults:
     scope:
       path: "portland"
     values:
-      layout: "default-sd"
+      layout: "default-pdx"
       title: "Spitz Portland - Home of the Döner Kebab | Mediterranean Street Food"
       description: "Welcome to Spitz, home of the Döner Kebab, and Portland's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
       email: "****"
@@ -119,7 +119,6 @@ defaults:
       url: "http://spitzpdx.com"
       copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
       order-online:
-        - {title: "Hillcrest", link: "http://san-diego.eat24hours.com/spitz-hillcrest/67272"}
       contact-hillcrest:
         management-email: talk2us@spitzSD.com
         phone: "619-326-8556"
