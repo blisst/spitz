@@ -118,7 +118,7 @@ defaults:
       baseurl: "" # the subpath of your site, e.g. /blog/
       url: "http://spitzpdx.com"
       copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
-      order-online:
+      order-online: "https://order.postmates.com/spitz-portland-2"
       contact-hillcrest:
         management-email: talk2us@spitzSD.com
         phone: "619-326-8556"
