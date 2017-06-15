@@ -1098,10 +1098,7 @@ $(function() {
   function showSubscribe() {
     var existCookie = Cookies.get('spitzsub');
 
-    if (existCookie == 2) {
-      return;
-    }
-    if (existCookie == 1 || (document.referrer.split('/')[2] == location.hostname || document.referrer.split('/')[0] == "")) {
+    if (existCookie == 2 || existCookie == 1) {
       return;
     }
 
