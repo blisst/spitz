@@ -118,6 +118,17 @@ img.blur {
     -webkit-filter: blur(1px);
     filter: blur(1px);
 }
+.button {
+    background: rgb(205, 103, 52);
+    padding:10px 20px;
+    color:white;
+    display:block;
+}
+.button:hover {
+    background: #B44E1B;
+    color:white;
+}
+
 a:focus { outline: 0;}
 a:hover {text-decoration: none;}
 p {color: #262626; font-size: 12px; line-height: 20px; margin: 0; padding: 0;}
