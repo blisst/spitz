@@ -1,0 +1,238 @@
+---
+page_name: "Spitz Truck LA"
+email: "managingspitz@gmail.com"
+excerpt: "Stop by Spitz Los Feliz for the best sangria and happy-hour in Los Angeles.  Craft beer, cheladas, and a DJ on Friday and Saturday nights are the perfect compliment to our famous fries, falafel, döner kebab sandwiches and wraps. "
+copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+---
+<style>
+  #mainContent {
+    margin-bottom:50px;
+  }
+  #mainContent h1 {
+    margin-bottom:30px;
+  }
+  #gform label {
+    font-family: american_typewriter,Underwood,lucida_granderegular;
+    background-color: #4D4D4D;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px 14px;
+  }
+  #gform h4 {
+    font-family: american_typewriter,Underwood,lucida_granderegular;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    margin:25px auto;
+    display:table;
+    text-align: center;
+  }
+  .thankyou h4 {
+    margin:0 auto;
+    display:table;
+    font-family: american_typewriter,Underwood,lucida_granderegular;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+  }
+  .thankyou p {
+    display: inline-block;
+    font-family: american_typewriter,Underwood,lucida_granderegular;
+    background-color: #4D4D4D;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px 14px;
+  }
+  .form-control:focus {
+    border-color: #4D4D4D;
+    box-shadow: inset 0 1px 1px #4D4D4D, 0 0 3px black;
+  }
+  #gform .error {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px red;
+  }
+</style>
+<div id="mainContent">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center">SpitzTruck Catering Request</h1>
+      </div>
+
+        <div class="catering-form">
+          <div class="thankyou text-center" style="display:none;margin-top:150px">
+            <h4>Thank You!</h4>
+            <p>We will be in touch ASAP!</p>
+          </div>
+          <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyMoN4rP5C7wsCOFyk75fhpiVJ0aG0gxX6RefdTA4L2kDTMWb_x/exec">
+
+          <!-- COL -->
+          <div class="col-xs-12 col-md-6">
+            <h4>Event Details</h4>
+            <div class="form-group">
+              <label for="event_name">Event Name</label>
+              <input name="event_name" class="form-control" id="event_name">
+            </div>
+            <div class="form-group">
+              <label for="event_date">Event Date</label>
+              <input type="date" name="event_date" class="form-control" id="event_date">
+            </div>
+            <div class="form-group">
+              <label for="event_start_time">Event Start Time</label>
+              <input type="time" name="event_start_time" class="form-control" id="event_start_time">
+            </div>
+            <div class="form-group">
+              <label for="event_setup_time">Event Setup Time</label>
+              <input type="time" name="event_setup_time" class="form-control" id="event_setup_time">
+            </div>
+            <div class="form-group">
+              <label for="attendance">Attendance</label>
+              <input type="number" name="attendance" class="form-control" id="attendance">
+            </div>
+
+            <h4>Event Location</h4>
+            <div class="form-group">
+              <div class="form-group">
+                <label for="address_street">Street</label>
+                <input name="address_street" class="form-control" id="address_street">
+              </div>
+              <div class="form-group">
+                <label for="address_city">City</label>
+                <input name="address_city" class="form-control" id="address_city">
+              </div>
+              <div class="form-group">
+                <label for="address_zip">Zip Code</label>
+                <input name="address_zip" pattern="[0-9]{5}" class="form-control" id="address_zip">
+              </div>
+            </div>
+          </div>
+          <!-- END COL -->
+
+          <!-- COL -->
+          <div class="col-xs-12 col-md-6">
+            <h4>Company Details</h4>
+
+            <div class="form-group">
+              <label for="client">Company/Client</label>
+              <input name="client" class="form-control" id="client">
+            </div>
+            <div class="form-group">
+              <label for="contact_name">Contact Name</label>
+              <input name="contact_name" class="form-control" id="contact_name">
+            </div>
+            <div class="form-group">
+              <label for="contact_email">Contact Email</label>
+              <input type="email" name="contact_email" class="form-control" id="contact_email">
+            </div>
+            
+            <div class="form-group">
+              <label for="referral">How Did You Hear About SpitzTruck Catering?</label>
+              <textarea name="referral" class="form-control" id="referral"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="parking">Parking Situation</label>
+              <textarea name="parking" class="form-control" id="parking"></textarea>
+            </div>
+            <div class="text-center">
+              <a style="display:table;margin:30px auto;font-size:18px;text-transform:uppercase" class="submit-gform button text-center" href="#">Submit Request</a>
+            </div>
+          </div>
+          <!-- END COL -->
+
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- container -->
+
+</div>
+
+</div>
+
+<!-- <script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script> -->
+
+<script>
+  jQuery(function($) {
+    // $.ajaxSetup({
+    //     ajaxComplete: function() {
+    //         alert('this called');
+    //     }
+    // });
+    function displayError() {
+      alert('An error occurred.  Please try again.  If the problem persists please let us know at support@bakerbrook.com');
+    }
+    function handleSuccess() {
+      $('#gform').slideUp();
+      $('.thankyou').slideDown();
+    }
+
+    function inputError(name) {
+      $('[name='+name+']').addClass('error');
+    }
+
+    function formValidate(data) {
+      var errors = 0;
+      data.forEach(function(a) {
+        if (a.value == '') {
+          errors++;
+          inputError(a.name);
+        }
+      });
+
+      if (errors > 0) {
+        return false;
+      }
+
+      return true;
+    }
+
+    $( document ).ajaxComplete(function( event, xhr, settings ) {
+      if (settings.url.indexOf("https://script.google.com/macros") < 0) {
+        return;
+      }
+      try {
+        var response = JSON.parse(xhr.responseText);
+        if (response.result == 'success') {
+          handleSuccess();
+        } else {
+          displayError();
+        }
+      } catch (err) {
+        displayError();
+      }
+      
+    });
+
+    $('.submit-gform').click(function(e) {
+      e.preventDefault();
+      // $('#gform').submit();
+      var valid = formValidate($('#gform').serializeArray());
+
+      if (!valid) {
+        return;
+      }
+      $.post($('#gform').attr('action'), $('#gform').serialize());
+     
+      // alert('clicked');
+      // e.preventDefault();
+
+      // $.post($('#gform').attr('action'), $('#gform').serialize(), function(data) {
+      //   alert('success');
+      //   console.log(data);
+      // }, function(err) {
+      //   alert('An error occurred.  Please try again.  If the problem persists please let us know at support@bakerbrook.com');
+      // });
+    });
+
+    $('#gform').on('focus', '.error', function() {
+      $(this).removeClass('error');
+    });
+  });
+</script>
+
