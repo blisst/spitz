@@ -7,7 +7,7 @@
 # copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
 # Build settings
 # markdown: kramdown
-exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock","*.sublime-*","WORKFLOW.md"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock","*.sublime-*","WORKFLOW.md","package-lock.json"]
 # gems: ["octopress-autoprefixer"]
 logo: "assets/images/logo_new.png"
 logo_no_words: "assets/images/logo_no_words.png"
