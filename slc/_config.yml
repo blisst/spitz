@@ -1,0 +1,126 @@
+# layout: "default-la"
+# title: "Spitz - Home of the Döner Kebab | Los Angeles | Mediterranean Street Food"
+# email: "managingspitz@gmail.com"
+# description: "Welcome to Spitz, home of the Döner Kebab, and Los Angeles' best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+# baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://eatatspitz.com"
+# copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+# Build settings
+# markdown: kramdown
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock","*.sublime-*","WORKFLOW.md","package-lock.json"]
+# gems: ["octopress-autoprefixer"]
+logo: "assets/images/logo_new.png"
+logo_no_words: "assets/images/logo_no_words.png"
+seal: "assets/images/seal.png"
+front-photos:
+  - {path: assets/images/slider/index/wraps.jpg}
+  - {path: assets/images/slider/index/patrons.jpg}
+  - {path: assets/images/slider/index/salad.jpg}
+  - {path: assets/images/slider/index/vinyl-dj.jpg}
+  - {path: assets/images/slider/index/wraps-and-fries.jpg, classes: focusBottom }
+  - {path: assets/images/slider/index/sangria.jpg}
+  - {path: assets/images/slider/index/beer-taps.jpg}
+front-photos-mobile:
+  - {path: assets/images/slider/index/mobile/wraps.jpg}
+  - {path: assets/images/slider/index/mobile/patrons.jpg}
+  - {path: assets/images/slider/index/mobile/salad.jpg}
+  - {path: assets/images/slider/index/mobile/vinyl-dj.jpg}
+  - {path: assets/images/slider/index/mobile/wraps-and-fries.jpg} 
+  - {path: assets/images/slider/index/mobile/sangria.jpg}
+  - {path: assets/images/slider/index/mobile/beer-taps.jpg}
+defaults: 
+  -
+    scope:
+      path: "la"
+    values:
+      layout: "default-la"
+      title: "Spitz - Home of the Döner Kebab | Los Angeles |  Mediterranean Street Food"
+      email: "managingspitz@gmail.com"
+      description: "Welcome to Spitz, home of the Döner Kebab, and Los Angeles' best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+      # description: > 
+      #   Write an awesome description for your new site here. You can edit this
+      #   line in _config.yml. It will appear in your document head meta (for
+      #   Google search results) and in your feed.xml site description.
+      baseurl: "" # the subpath of your site, e.g. /blog/
+      url: "http://eatatspitz.com"
+      copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+      order-links:
+        - {name: Little Tokyo, delivery: "https://postmates.com/la/spitz-los-angeles", takeout: "http://eat24hrs.com/restaurants/16728"}
+        - {name: Los Feliz, delivery: "https://postmates.com/la/spitz-home-of-the-doner-kabab-los-angeles", takeout: "http://eat24hrs.com/restaurants/19444"}
+        - {name: Eagle Rock, delivery: "https://postmates.com/la/spitz-los-angeles-2", takeout: "http://eat24hrs.com/restaurants/16727"}
+        - {name: Studio City, delivery: "https://postmates.com/la/spitz-studio-city", takeout: "http://eat24hrs.com/restaurants/27444"}
+
+  -
+    scope:
+      path: "slc"
+    values:
+      layout: "default-slc"
+      title: "Spitz SLC - Home of the Doner Kebab - Restaurant in Salt Lake City, UT"
+      description: "Welcome to Spitz, home of the Döner Kebab, and Salt Lake City's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+      email: "info@spitzslc.com"
+      order-sugarhouse-link: "//www.grubhub.com/r/w/49831/restaurant/367445"
+      order-downtown-link: "//www.grubhub.com/r/w/50217/restaurant/376476"
+      order-cottonwood-link: "//www.grubhub.com/r/w/49099/restaurant/362299"
+      # description: > 
+      #   Write an awesome description for your new site here. You can edit this
+      #   line in _config.yml. It will appear in your document head meta (for
+      #   Google search results) and in your feed.xml site description.
+      baseurl: "" # the subpath of your site, e.g. /blog/
+      url: "http://spitzslc.com"
+      copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+  -
+    scope:
+      path: "minnesota"
+    values:
+      layout: "default-mn"
+      title: "Spitz Minneapolis - Home of the Doner Kebab - Restaurant in Minneapolis, MN"
+      description: "Welcome to Spitz, home of the Döner Kebab, and Minneapolis's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+      email: "****"
+      # description: > 
+      #   Write an awesome description for your new site here. You can edit this
+      #   line in _config.yml. It will appear in your document head meta (for
+      #   Google search results) and in your feed.xml site description.
+      baseurl: "" # the subpath of your site, e.g. /blog/
+      url: "http://spitzmn.com"
+      copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+  -
+    scope:
+      path: "san_diego"
+    values:
+      layout: "default-sd"
+      title: "Spitz San Diego - Home of the Döner Kebab | Mediterranean Street Food"
+      description: "Welcome to Spitz, home of the Döner Kebab, and San Diego's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+      email: "****"
+      # description: > 
+      #   Write an awesome description for your new site here. You can edit this
+      #   line in _config.yml. It will appear in your document head meta (for
+      #   Google search results) and in your feed.xml site description.
+      baseurl: "" # the subpath of your site, e.g. /blog/
+      url: "http://spitzsd.com"
+      copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+      order-online:
+        - {title: "Hillcrest", link: "http://san-diego.eat24hours.com/spitz-hillcrest/67272"}
+      contact-hillcrest:
+        management-email: talk2us@spitzSD.com
+        phone: "619-326-8556"
+  -
+    scope:
+      path: "portland"
+    values:
+      layout: "default-pdx"
+      title: "Spitz Portland - Home of the Döner Kebab | Mediterranean Street Food"
+      description: "Welcome to Spitz, home of the Döner Kebab, and Portland's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+      email: "****"
+      # description: > 
+      #   Write an awesome description for your new site here. You can edit this
+      #   line in _config.yml. It will appear in your document head meta (for
+      #   Google search results) and in your feed.xml site description.
+      baseurl: "" # the subpath of your site, e.g. /blog/
+      url: "http://spitzpdx.com"
+      copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+      order-online: "https://order.postmates.com/spitz-portland-2"
+      contact-hillcrest:
+        management-email: talk2us@spitzSD.com
+        phone: "619-326-8556"
+
+
