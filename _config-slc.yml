@@ -1,0 +1,19 @@
+source: "slc"
+destination: "_site/slc"
+plugins:
+  - jekyll-redirect-from
+layout: "default-slc"
+title: "Spitz SLC - Home of the Doner Kebab - Restaurant in Salt Lake City, UT"
+description: "Welcome to Spitz, home of the Döner Kebab, and Salt Lake City's best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+email: "info@spitzslc.com"
+order-sugarhouse-link: "//www.grubhub.com/r/w/49831/restaurant/367445"
+order-downtown-link: "//www.grubhub.com/r/w/50217/restaurant/376476"
+order-cottonwood-link: "//www.grubhub.com/r/w/49099/restaurant/362299"
+# description: > 
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://spitzslc.com"
+copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+  

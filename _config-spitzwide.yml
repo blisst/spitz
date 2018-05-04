@@ -1,0 +1,29 @@
+# layout: "default-la"
+# title: "Spitz - Home of the Döner Kebab | Los Angeles | Mediterranean Street Food"
+# email: "managingspitz@gmail.com"
+# description: "Welcome to Spitz, home of the Döner Kebab, and Los Angeles' best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+# baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://eatatspitz.com"
+# copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+# Build settings
+# markdown: kramdown
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock","*.sublime-*","WORKFLOW.md","package-lock.json"]
+logo: "assets/images/logo_new.png"
+logo_no_words: "assets/images/logo_no_words.png"
+seal: "assets/images/seal.png"
+front-photos:
+  - {path: assets/images/slider/index/wraps.jpg}
+  - {path: assets/images/slider/index/patrons.jpg}
+  - {path: assets/images/slider/index/salad.jpg}
+  - {path: assets/images/slider/index/vinyl-dj.jpg}
+  - {path: assets/images/slider/index/wraps-and-fries.jpg, classes: focusBottom }
+  - {path: assets/images/slider/index/sangria.jpg}
+  - {path: assets/images/slider/index/beer-taps.jpg}
+front-photos-mobile:
+  - {path: assets/images/slider/index/mobile/wraps.jpg}
+  - {path: assets/images/slider/index/mobile/patrons.jpg}
+  - {path: assets/images/slider/index/mobile/salad.jpg}
+  - {path: assets/images/slider/index/mobile/vinyl-dj.jpg}
+  - {path: assets/images/slider/index/mobile/wraps-and-fries.jpg} 
+  - {path: assets/images/slider/index/mobile/sangria.jpg}
+  - {path: assets/images/slider/index/mobile/beer-taps.jpg}
