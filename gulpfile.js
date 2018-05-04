@@ -139,6 +139,9 @@ gulp.task('copyassets', function(cb) {
     folders.forEach(function(folder) {
         task.pipe(gulp.dest('_site/'+folder+'/assets'));
     });
+
+    gulp.src("slc/_config.yml").pipe(gulp.dest('_site/slc'));
+    
     cb();
 });
 
