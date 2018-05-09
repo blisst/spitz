@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header-mn.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="hidden-phone">
+          {% include menu-mn.html %}
+        </div>
+        {{ content }}
+        <div class="visible-phone">
+          {% include menu-mn.html %}
+        </div>
+        
+        {% include subscribe.html %}
+
+      </div>
+    </div>
+    {% include js.html %}
+    {% include footer-mn.html %}
+
+  </body>
+
+</html>

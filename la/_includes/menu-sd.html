@@ -1,0 +1,79 @@
+<div id="menuContainer" class="clearfix">
+    <p class="menuBg"></p>
+    <div class="container">
+        <ul class="mainMenu hidden-tablet">
+            <li class="visible-desktop"><a href="about.html">About</a></li>
+            <div class="hidden-desktop">
+            {% include order-online-sd.html %}
+            </div>
+            
+           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt hidden-phone">Our Real Tasty Food</span></a>
+               <ul>
+                   <li><a target="_blank" href="menus/lunch-dinner.pdf">Lunch/Dinner</a></li>
+                   <li><a target="_blank" href="menus/brunch.pdf">Brunch</a></li>
+                   <li><a target="_blank" href="menus/catering.pdf">Catering</a></li>
+               </ul>
+           </li>
+            <li class="subMenu"><a href="#">Locations<span class="addTxt hidden-phone">Find Your Favorite Spitz</span></a>
+                <ul>
+                    <li><a href="hillcrest.html">Hillcrest</a></li>
+                    <li><a href="//eatatspitz.com" target="_blank">Los Angeles</a></li>
+                    <li><a href="//spitzslc.com" targe="_blank">Salt Lake City</a></li>
+                    <li><a href="//spitzmn.com" target="_blank">Minneapolis</a></li>
+                    <li><a href="//spitzpdx.com" target="_blank">Portland</a></li>
+
+
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact<span class="addTxt hidden-phone">Get & Stay in Contact</span></a></li>
+          <!--   <li><a href="employment.html">Employment<span class="addTxt hidden-phone">Work for Spitz</span></a></li> -->
+        </ul>
+
+        <ul class="mainMenu tablet visible-tablet">
+            {% include order-online-sd.html %}
+          <div class="flexy">
+           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt hidden-phone">Our Real Tasty Food</span></a>
+               <ul>
+                   <li><a target="_blank" href="menus/lunch-dinner.pdf">Lunch/Dinner</a></li>
+                   <li><a target="_blank" href="menus/brunch.pdf">Brunch</a></li>
+                   <li><a target="_blank" href="menus/catering.pdf">Catering</a></li>
+               </ul>
+           </li>
+           <li class="subMenu"><a href="#">Locations<span class="addTxt hidden-phone">Find Your Favorite Spitz</span></a>
+               <ul>
+                   <li><a href="hillcrest.html">Hillcrest</a></li>
+                   <li><a href="//eatatspitz.com" target="_blank">Los Angeles</a></li>
+                   <li><a href="//spitzslc.com" targe="_blank">Salt Lake City</a></li>
+                    <li><a href="//spitzmn.com" target="_blank">Minneapolis</a></li>
+                    <li><a href="//spitzpdx.com" target="_blank">Portland</a></li>
+                    
+                   
+               </ul>
+           </li>
+            <li><a href="contact.html">Contact<span class="addTxt hidden-phone">Get & Stay in Contact</span></a></li>
+<!--             <li><a href="employment.html">Employment<span class="addTxt hidden-phone">Work for Spitz</span></a></li> -->
+            </div>
+        </ul>
+
+        <div class="order hidden-phone hidden-tablet">
+          <div class="top"></div>
+          <ul>
+            <li class="subMenu"><a class="order" href="#">Order Online</a>
+              <ul>
+                  {% for o in page.order-online %}
+                    <li>
+                      <a href="{{o.link}}" target="_blank">{{o.title}}</a>
+                    </li>  
+                  {% endfor %}
+              </ul>
+
+            </li>
+          </ul>
+          <div class="bottom"></div>
+          <!--  -->
+               
+           <!--  <a href="order.html" class="order" id="bkTable">Order Online</a> -->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

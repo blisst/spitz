@@ -1,0 +1,44 @@
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock","*.sublime-*","WORKFLOW.md","package-lock.json"]
+logo: "assets/images/logo_new.png"
+logo_no_words: "assets/images/logo_no_words.png"
+seal: "assets/images/seal.png"
+destination: ../_site/la
+plugins:
+  - jekyll-redirect-from
+front-photos:
+  - {path: assets/images/slider/index/wraps.jpg}
+  - {path: assets/images/slider/index/patrons.jpg}
+  - {path: assets/images/slider/index/salad.jpg}
+  - {path: assets/images/slider/index/vinyl-dj.jpg}
+  - {path: assets/images/slider/index/wraps-and-fries.jpg, classes: focusBottom }
+  - {path: assets/images/slider/index/sangria.jpg}
+  - {path: assets/images/slider/index/beer-taps.jpg}
+front-photos-mobile:
+  - {path: assets/images/slider/index/mobile/wraps.jpg}
+  - {path: assets/images/slider/index/mobile/patrons.jpg}
+  - {path: assets/images/slider/index/mobile/salad.jpg}
+  - {path: assets/images/slider/index/mobile/vinyl-dj.jpg}
+  - {path: assets/images/slider/index/mobile/wraps-and-fries.jpg} 
+  - {path: assets/images/slider/index/mobile/sangria.jpg}
+  - {path: assets/images/slider/index/mobile/beer-taps.jpg}
+defaults: 
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default-la"
+      title: "Spitz - Home of the Döner Kebab | Los Angeles |  Mediterranean Street Food"
+      email: "managingspitz@gmail.com"
+      description: "Welcome to Spitz, home of the Döner Kebab, and Los Angeles' best choice for Mediterranean street food, falafel, craft beer, and fresh sangria. Try our fries, sandwiches, and wraps!"
+      # description: > 
+      #   Write an awesome description for your new site here. You can edit this
+      #   line in _config.yml. It will appear in your document head meta (for
+      #   Google search results) and in your feed.xml site description.
+      baseurl: "" # the subpath of your site, e.g. /blog/
+      url: "http://eatatspitz.com"
+      copyright: "© 2014 Spitz - Home of the Döner Kebab<br>All Rights Reserved."
+      order-links:
+        - {name: Little Tokyo, delivery: "https://postmates.com/la/spitz-los-angeles", takeout: "http://eat24hrs.com/restaurants/16728"}
+        - {name: Los Feliz, delivery: "https://postmates.com/la/spitz-home-of-the-doner-kabab-los-angeles", takeout: "http://eat24hrs.com/restaurants/19444"}
+        - {name: Eagle Rock, delivery: "https://postmates.com/la/spitz-los-angeles-2", takeout: "http://eat24hrs.com/restaurants/16727"}
+        - {name: Studio City, delivery: "https://postmates.com/la/spitz-studio-city", takeout: "http://eat24hrs.com/restaurants/27444"}

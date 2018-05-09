@@ -1,0 +1,248 @@
+<style>
+ul li.subMenu ul li:hover a {
+  background:inherit;
+
+}
+ul li.subMenu ul li a {
+  display:block;
+  cursor:pointer;
+}
+ul li.subMenu ul li a:hover{
+  text-decoration:underline;
+}
+
+
+div.order {
+  width:180px;
+}
+#menuContainer a.order-link {
+  transition: all 0.3s ease;
+}
+#menuContainer a.order-link.open {
+  text-shadow:0 2px black;
+  font-size:16px;
+}
+#menuContainer a.order-link.open:hover {
+  text-decoration: none;
+}
+#menuContainer a.order-link.tab.open {
+  text-shadow:0px -1px 0px #c63;
+}
+#menuContainer .border {
+  width:55%;
+  height:1px;
+  background:white;
+  margin:2px auto;
+  transition: all 0.3s ease;
+}
+#menuContainer .border.closed {
+  width:0;
+  height:0;
+}
+
+#menuContainer a.order-link:hover, #menuContainer .links a:hover{
+  text-decoration:underline;
+  opacity:.8;
+}
+ul li.subMenu ul .links a {
+  text-transform: none;
+}
+.links {
+    text-align: center;
+    width: calc(100% - 60px);
+    margin: 6px auto;
+    display:none;
+}
+.links-tablet {
+  display:none;
+}
+.links-tablet .separator {
+  width:1px;
+  border: 1px dashed white;
+  margin: 0 2px;
+}
+.links-tablet.open {
+  display:flex;
+}
+ul li.subMenu ul li h4 {
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 2px;
+}
+.links .separator {
+  height:1px;
+  margin:1px auto;
+  width:35px;
+  border: 1px dashed white;
+}
+
+/* TABLET */
+.mainMenu.tablet ul li.subMenu ul li a {
+  display:inline-block;
+}
+</style>
+
+<div id="menuContainer" class="clearfix">
+    <p class="menuBg"></p>
+    <div class="container">
+        <ul class="mainMenu hidden-tablet">
+            <li class="visible-desktop"><a href="about.html">About</a></li>
+            <li class="subMenu hidden-desktop">
+              <a class="hidden-phone" href="#">Order <span class="addTxt">Order Yummy Spitz Online!</span></a>
+              <a class="visible-phone" href="#">Order Online</a>
+                <ul>
+                      {% for link in page.order-links %}
+                    <li>
+                      <a class="order-link tab">{{link.name}}</a>
+                      <div class="border closed"></div>
+                      <div class="links closed">
+                        {% if link.delivery %}
+                        <a href="{{link.delivery}}" target="_blank">Delivery</a>
+                        {% endif %}
+                        {% if link.takeout %}
+                        <div class="separator"></div>
+                        <a href="{{link.takeout}}" target="_blank">Takeout</a>
+                        {% endif %}   
+                       </div>
+                      <div class="border closed"></div>
+
+                     </li>
+                    {% endfor %}
+                </ul>
+            </li>
+            
+           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt hidden-phone">Our Real Tasty Food</span></a>
+               <ul>
+                   <li><a target="_blank" href="menus/lunch-dinner.pdf">Lunch/Dinner</a></li>
+                   <li><a target="_blank" href="menus/brunch.pdf">Brunch</a></li>
+                   <li><a target="_blank" href="menus/catering.pdf">Catering</a></li>
+                   <li><a target="_blank" href="menus/beerandwine.pdf">Beer & Wine</a></li>
+               </ul>
+           </li>
+            <li class="subMenu"><a href="#">Locations<span class="addTxt hidden-phone">Find Your Favorite Spitz</span></a>
+                <ul>
+                    <li><a href="spitz-truck.html">Spitz Truck</a></li>
+                    <li><a href="spitz-little-tokyo.html">Little Tokyo</a></li>
+                    <li><a href="spitz-los-feliz.html">Los Feliz</a></li>
+                    <li><a href="spitz-eagle-rock.html">Eagle Rock</a></li>
+                    <li><a href="spitz-studio-city.html">Studio City</a></li>
+                    <li><a href="//spitzslc.com" target="_blank">Salt Lake City</a></li>
+                    <li><a href="//spitzmn.com" target="_blank">Minneapolis</a></li>
+                    <li><a href="//spitzpdx.com" target="_blank">Portland</a></li>
+        
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact<span class="addTxt hidden-phone">Get & Stay in Contact</span></a></li>
+            <li><a href="https://harri.com/Spitz-Careers">Careers<span class="addTxt hidden-phone">Work at Spitz</span></a></li>
+        </ul>
+
+        <ul class="mainMenu tablet visible-tablet">
+            <li class="subMenu order-link">
+              <a  href="#">Order <span class="addTxt">Order Yummy Spitz Online!</span></a>
+                <ul>
+                    {% for link in page.order-links %}
+                    <li>
+                      <a class="order-link tab">{{link.name}}</a>
+                      <div class="border closed"></div>
+                      <div class="links closed">
+                        {% if link.delivery %}
+                        <a href="{{link.delivery}}" target="_blank">Delivery</a>
+                        {% endif %}
+                        {% if link.takeout %}
+                        <div class="separator"></div>
+                        <a href="{{link.takeout}}" target="_blank">Takeout</a>
+                        {% endif %}   
+                       </div>
+                      <div class="border closed"></div>
+
+                     </li>
+                    {% endfor %}
+                </ul>
+            </li>
+          <div class="flexy">
+           <li class="subMenu"><a href="#">Menus/Catering<span class="addTxt hidden-phone">Our Real Tasty Food</span></a>
+               <ul>
+                   <li><a target="_blank" href="menus/lunch-dinner.pdf">Lunch/Dinner</a></li>
+                   <li><a target="_blank" href="menus/brunch.pdf">Brunch</a></li>
+                   <li><a target="_blank" href="menus/catering.pdf">Catering</a></li>
+                   <li><a target="_blank" href="menus/beerandwine.pdf">Beer & Wine</a></li>
+                   
+               </ul>
+           </li>
+            <li class="subMenu"><a href="#">Locations<span class="addTxt hidden-phone">Find Your Favorite Spitz</span></a>
+                <ul>
+                    <li><a href="spitz-truck.html">Spitz Truck</a></li>
+                    <li><a href="spitz-little-tokyo.html">Little Tokyo</a></li>
+                    <li><a href="spitz-los-feliz.html">Los Feliz</a></li>
+                    <li><a href="spitz-eagle-rock.html">Eagle Rock</a></li>
+                    <li><a href="spitz-studio-city.html">Studio City</a></li>
+                   <li><a href="//spitzslc.com" target="_blank">Salt Lake City</a></li>
+                    <li><a href="//spitzmn.com" target="_blank">Minneapolis</a></li>
+                    <li><a href="//spitzpdx.com" target="_blank">Portland</a></li>
+                   
+        
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact<span class="addTxt hidden-phone">Get & Stay in Contact</span></a></li>
+            </div>
+        </ul>
+
+        <div class="order hidden-phone hidden-tablet">
+          <div class="top"></div>
+
+          <ul>
+            <li class="subMenu"><a class="order" href="#">Order Online</a>
+              <ul>
+                {% for link in page.order-links %}
+                <li>
+                  <a class="order-link">{{link.name}}</a>
+                  <div class="border closed"></div>
+                  <div class="links closed">
+                    {% if link.delivery %}
+                    <a href="{{link.delivery}}" target="_blank">Delivery</a>
+                    {% endif %}
+                    {% if link.takeout %}
+                    <div class="separator"></div>
+                    <a href="{{link.takeout}}" target="_blank">Takeout</a>
+                    {% endif %}   
+                   </div>
+                    <div class="border closed"></div>
+
+                 </li>
+                {% endfor %}
+              </ul>
+            </li>
+          </ul>
+          <div class="bottom"></div>
+
+               
+           <!--  <a href="order.html" class="order" id="bkTable">Order Online</a> -->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<script>
+jQuery(function($){
+  $('a.order-link').off('click.slide').on('click.slide', function(e) {
+    e.preventDefault();
+    var that = $(this);
+    $(this).toggleClass('open');
+    var links = $(this).siblings('.links');
+    var border = $(this).siblings('.border');
+    if (links.hasClass('closed')) {
+
+      $(this).addClass('open');
+
+      border.removeClass('closed');
+      links.removeClass('closed').slideDown();
+    } else {
+      $(this).removeClass('open');
+
+      border.addClass('closed');
+      links.slideUp().addClass('closed');
+    }
+    return false;
+  });
+});
+</script>

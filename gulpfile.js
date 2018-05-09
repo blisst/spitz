@@ -39,8 +39,22 @@ gulp.task('build', function(cb) {
     cb();
 });
 
-gulp.task('jekyll-build', ['css', 'build', 'copyassets'], function() {});
 
+/**
+ * Build the Jekyll Site
+ */
+gulp.task('build-slc', function(cb) {
+    process.chdir("./slc");
+    browserSync.notify(messages.jekyllBuild);
+    cp.spawnSync('jekyll', ['build'], {
+        stdio: 'inherit'
+    });
+    process.chdir("../");
+    cb();
+});
+
+gulp.task('jekyll-build', ['css', 'build', 'copyassets'], function() {});
+gulp.task('jekyll-build-slc', ['css', 'build-slc', 'copyassets'], function() {});
 /**
  * Rebuild Jekyll & do page reload
  */
@@ -149,13 +163,15 @@ gulp.task('copyassets', function(cb) {
 /**
  * SLC build
  */
-gulp.task('slc', ['browser-sync-slc', 'watch']);
+// gulp.task('slc', ['browser-sync-slc', 'watch']);
 
 /**
  * LA build
  */
 gulp.task('la', ['browser-sync-la', 'watch']);
 gulp.task('san-diego', ['jekyll-build', 'watch']);
+
+gulp.task('slc', ['jekyll-build-slc']);
 
 
 /**

@@ -1,0 +1,19 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% if page.page_name %}{{ page.title | prepend: " | " | prepend: page.page_name }}{% else %}{{page.title}}{% endif %}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	
+	<link href="{{ "assets/css/golden-bootstrap.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ "assets/css/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ "assets/css/bootstrap/css/bootstrap-responsive.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ "assets/css/flexslider.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link rel="stylesheet" href="{{ "assets/css/style.min.css" | prepend: site.baseurl }}">
+
+	<!-- <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | replace: '/la','' | replace: '/slc','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="icon" href="assets/favicon.ico"> 
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+	<script src="assets/js/jquery.mobile.custom.min.js"></script>
+</head>
